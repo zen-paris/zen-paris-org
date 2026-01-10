@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+
+// Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const zenetdojoEntries = await getCollection("zen-et-dojo");
+  return zenetdojoEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// Get the entry directly from the prop on render
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Load all entries for navigation
+const allEntries = await getCollection("zen-et-dojo");
+
+// Sort by date ascending (oldest first)
+const sortedEntries = allEntries.sort(
+  (a, b) => new Date(a.data.date) - new Date(b.data.date)
+);
+
+// Find current entry index
+const currentIndex = sortedEntries.findIndex((e) => e.slug === entry.slug);
+
+// Previous & Next entries
+const prevEntry = currentIndex > 0 ? sortedEntries[currentIndex - 1] : null;
+const nextEntry =
+  currentIndex < sortedEntries.length - 1
+    ? sortedEntries[currentIndex + 1]
+    : null;
+---
+
+<Layout title={entry.data.title}>
+  <Container>
+    <!-- Post Header -->
+    <div class="mx-auto max-w-3xl mt-4">
+      <span class="text-teal-800 uppercase tracking-wider text-sm font-medium">
+        {entry.data.category}
+      </span>
+      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
+        {entry.data.title}
+      </h1>
+    </div>
+
+    <!-- Post Content -->
+    <div class="mx-auto prose prose-lg mt-6 max-w-3xl">
+      <Content />
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="mx-auto max-w-3xl mt-12 border-t border-gray-200 pt-6">
+      <div class="flex justify-between items-center text-sm font-medium text-teal-700">
+        {prevEntry ? (
+          <a
+            href={`/zen-et-dojo/${prevEntry.slug}`}
+            class="flex items-center gap-2 hover:text-teal-900 transition"
+          >
+            ← {prevEntry.data.title}
+          </a>
+        ) : (
+          <span></span>
+        )}
+
+        {nextEntry ? (
+          <a
+            href={`/zen-et-dojo/${nextEntry.slug}`}
+            class="flex items-center gap-2 hover:text-teal-900 transition"
+          >
+            {nextEntry.data.title} →
+          </a>
+        ) : (
+          <span></span>
+        )}
+      </div>
+    </div>
+  </Container>
+</Layout>

@@ -1,0 +1,98 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+// Example grid items
+const gridItems = [
+  { title: "Zen et dojo", image: "/assets/une-salle-de-meditation-avec-des-tapis-et-des-coussins-sur-le-sol-en-bois.webp", link: "/zen-et-dojo" },
+  { title: "Zen et sangha", image: "/assets/un-groupe-de-personnes-est-rassemble-a-l-exterieur-devant-une-statue-en-pierre.webp", link: "/zen-et-sangha" },
+  { title: "Activités précédentes", image: "/assets/activites-zen-stages-meditation.webp", link: "/sesshins-et-stages-zen" },
+];
+---
+
+<div class="flex flex-col lg:flex-row gap-8 mx-auto max-w-6xl mt-8">
+
+  <!-- Main Text -->
+  <div class="flex flex-col gap-1 max-w-4xl">
+
+    <h2 class="text-2xl font-semibold mt-1 mb-1 text-gray-900">Zazen, une pratique traditionnelle ouverte à toutes et à tous</h2>
+    <p class="text-lg leading-relaxed text-gray-900">
+      Le dojo zen a ouvert ses portes il y a plus de quarante ans et constitue aujourd’hui un lieu privilégié pour tous ceux qui souhaitent s’initier ou approfondir la méditation à Paris. Situé dans un cadre propice au silence intérieur, ce dojo traditionnel perpétue la transmission du zazen, la méditation assise enseignée par le Bouddha et transmise de génération en génération.
+    </p>
+
+<!-- Responsive Grid of Tiles -->
+<div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+  {gridItems.map((item) => {
+    let altText = "";
+    switch (item.title) {
+      case "Zen et dojo":
+        altText = "Intérieur du dojo zen de Paris avec tatamis et coussins de méditation, ambiance paisible.";
+        break;
+      case "Zen et sangha":
+        altText = "Groupe de pratiquants méditant ensemble dans un temple zen, ambiance concentrée et calme.";
+        break;
+      case "Activités précédentes":
+        altText = "Pratiquant de zazen méditant assis dans un dojo en Bourgogne, en posture traditionnelle.";
+        break;
+      default:
+        altText = item.title;
+    }
+
+    return (
+      <a
+        href={item.link}
+        class="group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition focus:outline-none focus:ring-2 focus:ring-teal-800"
+      >
+        <img
+          src={item.image}
+          alt={altText}
+          class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+        <div class="p-3 bg-white text-center">
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-black underline-offset-2 group-hover:underline">
+            {item.title}
+          </h3>
+        </div>
+      </a>
+    );
+  })}
+</div>
+
+    <p class="text-lg leading-relaxed text-gray-900 mt-6">
+      Françoise Jomon Julien, nonne zen qui a reçu en avril 2015 la transmission du Dharma de Maître Kosen, proche disciple de Maître Deshimaru, enseigne quotidiennement la méditation à Paris dans ce dojo, qui organise également des <a href="/matinees" class="underline-orange">matinées</a> et des <a href="/journees" class="underline-orange">journées</a> de stage.
+    </p>
+
+    <!-- Insert image at 2/3 of the text -->
+    <div class="my-8">
+      <img 
+        src="/assets/serie-pratiquants-zazen-dijon.webp" 
+        alt="Pratiquant de zazen en Bourgogne assis sur un coussin de méditation dans le dojo zen." 
+        class="w-full rounded-2xl shadow-md object-cover"
+      />
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-900">
+      Pratiquer la méditation zen à Paris, c’est s’offrir un espace de calme et de détente profonde dans une société en perpétuel mouvement. Le dojo propose sept séances de zazen par semaine, accessibles à tous, que ce soit le matin, à midi ou en soirée. Pour les débutants, des initiations sont organisées chaque samedi matin afin de leur permettre d’acquérir les bases de cette discipline qui allie rigueur et spontanéité.
+    </p>
+
+    <blockquote class="text-lg italic text-gray-900 border-l-4 border-gray-500 pl-4 my-4">
+      « Simplement assis, sans but ni esprit de profit, si votre posture, votre respiration et l’attitude de votre esprit sont en harmonie, vous comprenez le vrai zen, vous saisissez la nature de Bouddha. » – Taisen Deshimaru
+    </blockquote>
+
+    <p class="text-lg leading-relaxed text-gray-900">
+      En plus de ces pratiques régulières, le dojo organise tout au long de l’année des matinées de pratique approfondie ainsi que des <a href="/sesshins" class="underline-orange">sesshins</a>, retraites intensives de méditation, où les participants peuvent se plonger pleinement dans l’expérience du zen. Lors de ces stages, d’autres Maîtres sont fréquemment invités afin d’enrichir la pratique et d’apporter d’autres regards sur une pratique aux nombreuses facettes.
+    </p>
+
+    <p class="text-lg leading-relaxed text-gray-900">
+      Venir au dojo de méditation zen à Paris, c’est faire le choix d’une pratique authentique et rigoureuse, une expérience qui transforme en profondeur l’esprit et le corps. Que vous soyez novice ou pratiquant confirmé, le zen vous ouvre ses portes dans un esprit de bienveillance et de transmission fidèle à la tradition.
+    </p>
+  </div>
+</div>

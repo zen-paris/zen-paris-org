@@ -1,0 +1,128 @@
+---
+import Container from "@/components/container.astro";
+import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { getCollection } from "astro:content";
+
+/* ---------------- Pages menu ---------------- */
+const pages = await getCollection("pages");
+const pageMenuItems = pages
+  .filter(p => !p.data.draft)
+  .map(p => ({
+    title: p.data.title,
+    path: `/${p.slug}`,
+  }));
+
+/* ---------------- Zen et dojo ---------------- */
+const blogPosts = await getCollection("zen-et-dojo");
+const publishedPosts = blogPosts
+  .filter(p => !p.data.draft && p.data.publishDate <= new Date())
+  .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
+  .map(p => ({
+    title: p.data.title,
+    path: `/zen-et-dojo/${p.slug}`,
+  }));
+
+/* ---------------- Zen et sangha ---------------- */
+const zenetsanghaPosts = await getCollection("zen-et-sangha");
+const publishedZenetsanghaPosts = zenetsanghaPosts
+  .filter(p => !p.data.draft && p.data.publishDate <= new Date())
+  .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
+  .map(p => ({
+    title: p.data.title,
+    path: `/zen-et-sangha/${p.slug}`,
+  }));
+
+/* ---------------- Navbar structure ---------------- */
+const menuitems = [
+  { title: "Zen et dojo", children: publishedPosts },
+  { title: "Zen et sangha", children: publishedZenetsanghaPosts },
+  {
+    title: "Activités précédentes",
+    children: [
+      { title: "Par année", path: "/sesshins-et-stages-zen" },
+      { title: "Par godo", path: "/godos" },
+      { title: "Sesshins", path: "/sesshins" },
+      { title: "Matinées", path: "/matinees" },
+      { title: "Journées", path: "/journees" },
+      { title: "Découverte", path: "/decouverte" },
+    ],
+  },
+];
+
+const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
+---
+
+<Container>
+<!-- HERO VIDEO (full width) -->
+<header class="relative w-screen h-[70vh] min-h-[420px] overflow-hidden">
+
+  <!-- Video -->
+  <video
+    class="absolute inset-0 w-screen h-full object-cover"
+    src={heroVideo}
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+  ></video>
+
+  <!-- Logo bottom-left -->
+  <a
+    href="/"
+    class="absolute bottom-8 left-8 flex items-center gap-4 z-10"
+  >
+    <img
+      src="/assets/logo-kosen-shangha-typo-plein.svg"
+      alt="Logo Kosen Shangha"
+      class="h-28 w-auto"
+    />
+    <span class="text-white text-xl leading-tight">
+      <span class="font-bold block">Dojo zen</span>
+      <span class="block">de Paris</span>
+    </span>
+  </a>
+
+</header>
+
+<!-- NAVBAR (below video, scrolls normally) -->
+<nav class="relative z-10 bg-transparent">
+  <Container>
+    <Astronav class="py-6 flex justify-end">
+
+      <div class="w-full flex flex-col items-end">
+
+        <!-- Menu -->
+        <MenuItems class="hidden lg:flex mb-3">
+          <ul class="flex gap-4">
+            {menuitems.map((item, index) => (
+              <li class="relative">
+                {item.children ? (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === menuitems.length - 1}
+                    textClass="text-black hover:text-teal-600"
+                    align="right"
+                  />
+                ) : (
+                  <a
+                    href={item.path}
+                    class="px-3 py-2 text-black hover:text-teal-600"
+                  >
+                    {item.title}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </MenuItems>
+
+        <!-- Logo + burger -->
+
+      </div>
+    </Astronav>
+  </Container>
+</nav>
+</Container>

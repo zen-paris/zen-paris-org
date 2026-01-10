@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+
+const baseUrl = "https://zen-deshimaru-dijon.com";
+
+// Date du build utilisée comme fallback lastmod
+const buildDate = new Date().toISOString();
+
+// Pages statiques (exclut sitemap, 404 et fichiers dynamiques)
+const staticPages = await Astro.glob("../pages/**/*.astro");
+const filteredStatic = staticPages.filter(
+  (page) =>
+    !page.url.includes("sitemap.xml") &&
+    !page.url.includes("404") &&
+    !page.url.includes("[") &&
+    page.url !== "/" && // évite la home
+    page.url !== ""     // évite le doublon sans slash
+);
+const staticWithDates = filteredStatic.map((page) => ({
+  url: `${baseUrl}${page.url}`,
+  lastmod: buildDate,
+}));
+
+// Collections dynamiques : zen-et-dojo et zen-et-sangha
+const dojo = await getCollection("zen-et-dojo");
+const sangha = await getCollection("zen-et-sangha");
+const collections = [
+  ...dojo.map((entry) => ({
+    url: `${baseUrl}/zen-et-dojo/${entry.slug}`,
+    lastmod: buildDate,
+  })),
+  ...sangha.map((entry) => ({
+    url: `${baseUrl}/zen-et-sangha/${entry.slug}`,
+    lastmod: buildDate,
+  })),
+];
+
+// Définir le header XML
+Astro.response.headers.set("Content-Type", "application/xml");
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url>
+    <loc>{baseUrl}/</loc>
+    <priority>1.0</priority>
+    <lastmod>{buildDate}</lastmod>
+  </url>
+
+  <!-- Pages statiques -->
+  {staticWithDates.map((page) => (
+    <url>
+      <loc>{page.url}</loc>
+      <priority>0.8</priority>
+      <lastmod>{page.lastmod}</lastmod>
+    </url>
+  ))}
+
+  <!-- Collections dynamiques -->
+  {collections.map((page) => (
+    <url>
+      <loc>{page.url}</loc>
+      <priority>0.8</priority>
+      <lastmod>{page.lastmod}</lastmod>
+    </url>
+  ))}
+</urlset>

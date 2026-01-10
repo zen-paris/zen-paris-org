@@ -1,0 +1,135 @@
+/* Import Tailwind CSS and plugins */
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Theme customization */
+@layer base {
+  :root {
+    --font-sans: 
+      Bricolage Grotesque Variable, Inter Variable, Inter, 
+      ui-sans-serif, system-ui, sans-serif, 
+      'Apple Color Emoji', 'Segoe UI Emoji', 
+      'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+}
+
+/* Global reset for border colors for Tailwind v4 compatibility */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+/* Global link style: teal normally, orange on hover */
+@layer base {
+  a {
+    color: #02bba7; /* Tailwind teal-500 */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: #ea580c; /* Tailwind orange-800 */
+    text-decoration: underline;
+    text-decoration-color: #ea580c;
+  }
+}
+
+/* Homepage links */
+.underline-orange {
+  color: #02bba7; /* teal normally */
+  text-decoration: underline;
+  text-decoration-color: #02bba7;
+}
+
+.underline-orange:hover {
+  color: #ea580c; /* orange on hover */
+  text-decoration-color: #ea580c;
+}
+
+/* Navbar links: teal normally, orange on hover */
+@layer base {
+  header a,
+  header a:hover {
+    text-decoration: none !important;
+    color: #02bba7 !important;
+  }
+
+  header a:hover {
+    color: #ea580c !important;
+  }
+}
+
+/* Card links (block links around images/titles) */
+@layer base {
+  .group.block.rounded-2xl,
+  .group.block.rounded-2xl a {
+    text-decoration: none !important;
+    color: #02bba7 !important;
+  }
+
+  .group.block.rounded-2xl a:hover {
+    color: #ea580c !important;
+  }
+}
+
+/* Prose content links: teal normally, orange on hover */
+@layer base {
+  .prose a,
+  .prose-sm a,
+  .prose-lg a,
+  .prose-xl a {
+    color: #02bba7 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #02bba7 !important;
+  }
+
+  .prose a:hover,
+  .prose-sm a:hover,
+  .prose-lg a:hover,
+  .prose-xl a:hover {
+    color: #ea580c !important;
+    text-decoration-color: #ea580c !important;
+    text-decoration-thickness: 2px !important;
+  }
+}
+
+/* 🔥 Dropdown submenu links: keep white */
+@layer base {
+  .dropdown-menu {
+    background-color: #02bba7 !important; /* teal-600 */
+  }
+
+  .dropdown-menu a,
+  .dropdown-menu button {
+    color: #ffffff !important;
+  }
+
+  .dropdown-menu a:hover,
+  .dropdown-menu button:hover {
+    color: #99f6e4 !important; /* teal-200 on hover */
+    background-color: #02bba7 !important;
+  }
+}
+
+/* H2 headings teal */
+@layer base {
+
+  /* If h2 contains a link */
+  h2 a {
+    color: inherit; /* inherit teal by default */
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  h2 a:hover {
+    color: #ff6600; /* orange on hover */
+  }
+}
+
+/* Apply custom font globally */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}

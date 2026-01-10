@@ -1,0 +1,391 @@
+---
+import fs from "fs";
+import yaml from "js-yaml";
+
+// --- Load events YAML ---
+const rawData = yaml.load(fs.readFileSync("./src/content/events.yaml", "utf8"));
+const rawEvents = Array.isArray(rawData) ? rawData : [];
+const now = new Date();
+
+// --- Date helpers ---
+const frenchDays = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+
+function formatDayFR(dayNum) {
+  return dayNum === 1 ? "1<sup>er</sup>" : String(dayNum);
+}
+
+function formatFullDateFR(dateStr) {
+  const d = new Date(dateStr);
+  if (isNaN(d)) return dateStr;
+
+  const dayName = frenchDays[d.getDay()];
+  const dayNum = formatDayFR(d.getDate());
+  const month = d.toLocaleDateString("fr-FR", { month: "long" });
+  const year = d.getFullYear();
+  const monthYear = `${month} ${year}`;
+
+  return {
+    dayName,
+    dayNum,
+    month,
+    year,
+    full: `${dayName} ${dayNum} ${monthYear}`,
+  };
+}
+
+// Format time as "8 h" or "13 h 30"
+function formatTimeFR(dateStr) {
+  const d = new Date(dateStr);
+  if (isNaN(d)) return "";
+
+  const hours = d.getHours();
+  const minutes = d.getMinutes();
+
+  return minutes === 0 ? `${hours} h` : `${hours} h ${minutes}`;
+}
+
+// Google Calendar format: YYYYMMDDTHHmmssZ
+function formatGoogleDate(date) {
+  return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+}
+
+// Subtract 2 hours from a date
+function subtractHours(date, hours) {
+  const newDate = new Date(date);
+  newDate.setHours(newDate.getHours() - hours);
+  return newDate;
+}
+
+// --- Type mapping ---
+function getEventTypeLabel(type) {
+  switch (type) {
+    case "decouverte":
+      return "Journée de découverte";
+    case "journee":
+      return "Journée de zazen";
+    case "matinee":
+      return "Matinée de zazen";
+    case "sesshin":
+      return "Stage de zazen";
+    default:
+      return "";
+  }
+}
+
+// --- Collect future events ---
+const futureEvents = rawEvents
+  .filter((e) => e.date && new Date(e.date) >= now)
+  .map((e) => {
+    const startDate = new Date(e.date);
+    const endDate = e.to ? new Date(e.to) : new Date(startDate.getTime() + 60 * 60 * 1000);
+
+    const startInfo = formatFullDateFR(e.date);
+    const endInfo = e.to ? formatFullDateFR(e.to) : null;
+
+    let displayDate;
+    if (!endInfo || startInfo.full === endInfo.full) {
+      const startTime = formatTimeFR(startDate);
+      const endTime = formatTimeFR(endDate);
+      displayDate = `${startInfo.full} de ${startTime} à ${endTime}`;
+    } else {
+      if (startInfo.month === endInfo.month && startInfo.year === endInfo.year) {
+        displayDate = `${startInfo.dayName} ${startInfo.dayNum} - ${endInfo.dayName.toLowerCase()} ${endInfo.dayNum} ${endInfo.month} ${endInfo.year}`;
+      } else if (startInfo.year === endInfo.year) {
+        displayDate = `${startInfo.dayName} ${startInfo.dayNum} ${startInfo.month} - ${endInfo.dayName.toLowerCase()} ${endInfo.dayNum} ${endInfo.month} ${endInfo.year}`;
+      } else {
+        displayDate = `${startInfo.full} - ${endInfo.full}`;
+      }
+    }
+
+    const adjustedStart = subtractHours(startDate, 2);
+    const adjustedEnd = subtractHours(endDate, 2);
+
+    const googleParams = new URLSearchParams({
+      action: "TEMPLATE",
+      text: e.title || "Activité",
+      dates: `${formatGoogleDate(adjustedStart)}/${formatGoogleDate(adjustedEnd)}`,
+      details: getEventTypeLabel(e.type),
+      location: e.lieu || "",
+      ctz: "Europe/Paris",
+    });
+
+    return {
+      ...e,
+      typeLabel: getEventTypeLabel(e.type),
+      dateObj: startDate,
+      displayDate,
+      googleUrl: `https://www.google.com/calendar/render?${googleParams.toString()}`,
+      id: e.title.replace(/\s+/g, "-").toLowerCase(),
+    };
+  })
+  .sort((a, b) => a.dateObj - b.dateObj);
+---
+
+<section class="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-md w-full md:w-96 mx-auto space-y-8">
+  {futureEvents.length > 0 && (
+    <ul class="space-y-4">
+      {futureEvents.map((event) => (
+        <li key={event.id} class="p-3 border rounded-lg bg-white hover:shadow transition">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Prochaines activités</h2>
+          {event.coverImage && (
+            <img
+              src={`/assets/${event.coverImage}`}
+              alt={event.title}
+              class="w-full aspect-[3/4] object-cover rounded-lg mb-3 cursor-pointer hover:opacity-90 transition"
+              data-lightbox={`/assets/${event.coverImage}`}
+              loading="lazy"
+            />
+          )}
+
+          <div class="text-xs text-gray-500" set:html={event.displayDate}></div>
+          <h3 class="font-semibold text-gray-900 mt-1">{event.title}</h3>
+
+          <ul class="mt-2 space-y-1 text-gray-700 text-sm">
+            {event.lieu && (
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 text-teal-500">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0
+                          9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62
+                          6.5 12 6.5s2.5 1.12 2.5 2.5S13.38
+                          11.5 12 11.5z"/>
+                </svg>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.lieu)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-teal-600 hover:underline hover:text-orange-500"
+                >
+                  {event.lieu}
+                </a>
+              </li>
+            )}
+            {event.description && <li>{event.description}</li>}
+            {event.prix && <li><strong>Participation :</strong> {event.prix} €</li>}
+            {event.godo && <li><strong>Dirigée par :</strong> {event.godo}</li>}
+          </ul>
+
+          <div class="mt-2">
+            <a
+              href={event.googleUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block px-2 py-1 text-xs bg-teal-600 text-white rounded hover:bg-orange-500 transition"
+            >
+              Ajouter à Google Agenda
+            </a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <!-- Initiation -->
+  <section>
+    <div class="w-full max-w-4xl">
+      <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+        <h2 class="flex items-center text-xl font-bold text-gray-800 mb-3">
+          Initiation
+          <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
+            Le samedi 10 h
+          </span>
+        </h2>
+        <p class="mt-1 text-sm text-gray-700">
+          Découverte de la pratique ouverte à tous. Inscription par téléphone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="w-full max-w-4xl">
+      <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+        <h2 class="text-xl font-bold text-gray-800 mb-3">Contact</h2>
+        <p class="text-sm">
+          Appelez Françoise Julien au<br/>
+          <span class="px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">06 68 26 14 83</span>
+          ou envoyez un mail à
+          <a
+            href="mailto:dojozendijon@gmail.com"
+            class="text-teal-800 underline [text-decoration-style:dotted] [text-decoration-thickness:1px] [text-underline-offset:2px] hover:text-orange-500 hover:[text-decoration-style:solid]"
+          >
+            dojozendijon@gmail.com
+          </a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Séances -->
+  <section>
+    <div class="w-full max-w-4xl">
+      <h2 class="text-xl font-bold text-gray-800 mb-3">Séances de méditation</h2>
+<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
+
+  <!-- Mardi -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="text-base font-semibold text-gray-800 mb-2">Mardi *</h3>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">19 h</span>
+    </div>
+  </div>
+
+  <!-- Mercredi -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="text-base font-semibold text-gray-800 mb-2">Mercredi *</h3>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">7 h</span>
+      <span class="px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">18 h</span>
+    </div>
+  </div>
+
+  <!-- Jeudi -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+      Jeudi *
+      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">12 h 30</span>
+    </h3>
+  </div>
+
+  <!-- Vendredi -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+      Vendredi *
+      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">7 h</span>
+    </h3>
+  </div>
+
+  <!-- Samedi -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+      Samedi *
+      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">11 h</span>
+    </h3>
+  </div>
+
+  <!-- Dimanche -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+      Dimanche
+      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">10 h</span>
+    </h3>
+  </div>
+
+</div>
+      </div>
+      <p class="mt-2 text-xs text-gray-700">* Hors jours fériés.</p>
+    </div>
+  </section>
+
+  <!-- Tarifs -->
+  <section>
+    <div class="w-full max-w-4xl">
+      <h2 class="text-xl font-bold text-gray-800 mb-3">Participation</h2>
+<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
+  <!-- Initiation -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+      Initiation
+      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
+        Libre
+      </span>
+    </h3>
+  </div>
+
+  <!-- 1re séance -->
+  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+      1<sup>re</sup> séance
+      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
+        Libre
+      </span>
+    </h3>
+  </div>
+</div>
+
+<!-- Last block (Séance) -->
+<div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition mt-3">
+  <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
+    Séance (1 h 15 environ)
+    <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
+      5 €
+    </span>
+  </h3>
+</div>
+  </section>
+
+  <!-- Adresse -->
+  <section>
+    <div class="w-full max-w-4xl">
+      <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
+        <p class="text-sm"><strong>15 rue Charles Poisot, Paris</strong></p>
+        <p class="text-sm"><a href="https://www.divia.fr/bus-tram" target="_blank" 
+  rel="noopener noreferrer" class="underline-orange">Tram T2 – Arrêt Jaurès</a> • Entrée côté cour.</p>
+        <div class="w-full h-40 md:h-48 mt-2">
+          <div class="relative w-full h-48 rounded-lg overflow-hidden">
+            <img
+              src="/assets/plan-dojo-zen-dijon.svg"
+              alt="Carte statique du dojo zen de Paris"
+              class="w-full h-full object-cover"
+            />
+            <button
+              class="absolute inset-0 flex items-center justify-center bg-black/40 text-white font-semibold text-base"
+              onclick="this.parentNode.innerHTML = `<iframe class='w-full h-full border-0 rounded-lg'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.220956294802!2d5.021412776680958!3d47.310021808410255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29d0ec1537d5b%3A0x222bbf6266e99c37!2sDojo%20zen%20de%20Paris!5e0!3m2!1sen!2sus!4v1756828896826!5m2!1sen!2sus'
+                allowfullscreen
+                loading='lazy'
+                title='Carte du dojo zen de Paris'
+                referrerpolicy='no-referrer-when-downgrade'></iframe>`">
+              ▶ Voir la carte interactive
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Smaller floating lightbox -->
+<div
+  id="lightbox"
+  class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl shadow-2xl border border-gray-300 p-2 scale-95 opacity-0 pointer-events-none z-50 transition-all duration-300 ease-out"
+>
+  <img
+    id="lightbox-img"
+    src=""
+    alt="Agrandissement"
+    class="max-w-[80vw] max-h-[70vh] rounded-lg object-contain"
+  />
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const images = Array.from(document.querySelectorAll("[data-lightbox]"));
+  let hoverTimeout;
+
+  function showLightbox(index) {
+    lightboxImg.src = images[index].dataset.lightbox;
+    lightbox.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+    lightbox.classList.add("opacity-100", "scale-100");
+  }
+
+  function hideLightbox() {
+    lightbox.classList.remove("opacity-100", "scale-100");
+    lightbox.classList.add("opacity-0", "scale-95", "pointer-events-none");
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener("mouseenter", () => {
+      clearTimeout(hoverTimeout);
+      showLightbox(index);
+    });
+    img.addEventListener("mouseleave", () => {
+      hoverTimeout = setTimeout(() => {
+        hideLightbox();
+      }, 200);
+    });
+  });
+
+  // Hide lightbox when mouse leaves it
+  lightbox.addEventListener("mouseenter", () => clearTimeout(hoverTimeout));
+  lightbox.addEventListener("mouseleave", () => hideLightbox());
+</script>
