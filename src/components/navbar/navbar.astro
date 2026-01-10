@@ -3,6 +3,7 @@ import Container from "@/components/container.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { getCollection } from "astro:content";
+import { useState } from "react"; // React state for burger menu
 
 /* ---------------- Pages menu ---------------- */
 const pages = await getCollection("pages");
@@ -104,8 +105,7 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
   class="sticky top-0 z-30 bg-white shadow-sm transition-shadow duration-300"
 >
   <Container>
-    <Astronav class="flex items-center justify-end py-4">
-
+    <Astronav class="flex items-center justify-end py-4 relative">
       <!-- Desktop menu -->
       <MenuItems class="hidden lg:flex">
         <ul class="flex gap-4">
@@ -130,11 +130,19 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
       </MenuItems>
 
       <!-- Mobile burger icon -->
-      <MenuIcon class="lg:hidden text-black" />
+      <button
+        id="burger-toggle"
+        class="lg:hidden text-black focus:outline-none z-50"
+        aria-label="Open menu"
+      >
+        <MenuIcon />
+      </button>
 
       <!-- Mobile dropdown menu -->
-      <MenuItems
-        class="lg:hidden absolute top-full right-0 mt-2 w-64 bg-white shadow-xl rounded-2xl overflow-hidden z-50"
+      <div
+        id="mobile-menu"
+        class="lg:hidden absolute top-full right-0 mt-2 w-64 bg-white shadow-xl rounded-2xl
+               overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
       >
         <ul class="flex flex-col divide-y">
           {menuitems.map((item) => (
@@ -157,18 +165,18 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
             </li>
           ))}
         </ul>
-      </MenuItems>
+      </div>
     </Astronav>
   </Container>
 </nav>
 
-<!-- ================= SCROLL LOGIC ================= -->
+<!-- ================= SCROLL & BURGER LOGIC ================= -->
 <script>
   const hero = document.getElementById("hero");
   const content = document.querySelector(".hero-content");
 
-  const MIN_HEIGHT = 200; // final hero height
-  const TRIGGER = 60;     // scroll amount to start shrinking
+  const MIN_HEIGHT = 200; // hero shrink height
+  const TRIGGER = 60;     // scroll to start shrinking
 
   let ticking = false;
 
@@ -176,11 +184,9 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
     if (!ticking) {
       requestAnimationFrame(() => {
         const scrolled = window.scrollY > TRIGGER;
-
         hero.style.height = scrolled ? `${MIN_HEIGHT}px` : "";
         content.style.opacity = scrolled ? "0.85" : "";
         content.style.transform = scrolled ? "translateY(10px)" : "";
-
         ticking = false;
       });
       ticking = true;
@@ -188,4 +194,26 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
+
+  // ----------------- Burger menu -----------------
+  const burger = document.getElementById("burger-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  let menuOpen = false;
+
+  burger.addEventListener("click", () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+    } else {
+      mobileMenu.style.maxHeight = "0";
+    }
+  });
+
+  // Optional: close menu on link click
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menuOpen = false;
+      mobileMenu.style.maxHeight = "0";
+    });
+  });
 </script>
