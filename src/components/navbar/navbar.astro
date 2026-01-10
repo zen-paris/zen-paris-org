@@ -8,30 +8,21 @@ import { getCollection } from "astro:content";
 const pages = await getCollection("pages");
 const pageMenuItems = pages
   .filter(p => !p.data.draft)
-  .map(p => ({
-    title: p.data.title,
-    path: `/${p.slug}`,
-  }));
+  .map(p => ({ title: p.data.title, path: `/${p.slug}` }));
 
 /* ---------------- Zen et dojo ---------------- */
 const blogPosts = await getCollection("zen-et-dojo");
 const publishedPosts = blogPosts
   .filter(p => !p.data.draft && p.data.publishDate <= new Date())
   .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
-  .map(p => ({
-    title: p.data.title,
-    path: `/zen-et-dojo/${p.slug}`,
-  }));
+  .map(p => ({ title: p.data.title, path: `/zen-et-dojo/${p.slug}` }));
 
 /* ---------------- Zen et sangha ---------------- */
 const zenetsanghaPosts = await getCollection("zen-et-sangha");
 const publishedZenetsanghaPosts = zenetsanghaPosts
   .filter(p => !p.data.draft && p.data.publishDate <= new Date())
   .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
-  .map(p => ({
-    title: p.data.title,
-    path: `/zen-et-sangha/${p.slug}`,
-  }));
+  .map(p => ({ title: p.data.title, path: `/zen-et-sangha/${p.slug}` }));
 
 /* ---------------- Navbar structure ---------------- */
 const menuitems = [
@@ -53,12 +44,41 @@ const menuitems = [
 const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 ---
 
+<style>
+  /* Hero shrink */
+  #hero {
+    transition: height 0.5s ease-in-out;
+  }
+
+  #hero.shrink {
+    height: 200px !important;
+  }
+
+  .hero-content {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .hero-content.shrink {
+    opacity: 0.85;
+    transform: translateY(10px);
+  }
+
+  /* Mobile dropdown */
+  .mobile-dropdown ul {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .mobile-dropdown button span {
+    transition: transform 0.3s ease;
+  }
+</style>
+
 <Container>
   <!-- ================= HERO ================= -->
   <header
     id="hero"
-    class="relative w-screen h-[55vh] sm:h-[65vh] lg:h-[70vh] min-h-[360px]
-           overflow-hidden transition-[height] duration-500 ease-in-out"
+    class="relative w-screen h-[55vh] sm:h-[65vh] lg:h-[70vh] min-h-[360px] overflow-hidden"
   >
     <video
       class="absolute inset-0 w-full h-full object-cover"
@@ -76,8 +96,7 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
       href="/"
       class="hero-content absolute inset-x-4 bottom-6 sm:left-8 sm:bottom-8
              flex flex-col sm:flex-row items-center sm:items-end gap-4 z-10
-             text-center sm:text-left
-             transition-all duration-500 ease-in-out"
+             text-center sm:text-left"
     >
       <img
         src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
@@ -152,9 +171,9 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
                 <div class="mobile-dropdown">
                   <button class="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center">
                     {item.title}
-                    <span class="rotate-0 transition-transform duration-300">▼</span>
+                    <span class="rotate-0">▼</span>
                   </button>
-                  <ul class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-4">
+                  <ul class="max-h-0">
                     {item.children.map(child => (
                       <li>
                         <a
@@ -188,23 +207,17 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
   // ---------- Hero scroll shrink ----------
   const hero = document.getElementById("hero");
   const content = document.querySelector(".hero-content");
-  const MIN_HEIGHT = 200;
   const TRIGGER = 60;
-  let ticking = false;
 
-  function onScroll() {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        const scrolled = window.scrollY > TRIGGER;
-        hero.style.height = scrolled ? `${MIN_HEIGHT}px` : "";
-        content.style.opacity = scrolled ? "0.85" : "";
-        content.style.transform = scrolled ? "translateY(10px)" : "";
-        ticking = false;
-      });
-      ticking = true;
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > TRIGGER) {
+      hero.classList.add("shrink");
+      content.classList.add("shrink");
+    } else {
+      hero.classList.remove("shrink");
+      content.classList.remove("shrink");
     }
-  }
-  window.addEventListener("scroll", onScroll, { passive: true });
+  }, { passive: true });
 
   // ---------- Burger menu toggle ----------
   const burger = document.getElementById("burger-toggle");
