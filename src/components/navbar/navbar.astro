@@ -3,7 +3,6 @@ import Container from "@/components/container.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { getCollection } from "astro:content";
-import { useState } from "react"; // React state for burger menu
 
 /* ---------------- Pages menu ---------------- */
 const pages = await getCollection("pages");
@@ -129,7 +128,7 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
         </ul>
       </MenuItems>
 
-      <!-- Mobile burger icon -->
+      <!-- Mobile burger icon (hidden on desktop) -->
       <button
         id="burger-toggle"
         class="lg:hidden text-black focus:outline-none z-50"
@@ -148,12 +147,24 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
           {menuitems.map((item) => (
             <li class="relative">
               {item.children ? (
-                <Dropdown
-                  title={item.title}
-                  children={item.children}
-                  textClass="block w-full px-4 py-3 text-black hover:bg-gray-100"
-                  align="left"
-                />
+                <div class="mobile-dropdown">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center">
+                    {item.title}
+                    <span class="rotate-0 transition-transform duration-300">▼</span>
+                  </button>
+                  <ul class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-4">
+                    {item.children.map(child => (
+                      <li>
+                        <a
+                          href={child.path}
+                          class="block px-4 py-2 text-black hover:bg-gray-100 rounded w-full"
+                        >
+                          {child.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ) : (
                 <a
                   href={item.path}
@@ -172,12 +183,11 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 
 <!-- ================= SCROLL & BURGER LOGIC ================= -->
 <script>
+  // ---------- Hero scroll shrink ----------
   const hero = document.getElementById("hero");
   const content = document.querySelector(".hero-content");
-
-  const MIN_HEIGHT = 200; // hero shrink height
-  const TRIGGER = 60;     // scroll to start shrinking
-
+  const MIN_HEIGHT = 200;
+  const TRIGGER = 60;
   let ticking = false;
 
   function onScroll() {
@@ -192,28 +202,28 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
       ticking = true;
     }
   }
-
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // ----------------- Burger menu -----------------
+  // ---------- Burger menu toggle ----------
   const burger = document.getElementById("burger-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
   let menuOpen = false;
 
   burger.addEventListener("click", () => {
     menuOpen = !menuOpen;
-    if (menuOpen) {
-      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
-    } else {
-      mobileMenu.style.maxHeight = "0";
-    }
+    mobileMenu.style.maxHeight = menuOpen ? mobileMenu.scrollHeight + "px" : "0";
   });
 
-  // Optional: close menu on link click
-  mobileMenu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      menuOpen = false;
-      mobileMenu.style.maxHeight = "0";
+  // ---------- Nested mobile dropdowns ----------
+  document.querySelectorAll(".mobile-dropdown").forEach(drop => {
+    const btn = drop.querySelector("button");
+    const submenu = drop.querySelector("ul");
+    const arrow = btn.querySelector("span");
+
+    btn.addEventListener("click", () => {
+      const isOpen = submenu.style.maxHeight && submenu.style.maxHeight !== "0px";
+      submenu.style.maxHeight = isOpen ? "0" : submenu.scrollHeight + "px";
+      arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
     });
   });
 </script>
