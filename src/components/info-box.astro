@@ -160,7 +160,7 @@ const futureEvents = rawEvents
               </li>
             )}
             {event.description && <li>{event.description}</li>}
-            {event.prix && <li><strong>Participation :</strong> {event.prix} €</li>}
+            {event.prix && <li><strong>Participation :</strong> {event.prix}&nbsp;€</li>}
             {event.godo && <li><strong>Dirigée par :</strong> {event.godo}</li>}
           </ul>
 
@@ -234,42 +234,44 @@ const futureEvents = rawEvents
     </div>
   </section>
 
-  <!-- Tarifs -->
-  <section>
-    <div class="w-full max-w-4xl">
-      <h2 class="text-xl font-bold text-gray-800 mb-3">Participation</h2>
-<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
-  <!-- Initiation -->
-  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
-    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
-      Initiation
-      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
-        Libre
-      </span>
-    </h3>
-  </div>
+<!-- Tarifs -->
+<section class="my-8">
+  <div class="w-full max-w-4xl mx-auto">
+    <h2 class="text-xl font-bold text-gray-800 mb-3">Participation</h2>
 
-  <!-- 1re séance -->
-  <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition">
-    <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
-      1<sup>re</sup> séance
-      <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
-        Libre
-      </span>
-    </h3>
-  </div>
-</div>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
 
-<!-- Last block (Séance) -->
-<div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition mt-3">
-  <h3 class="flex items-center text-base font-semibold text-gray-800 mb-2">
-    Séance (1 h 15 environ)
-    <span class="ml-2 px-2 py-0.5 rounded-full bg-slate-400 text-white text-xs font-medium">
-      5 €
-    </span>
-  </h3>
-</div>
-  </section>
+      <!-- Séances et abonnements -->
+      <div class="grid gap-3 sm:col-span-2 mt-3">
+        <!-- Each price entry as a card -->
+        <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition flex justify-between items-center">
+          <h3 class="text-base font-semibold text-gray-800">Initiation et première séance</h3>
+          <p class="text-gray-800 font-medium">5&nbsp;€</p>
+        </div>
+
+        <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition flex justify-between items-center">
+          <h3 class="text-base font-semibold text-gray-800">Séance à l'unité</h3>
+          <p class="text-gray-800 font-medium">6&nbsp;€</p>
+        </div>
+
+<div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition flex justify-between items-center">
+          <h3 class="text-base font-semibold text-gray-800">Carnet de 10 séances</h3>
+          <p class="text-gray-800 font-medium">50&nbsp;€</p>
+        </div>
+        <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition flex justify-between items-center">
+          <h3 class="text-base font-semibold text-gray-800">Abonnement annuel</h3>
+          <p class="text-gray-800 font-medium">160&nbsp;€</p>
+        </div>
+	
+        <div class="p-3 border rounded-2xl bg-white shadow hover:shadow-md transition flex justify-between items-center">
+          <h3 class="text-base font-semibold text-gray-800">Annuel avec journées de zazen incluses</h3>
+          <p class="text-gray-800 font-medium">220&nbsp;€</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Adresse -->
   <section>
