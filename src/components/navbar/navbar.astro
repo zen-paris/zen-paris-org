@@ -96,76 +96,75 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
       </div>
     </a>
   </header>
-
-  <!-- ================= NAVBAR ================= -->
-  <nav
-    id="navbar"
-    class="relative z-20 bg-white transition-shadow duration-300"
-  >
-    <Container>
-      <Astronav class="flex items-center justify-end py-4">
-
-        <!-- Desktop menu -->
-        <MenuItems class="hidden lg:flex">
-          <ul class="flex gap-4">
-            {menuitems.map((item, index) => (
-              <li class="relative">
-                {item.children ? (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                    textClass="text-black hover:text-teal-600"
-                    align="right"
-                  />
-                ) : (
-                  <a href={item.path} class="px-3 py-2 text-black hover:text-teal-600">
-                    {item.title}
-                  </a>
-                )}
-              </li>
-            ))}
-          </ul>
-        </MenuItems>
-
-        <!-- Burger (mobile) -->
-        <MenuIcon class="lg:hidden text-black" />
-
-        <!-- Mobile menu -->
-        <MenuItems class="lg:hidden absolute top-full right-4 mt-2 w-64 bg-white shadow-xl rounded-2xl overflow-hidden">
-          <ul class="flex flex-col divide-y">
-            {menuitems.map((item) => (
-              <li>
-                {item.children ? (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    textClass="text-black"
-                    align="left"
-                  />
-                ) : (
-                  <a href={item.path} class="block px-4 py-3 text-black hover:bg-gray-100">
-                    {item.title}
-                  </a>
-                )}
-              </li>
-            ))}
-          </ul>
-        </MenuItems>
-
-      </Astronav>
-    </Container>
-  </nav>
 </Container>
+
+<!-- ================= NAVBAR ================= -->
+<nav
+  id="navbar"
+  class="sticky top-0 z-30 bg-white shadow-sm transition-shadow duration-300"
+>
+  <Container>
+    <Astronav class="flex items-center justify-end py-4">
+
+      <!-- Desktop menu -->
+      <MenuItems class="hidden lg:flex">
+        <ul class="flex gap-4">
+          {menuitems.map((item, index) => (
+            <li class="relative">
+              {item.children ? (
+                <Dropdown
+                  title={item.title}
+                  children={item.children}
+                  lastItem={index === menuitems.length - 1}
+                  textClass="text-black hover:text-teal-600"
+                  align="right"
+                />
+              ) : (
+                <a href={item.path} class="px-3 py-2 text-black hover:text-teal-600">
+                  {item.title}
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </MenuItems>
+
+      <!-- Burger (mobile) -->
+      <MenuIcon class="lg:hidden text-black" />
+
+      <!-- Mobile menu -->
+      <MenuItems class="lg:hidden absolute top-full right-4 mt-2 w-64 bg-white shadow-xl rounded-2xl overflow-hidden">
+        <ul class="flex flex-col divide-y">
+          {menuitems.map((item) => (
+            <li>
+              {item.children ? (
+                <Dropdown
+                  title={item.title}
+                  children={item.children}
+                  textClass="text-black"
+                  align="left"
+                />
+              ) : (
+                <a href={item.path} class="block px-4 py-3 text-black hover:bg-gray-100">
+                  {item.title}
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </MenuItems>
+
+    </Astronav>
+  </Container>
+</nav>
 
 <!-- ================= SCROLL LOGIC ================= -->
 <script>
   const hero = document.getElementById("hero");
-  const navbar = document.getElementById("navbar");
   const content = document.querySelector(".hero-content");
 
-  const MIN_HEIGHT = 200;
-  const TRIGGER = 60;
+  const MIN_HEIGHT = 200; // final hero height
+  const TRIGGER = 60;     // scroll amount to start shrinking
 
   let ticking = false;
 
@@ -177,10 +176,6 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
         hero.style.height = scrolled ? `${MIN_HEIGHT}px` : "";
         content.style.opacity = scrolled ? "0.85" : "";
         content.style.transform = scrolled ? "translateY(10px)" : "";
-
-        navbar.classList.toggle("sticky", scrolled);
-        navbar.classList.toggle("top-0", scrolled);
-        navbar.classList.toggle("shadow-md", scrolled);
 
         ticking = false;
       });
