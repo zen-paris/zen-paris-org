@@ -19,7 +19,7 @@ const { title } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 const resolvedImageWithDomain = new URL("/opengraph.webp", Astro.site).toString();
 
-const makeTitle = title ? `${title} Méditation zen | ` : "Dojo zen de Paris";
+const makeTitle = title ? `${title} Méditation zen | ` : "Zen Paris";
 ---
 
 <!doctype html>
@@ -42,11 +42,11 @@ const makeTitle = title ? `${title} Méditation zen | ` : "Dojo zen de Paris";
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Dojo zen de Paris`,
+          title: `Zen Paris`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Dojo zen de Paris",
+          alt: "Zen Paris",
         },
       }}
     />
