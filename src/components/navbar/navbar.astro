@@ -129,13 +129,15 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
       </MenuItems>
 
       <!-- Mobile burger icon (hidden on desktop) -->
-      <button
-        id="burger-toggle"
-        class="lg:hidden text-black focus:outline-none z-50"
-        aria-label="Open menu"
-      >
-        <MenuIcon />
-      </button>
+      <div class="lg:hidden z-50">
+        <button
+          id="burger-toggle"
+          class="text-black focus:outline-none"
+          aria-label="Open menu"
+        >
+          <MenuIcon class="w-6 h-6" />
+        </button>
+      </div>
 
       <!-- Mobile dropdown menu -->
       <div
