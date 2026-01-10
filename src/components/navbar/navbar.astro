@@ -55,8 +55,11 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 
 <Container>
   <!-- ================= HERO ================= -->
-  <header class="relative w-screen h-[55vh] sm:h-[65vh] lg:h-[70vh] min-h-[360px] overflow-hidden">
-
+  <header
+    id="hero"
+    class="relative w-screen h-[55vh] sm:h-[65vh] lg:h-[70vh] min-h-[360px]
+           overflow-hidden transition-[height] duration-500 ease-in-out"
+  >
     <video
       class="absolute inset-0 w-full h-full object-cover"
       src={heroVideo}
@@ -67,11 +70,14 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
       preload="auto"
     ></video>
 
-    <div class="absolute inset-0 bg-black/0"></div>
+    <div class="absolute inset-0 bg-black/10"></div>
 
     <a
       href="/"
-      class="absolute inset-x-4 bottom-6 sm:left-8 sm:bottom-8 flex flex-col sm:flex-row items-center sm:items-end gap-4 z-10 text-center sm:text-left"
+      class="hero-content absolute inset-x-4 bottom-6 sm:left-8 sm:bottom-8
+             flex flex-col sm:flex-row items-center sm:items-end gap-4 z-10
+             text-center sm:text-left
+             transition-all duration-500 ease-in-out"
     >
       <img
         src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
@@ -92,7 +98,10 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
   </header>
 
   <!-- ================= NAVBAR ================= -->
-  <nav class="relative z-20 bg-white">
+  <nav
+    id="navbar"
+    class="relative z-20 bg-white transition-shadow duration-300"
+  >
     <Container>
       <Astronav class="flex items-center justify-end py-4">
 
@@ -148,3 +157,36 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
     </Container>
   </nav>
 </Container>
+
+<!-- ================= SCROLL LOGIC ================= -->
+<script>
+  const hero = document.getElementById("hero");
+  const navbar = document.getElementById("navbar");
+  const content = document.querySelector(".hero-content");
+
+  const MIN_HEIGHT = 200;
+  const TRIGGER = 60;
+
+  let ticking = false;
+
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrolled = window.scrollY > TRIGGER;
+
+        hero.style.height = scrolled ? `${MIN_HEIGHT}px` : "";
+        content.style.opacity = scrolled ? "0.85" : "";
+        content.style.transform = scrolled ? "translateY(10px)" : "";
+
+        navbar.classList.toggle("sticky", scrolled);
+        navbar.classList.toggle("top-0", scrolled);
+        navbar.classList.toggle("shadow-md", scrolled);
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+</script>
