@@ -1,7 +1,4 @@
 ---
-import Dropdown from "./dropdown.astro";
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import { getCollection } from "astro:content";
 import Container from "@/components/container.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
@@ -48,48 +45,82 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 ---
 
 <style>
-  /* ---------------- HERO ---------------- */
-  #hero {
-    width: 100vw; /* Full page width */
-    transition: height 0.5s ease-in-out;
-    overflow: hidden;
-  }
+/* ---------------- HERO ---------------- */
+#hero {
+  width: 100vw; 
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* push content to bottom */
+  position: relative;
+}
 
-  #hero video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+#hero video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
 
-  #hero.shrink {
-    height: 200px !important;
-  }
+.hero-content {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+}
 
-  .hero-content {
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
+#hero .overlay {
+  background-color: rgba(0,0,0,0.1);
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+}
 
-  .hero-content.shrink {
-    opacity: 0.85;
-    transform: translateY(10px);
-  }
+/* shrink effect */
+#hero.shrink {
+  height: 200px !important;
+}
 
-  /* ---------------- MOBILE DROPDOWN ---------------- */
-  .mobile-dropdown ul {
-    transition: max-height 0.3s ease-in-out;
-    overflow: hidden;
-  }
+.hero-content.shrink {
+  opacity: 0.85;
+  transform: translateY(10px);
+}
 
-  .mobile-dropdown button span {
-    transition: transform 0.3s ease;
-  }
+/* ---------------- NAVBAR LIGHT THEME ---------------- */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  z-index: 50;
+}
+
+#navbar a, #navbar .dropdown-title, #navbar button span {
+  color: #000000;
+}
+
+#navbar a:hover, #navbar .dropdown-title:hover {
+  color: #14b8a6; 
+}
+
+/* Mobile dropdown */
+.mobile-dropdown ul {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.mobile-dropdown button span {
+  transition: transform 0.3s ease;
+}
 </style>
 
 <!-- ================= HERO (FULL WIDTH) ================= -->
-<header
-  id="hero"
-  class="relative w-screen h-[70vh] min-h-[860px]"
->
+<header id="hero" class="relative w-screen h-[70vh] min-h-[860px]">
   <video
     src={heroVideo}
     autoplay
@@ -97,24 +128,18 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
     loop
     playsinline
     preload="auto"
-    class="absolute inset-0 w-full h-full object-cover"
   ></video>
 
-  <div class="absolute inset-0 bg-black/10"></div>
+  <div class="overlay"></div>
 
-  <a
-    href="/"
-    class="hero-content absolute inset-x-4 bottom-6 sm:left-8 sm:bottom-8
-           flex flex-col sm:flex-row items-center sm:items-end gap-4 z-10
-           text-center sm:text-left"
-  >
+  <div class="hero-content flex flex-col items-center sm:items-start gap-4">
     <img
       src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
       alt="Logo Kosen Shangha"
       class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
     />
 
-    <div class="flex flex-col">
+    <div class="flex flex-col text-center sm:text-left">
       <h1 class="text-white font-bold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
         Zen Paris, Kosen sangha
       </h1>
@@ -123,14 +148,11 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
         Simplement s&rsquo;asseoir, dans un cadre simple
       </p>
     </div>
-  </a>
+  </div>
 </header>
 
-<!-- ================= NAVBAR ================= -->
-<nav
-  id="navbar"
-  class="sticky top-0 z-30 bg-white shadow-sm transition-shadow duration-300"
->
+<!-- ================= NAVBAR (ALWAYS VISIBLE) ================= -->
+<nav id="navbar" class="shadow-sm transition-shadow duration-300">
   <Container>
     <Astronav class="flex items-center justify-end py-4 relative">
       <!-- Desktop menu -->
@@ -143,11 +165,11 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
                   title={item.title}
                   children={item.children}
                   lastItem={index === menuitems.length - 1}
-                  textClass="text-black hover:text-teal-600"
+                  textClass="text-black hover:text-teal-500"
                   align="right"
                 />
               ) : (
-                <a href={item.path} class="px-3 py-2 text-black hover:text-teal-600">
+                <a href={item.path} class="px-3 py-2 text-black hover:text-teal-500">
                   {item.title}
                 </a>
               )}
@@ -173,12 +195,12 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
         class="lg:hidden absolute top-full right-0 mt-2 w-64 bg-white shadow-xl rounded-2xl
                overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
       >
-        <ul class="flex flex-col divide-y">
+        <ul class="flex flex-col divide-y divide-gray-300">
           {menuitems.map((item) => (
             <li class="relative">
               {item.children ? (
                 <div class="mobile-dropdown">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center text-black">
                     {item.title}
                     <span class="rotate-0">▼</span>
                   </button>
@@ -213,34 +235,34 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 
 <!-- ================= SCROLL HERO SHRINK ================= -->
 <script>
-  const hero = document.getElementById("hero");
-  const content = document.querySelector(".hero-content");
+const hero = document.getElementById("hero");
+const content = document.querySelector(".hero-content");
 
-  const MAX_HEIGHT = hero.offsetHeight;
-  const MIN_HEIGHT = 200;
-  const TRIGGER = 300;
+const MAX_HEIGHT = hero.offsetHeight;
+const MIN_HEIGHT = 200;
+const TRIGGER = 300;
 
-  let targetRatio = 0;
-  let currentRatio = 0;
+let targetRatio = 0;
+let currentRatio = 0;
 
-  function lerp(a, b, t) {
-    return a + (b - a) * t;
-  }
+function lerp(a, b, t) {
+  return a + (b - a) * t;
+}
 
-  function update() {
-    currentRatio = lerp(currentRatio, targetRatio, 0.15);
-    const newHeight = MAX_HEIGHT - (MAX_HEIGHT - MIN_HEIGHT) * currentRatio;
-    hero.style.height = newHeight + "px";
-    content.style.opacity = 1 - 0.15 * currentRatio;
-    content.style.transform = `translateY(${10 * currentRatio}px)`;
+function update() {
+  currentRatio = lerp(currentRatio, targetRatio, 0.15);
+  const newHeight = MAX_HEIGHT - (MAX_HEIGHT - MIN_HEIGHT) * currentRatio;
+  hero.style.height = newHeight + "px";
+  content.style.opacity = 1 - 0.15 * currentRatio;
+  content.style.transform = `translateY(${10 * currentRatio}px)`;
 
-    if (Math.abs(currentRatio - targetRatio) > 0.001) {
-      requestAnimationFrame(update);
-    }
-  }
-
-  window.addEventListener("scroll", () => {
-    targetRatio = Math.min(window.scrollY / TRIGGER, 1);
+  if (Math.abs(currentRatio - targetRatio) > 0.001) {
     requestAnimationFrame(update);
-  }, { passive: true });
+  }
+}
+
+window.addEventListener("scroll", () => {
+  targetRatio = Math.min(window.scrollY / TRIGGER, 1);
+  requestAnimationFrame(update);
+}, { passive: true });
 </script>
