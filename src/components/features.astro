@@ -23,76 +23,19 @@ const gridItems = [
   <!-- Main Text -->
   <div class="flex flex-col gap-1 max-w-4xl">
 
-    <h2 class="text-2xl font-semibold mt-1 mb-1 text-gray-900">Zazen, une pratique traditionnelle ouverte à toutes et à tous</h2>
-    <p class="text-lg leading-relaxed text-gray-900">
-      Le dojo zen a ouvert ses portes il y a plus de quarante ans et constitue aujourd’hui un lieu privilégié pour tous ceux qui souhaitent s’initier ou approfondir la méditation à Paris. Situé dans un cadre propice au silence intérieur, ce dojo traditionnel perpétue la transmission du zazen, la méditation assise enseignée par le Bouddha et transmise de génération en génération.
-    </p>
+    <h2 class="text-2xl font-semibold mt-1 mb-1 text-gray-900">Pratiquez la méditation zazen dans un dojo zen intime calme, et en petit groupe, dans le 18e arrondissement de Paris</h2>
+<p class="text-lg leading-relaxed text-gray-900">[rank_math_contact_info]</p><br/>
+<p class="text-lg leading-relaxed text-gray-900">Vous êtes débutant·e ou pratiquant·e régulier·ère ? Nous serons heureux·ses de vous rencontrer et de pratiquer ensemble la posture de zazen.</p><br/>
+<p class="text-lg leading-relaxed text-gray-900">Le surnom traditionnel du dojo zen au Japon est "la forêt d’arbres secs". Tout comme ce n'est pas la forêt qui fait les arbres, mais les arbres qui font la forêt, ce sont les pratiquant·e·s qui font le dojo, et non le dojo qui fait les pratiquant·e·s.<br />
 
-<!-- Responsive Grid of Tiles -->
-<div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
-  {gridItems.map((item) => {
-    let altText = "";
-    switch (item.title) {
-      case "Zen et dojo":
-        altText = "Intérieur du dojo Zen Paris avec tatamis et coussins de méditation, ambiance paisible.";
-        break;
-      case "Zen et sangha":
-        altText = "Groupe de pratiquants méditant ensemble dans un temple zen, ambiance concentrée et calme.";
-        break;
-      case "Activités précédentes":
-        altText = "Pratiquant de zazen méditant assis dans un dojo en Bourgogne, en posture traditionnelle.";
-        break;
-      default:
-        altText = item.title;
-    }
+<blockquote>
+D’un côté, il y a le dojo, et de l’autre côté, il y a la vie ordinaire. On ne doit pas amener les spécificités d’un côté dans l’autre. Par exemple, on ne va pas envoyer un SMS pendant le kin-hin. Mais quand on va sortir du dojo, on ne va pas essayer non plus de garder la concentration dans la rue ou au bistro. Mais quand même, c’est important de garder un petit zest de dojo dans la vie quotidienne, et de garder un petit zest de vie quotidienne dans le dojo.<br/>Maître Kosen
+</blockquote>
 
-    return (
-      <a
-        href={item.link}
-        class="group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition focus:outline-none focus:ring-2 focus:ring-teal-800"
-      >
-        <img
-          src={item.image}
-          alt={altText}
-          class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-        <div class="p-3 bg-white text-center">
-          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-black underline-offset-2 group-hover:underline">
-            {item.title}
-          </h3>
-        </div>
-      </a>
-    );
-  })}
-</div>
-
-    <p class="text-lg leading-relaxed text-gray-900 mt-6">
-      Françoise Jomon Julien, nonne zen qui a reçu en avril 2015 la transmission du Dharma de Maître Kosen, proche disciple de Maître Deshimaru, enseigne quotidiennement la méditation à Paris dans ce dojo, qui organise également des <a href="/matinees" class="underline-orange">matinées</a> et des <a href="/journees" class="underline-orange">journées</a> de stage.
-    </p>
-
-    <!-- Insert image at 2/3 of the text -->
-    <div class="my-8">
-      <img 
-        src="/assets/serie-pratiquants-zazen-dijon.webp" 
-        alt="Pratiquant de zazen en Bourgogne assis sur un coussin de méditation dans le dojo zen." 
-        class="w-full rounded-2xl shadow-md object-cover"
-      />
-    </div>
-
-    <p class="text-lg leading-relaxed text-gray-900">
-      Pratiquer la méditation zen à Paris, c’est s’offrir un espace de calme et de détente profonde dans une société en perpétuel mouvement. Le dojo propose sept séances de zazen par semaine, accessibles à tous, que ce soit le matin, à midi ou en soirée. Pour les débutants, des initiations sont organisées chaque samedi matin afin de leur permettre d’acquérir les bases de cette discipline qui allie rigueur et spontanéité.
-    </p>
-
-    <blockquote class="text-lg italic text-gray-900 border-l-4 border-gray-500 pl-4 my-4">
-      « Simplement assis, sans but ni esprit de profit, si votre posture, votre respiration et l’attitude de votre esprit sont en harmonie, vous comprenez le vrai zen, vous saisissez la nature de Bouddha. » – Taisen Deshimaru
-    </blockquote>
-
-    <p class="text-lg leading-relaxed text-gray-900">
-      En plus de ces pratiques régulières, le dojo organise tout au long de l’année des matinées de pratique approfondie ainsi que des <a href="/sesshins" class="underline-orange">sesshins</a>, retraites intensives de méditation, où les participants peuvent se plonger pleinement dans l’expérience du zen. Lors de ces stages, d’autres Maîtres sont fréquemment invités afin d’enrichir la pratique et d’apporter d’autres regards sur une pratique aux nombreuses facettes.
-    </p>
-
-    <p class="text-lg leading-relaxed text-gray-900">
-      Venir au dojo de méditation zen à Paris, c’est faire le choix d’une pratique authentique et rigoureuse, une expérience qui transforme en profondeur l’esprit et le corps. Que vous soyez novice ou pratiquant confirmé, le zen vous ouvre ses portes dans un esprit de bienveillance et de transmission fidèle à la tradition.
-    </p>
+Le local que nous louons actuellement ne correspond pas à l'image du zen véhiculée dans les médias, et qu'on s'attend tout naturellement à rencontrer lorsque l'on débute. Mais il ne tient qu'à nous, le temps d'une séance, d'une journée ou d'un stage de zazen, de faire de ce lieu sans âme le creuset où se réalisent les bouddhas.</p><br/>
+<p class="text-lg leading-relaxed text-gray-900">D'ailleurs, au Japon, à l’entrée des dojos traditionnels, il est de coutume de mettre une pancarte en bois au-dessus de la porte, où est inscrit : "salle où l’on fabrique des bouddhas". Et maître Deshimaru avait coutume de dire aux personnes qui fréquentaient son dojo : "Vous êtes tous des bouddhas, quand vous êtes assis en zazen".</p><br/>
+<p class="text-lg leading-relaxed text-gray-900">De même, selon maître Kosen, "Les gens disent qu'être un moine, ça veut dire vivre dans un monastère. C'est plutôt le monastère qui se propose d'accueillir des moines."</p><br/>
+<p class="text-lg leading-relaxed text-gray-900">Donc, quel que soit le lieu où l'on pratique zazen, cet endroit devient un dojo. À plus forte raison si l'on pratique en groupe.</p><br/>
+<p class="text-lg leading-relaxed text-gray-900">Mais rassurez-vous : si vous souhaitez pratiquer également dans un magnifique lieu totalement dédié à la pratique de zazen, il suffit de vous rendre au temple zen de la Kosen sangha, situé dans le Haut-Languedoc !</p><br/>	
   </div>
 </div>
