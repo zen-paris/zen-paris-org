@@ -54,59 +54,50 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 ---
 
 <Container>
-<!-- HERO VIDEO (full width) -->
-<header class="relative w-screen h-[70vh] min-h-[420px] overflow-hidden">
+  <!-- ================= HERO ================= -->
+  <header class="relative w-screen h-[55vh] sm:h-[65vh] lg:h-[70vh] min-h-[360px] overflow-hidden">
 
-  <!-- Video -->
-  <video
-    class="absolute inset-0 w-screen h-full object-cover"
-    src={heroVideo}
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="auto"
-  ></video>
+    <video
+      class="absolute inset-0 w-full h-full object-cover"
+      src={heroVideo}
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    ></video>
 
-  <!-- Logo bottom-left -->
-  <a
-    href="/"
-    class="absolute bottom-8 left-8 flex items-center gap-4 z-10"
-  >
-    <img
-      src="assets/logo-kosen-shangha-typo-mono-blanc.svg"
-      alt="Logo Kosen Shangha"
-      class="h-28 w-auto"
-    />
-<!-- Conteneur pour titre + sous-texte -->
-<div class="flex flex-col">
+    <div class="absolute inset-0 bg-black/0"></div>
 
-  <!-- Titre principal -->
-  <div class="text-white font-bold leading-tight
-              text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-    Zen Paris, Kosen sangha
-  </div>
+    <a
+      href="/"
+      class="absolute inset-x-4 bottom-6 sm:left-8 sm:bottom-8 flex flex-col sm:flex-row items-center sm:items-end gap-4 z-10 text-center sm:text-left"
+    >
+      <img
+        src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
+        alt="Logo Kosen Shangha"
+        class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
+      />
 
-  <!-- Sous-texte juste en dessous -->
-  <div class="text-white leading-tight mt-2
-              text-base sm:text-lg md:text-xl lg:text-2xl">
-    Simplement s’asseoir, dans un cadre simple
-  </div>
+      <div class="flex flex-col">
+        <h1 class="text-white font-bold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          Zen Paris, Kosen sangha
+        </h1>
 
-</div>
-  </a>
+        <p class="text-white mt-1 sm:mt-2 leading-tight text-sm sm:text-base md:text-lg lg:text-xl">
+          Simplement s&rsquo;asseoir, dans un cadre simple
+        </p>
+      </div>
+    </a>
+  </header>
 
-</header>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="relative z-20 bg-white">
+    <Container>
+      <Astronav class="flex items-center justify-end py-4">
 
-<!-- NAVBAR (below video, scrolls normally) -->
-<nav class="relative z-10 bg-transparent">
-  <Container>
-    <Astronav class="py-6 flex justify-end">
-
-      <div class="w-full flex flex-col items-end">
-
-        <!-- Menu -->
-        <MenuItems class="hidden lg:flex mb-3">
+        <!-- Desktop menu -->
+        <MenuItems class="hidden lg:flex">
           <ul class="flex gap-4">
             {menuitems.map((item, index) => (
               <li class="relative">
@@ -119,10 +110,7 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
                     align="right"
                   />
                 ) : (
-                  <a
-                    href={item.path}
-                    class="px-3 py-2 text-black hover:text-teal-600"
-                  >
+                  <a href={item.path} class="px-3 py-2 text-black hover:text-teal-600">
                     {item.title}
                   </a>
                 )}
@@ -131,10 +119,32 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
           </ul>
         </MenuItems>
 
-        <!-- Logo + burger -->
+        <!-- Burger (mobile) -->
+        <MenuIcon class="lg:hidden text-black" />
 
-      </div>
-    </Astronav>
-  </Container>
-</nav>
+        <!-- Mobile menu -->
+        <MenuItems class="lg:hidden absolute top-full right-4 mt-2 w-64 bg-white shadow-xl rounded-2xl overflow-hidden">
+          <ul class="flex flex-col divide-y">
+            {menuitems.map((item) => (
+              <li>
+                {item.children ? (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    textClass="text-black"
+                    align="left"
+                  />
+                ) : (
+                  <a href={item.path} class="block px-4 py-3 text-black hover:bg-gray-100">
+                    {item.title}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </MenuItems>
+
+      </Astronav>
+    </Container>
+  </nav>
 </Container>
