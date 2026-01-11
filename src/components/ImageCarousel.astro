@@ -4,7 +4,7 @@
 
 <div class="carousel" aria-label="Galerie d’images">
   <div class="carousel-track">
-    <figure class="carousel-slide">
+    <figure class="carousel-slide active">
       <img src="/assets/homophobie-zen-700x300.webp" alt="Zen et lutte contre l’homophobie" loading="lazy" />
       <figcaption>Zen et lutte contre l’homophobie</figcaption>
     </figure>
@@ -38,16 +38,19 @@
 }
 .carousel-track {
   display: flex;
+  width: 100%;
   transition: transform 0.4s ease-in-out;
 }
 .carousel-slide {
   min-width: 100%;
   text-align: center;
+  flex-shrink: 0;
 }
 .carousel-slide img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  display: block;
 }
 .carousel-slide figcaption {
   margin-top: 0.5rem;
@@ -71,24 +74,30 @@
 </style>
 
 <script type="module" client:load>
-  const carousel = document.querySelector(".carousel");
-  const track = carousel.querySelector(".carousel-track");
-  const slides = carousel.querySelectorAll(".carousel-slide");
-  const prev = carousel.querySelector(".carousel-btn.prev");
-  const next = carousel.querySelector(".carousel-btn.next");
-  let index = 0;
+const carousel = document.querySelector(".carousel");
+const track = carousel.querySelector(".carousel-track");
+const slides = carousel.querySelectorAll(".carousel-slide");
+const prev = carousel.querySelector(".carousel-btn.prev");
+const next = carousel.querySelector(".carousel-btn.next");
+let index = 0;
 
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
+function update() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
 
-  prev.addEventListener("click", () => {
-    index = (index - 1 + slides.length) % slides.length;
-    update();
-  });
+// Initialize track width
+track.style.width = `${slides.length * 100}%`;
 
-  next.addEventListener("click", () => {
-    index = (index + 1) % slides.length;
-    update();
-  });
+prev.addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  update();
+});
+
+next.addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  update();
+});
+
+// Initial position
+update();
 </script>

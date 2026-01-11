@@ -2,13 +2,17 @@
 title: "Zen et féminisme : Josy, zazen et MLF"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+image:
+  src: "/assets/couture-traditionnelle-kesa-zen.webp"
+  alt: "Couture zen : cousez votre rakusu ou votre kesa"
 snippet: "Zen et féminisme, voici le cocktail détonnant que Josy Thibaut a concocté auprès du MLF et des maitres Deshimaru et Kosen."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""
 tags: []
-import ImageCarousel from "../components/ImageCarousel.astro"
 ---
+
+import ImageCarousel from "../components/ImageCarousel.astro"
+
 
 <p>Zen et féminisme sont-ils compatibles ? Si l'on en croit les propos des plus grands maîtres et l'expérience qu'a vécue et transmise la nonne zen et militante féministe Josy Thibaut, oui.</p>
 
