@@ -9,7 +9,7 @@ category: ""
 tags: []
 ---
 
-Zen Paris organise des après-midi couture zen (rakusu et kesa). Ces ateliers s’adressent aux personnes débutantes ou confirmées.  Stéphane, disciple de la nonne Françoise Kosen Laurent, qui dirige régulièrement une sesshin du kesa, y partage sa grande expérience de la couture traditionnelle zen.
+Zen Paris organise des après-midi couture zen (rakusu et kesa). Ces ateliers s’adressent aux personnes débutantes ou confirmées.  Stéphane, disciple de la nonne Françoise Kosen Laurent, qui dirige régulièrement une [sesshin du kesa](https://www.zen-deshimaru.com/fr/sesshin/sesshin-du-kesa-2024), y partage sa grande expérience de la couture traditionnelle zen.
 
 ## Le kesa
 
