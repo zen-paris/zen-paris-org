@@ -1,56 +1,14 @@
 ---
 title: "Initiation au zen"
-date: "2001-10-19"
-author: "landing-page"
-_edit_last: "68"
-_edit_lock: "1739129083:68"
-_yoast_wpseo_linkdex: "69"
-_yoast_wpseo_focuskw: "Initiation zen"
-_yoast_wpseo_metadesc: "Initiation zen gratuite à Paris le lundi ou mercredi à 18 h 30. Téléphonez au 01 43 70 11 46 au moins 24 heures à l'avance."
-_yoast_wpseo_focuskw_text_input: "Initiation zen"
-_yoast_wpseo_content_score: "90"
-_wp_page_template: default
-_yoast_wpseo_estimated-reading-time-minutes: 
-_yoast_wpseo_wordproof_timestamp: 
-_glossary_disable_for_page: "0"
-_glossary_disable_tooltip_for_page: "0"
-_glossary_disable_links_for_page: "0"
-_cmtt_highlightFirstOnly: "0"
-_glossary_disable_dom_parser_global_settings_for_page: "0"
-_cmtt_disable_acf_for_page: "0"
-_cmtt_new_page_exception: "0"
-_aioseo_title: 
-_aioseo_description: "Initiation zen gratuite à Paris. Apprenez la posture de méditation assise et silencieuse de zazen, transmise sans interruption depuis le Bouddha."
-_aioseo_keywords: 
-_aioseo_og_title: 
-_aioseo_og_description: 
-_aioseo_og_article_section: 
-_aioseo_og_article_tags: 
-_aioseo_twitter_title: 
-_aioseo_twitter_description: 
-lsw_language_switcher:
-  urls:
-    en: 
-    es: 
-  main: fr
-lsw_main_language: fr
-language_switcher: 
-_thumbnail_id: "6961"
-rank_math_title: 
-rank_math_description: "Initiation zen à Paris. Apprenez la posture de méditation assise et silencieuse de zazen, transmise sans interruption depuis le Bouddha."
-rank_math_canonical_url: 
-rank_math_facebook_title: 
-rank_math_facebook_description: 
-rank_math_facebook_image: 
-rank_math_twitter_title: 
-rank_math_twitter_description: 
-rank_math_twitter_image: 
-rank_math_twitter_use_facebook: off
-rank_math_focus_keyword: "initiation au zen"
-rank_math_seo_score: "62"
-rank_math_internal_links_processed: "1"
-rank_math_analytic_object_id: "107"
-rank_math_pillar_content: on
+date: 2015-12-12
+draft: false
+image:
+  src: "/assets/couture-traditionnelle-kesa-zen.webp"
+  alt: "Couture zen : cousez votre rakusu ou votre kesa"
+snippet: "Initiation zen gratuite à Paris le lundi ou mercredi à 18 h 30. Téléphonez au 01 43 70 11 46 au moins 24 heures à l'avance."
+publishDate: "2015-12-12T00:00:00Z"
+category: ""
+tags: []
 ---
 
 <p>Apprenez la pratique de zazen au cours d'une initiation.  Zazen est la pratique de l'assise méditative telle que la pratique s'en perpétue au sein de la Kosen sangha, dans la lignée de maître Deshimaru.</p>
