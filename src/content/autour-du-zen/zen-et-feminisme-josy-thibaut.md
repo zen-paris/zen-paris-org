@@ -9,6 +9,8 @@ category: ""
 tags: []
 ---
 
+import ImageCarousel from "../components/ImageCarousel.astro"
+
 <p>Zen et féminisme sont-ils compatibles ? Si l'on en croit les propos des plus grands maîtres et l'expérience qu'a vécue et transmise la nonne zen et militante féministe Josy Thibaut, oui.</p>
 
 ## Zen et féminisme : des pratiques vécues
@@ -39,100 +41,7 @@ Après avoir connu l'après-guerre dans le jazz du Paris de Saint-Germain-des-Pr
 
 <p>Elle rejoint le Mouvement de libération des femmes au début de l'année 1971, quelques mois après les premières apparitions publiques du mouvement. Signataire du Manifeste des 343, elle étonne ses camarades de lutte plus jeunes par son humour, son énergie et son imagination.</p>
 
-<!-- ===== Carousel inserted here ===== -->
-
-<div class="carousel" aria-label="Galerie d’images">
-  <div class="carousel-track">
-
-    <figure class="carousel-slide active">
-      <img src="/assets/homophobie-zen-700x300.webp" alt="Zen et lutte contre l’homophobie" loading="lazy" />
-      <figcaption>Zen et lutte contre l’homophobie</figcaption>
-    </figure>
-
-    <figure class="carousel-slide">
-      <img src="/assets/josy-thibaut-zen-700x300.webp" alt="Josy Thibaut et la pratique zen" loading="lazy" />
-      <figcaption>Josy Thibaut et la pratique zen</figcaption>
-    </figure>
-
-    <figure class="carousel-slide">
-      <img src="/assets/malheurs-sophie-zen-700x300.webp" alt="Les Malheurs de Sophie, lecture zen" loading="lazy" />
-      <figcaption>Les Malheurs de Sophie, lecture zen</figcaption>
-    </figure>
-
-    <figure class="carousel-slide">
-      <img src="/assets/manifeste-343-femmes-zen-700x300.webp" alt="Manifeste des 343 femmes et engagement" loading="lazy" />
-      <figcaption>Manifeste des 343 femmes et engagement</figcaption>
-    </figure>
-
-  </div>
-
-  <button class="carousel-btn prev" aria-label="Image précédente">‹</button>
-  <button class="carousel-btn next" aria-label="Image suivante">›</button>
-</div>
-
-<style>
-.carousel {
-  position: relative;
-  max-width: 700px;
-  margin: 2rem auto;
-  overflow: hidden;
-}
-.carousel-track {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-}
-.carousel-slide {
-  min-width: 100%;
-  text-align: center;
-}
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-}
-.carousel-slide figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #374151;
-}
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 0.25rem 0.75rem;
-  cursor: pointer;
-}
-.carousel-btn.prev { left: 0.5rem; }
-.carousel-btn.next { right: 0.5rem; }
-</style>
-
-<script>
-  const track = document.querySelector(".carousel-track");
-  const slides = document.querySelectorAll(".carousel-slide");
-  const prev = document.querySelector(".carousel-btn.prev");
-  const next = document.querySelector(".carousel-btn.next");
-  let index = 0;
-
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  prev.addEventListener("click", () => {
-    index = (index - 1 + slides.length) % slides.length;
-    update();
-  });
-
-  next.addEventListener("click", () => {
-    index = (index + 1) % slides.length;
-    update();
-  });
-</script>
-
-<!-- ===== End carousel ===== -->
+<ImageCarousel />
 
 ## Zen avec les maîtres Deshimaru et Kosen
 
