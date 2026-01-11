@@ -11,7 +11,7 @@ tags: []
 
 Le dojo zen a ouvert ses portes il y a plus de quarante ans et constitue aujourd'hui un lieu privilégié pour tous ceux qui souhaitent s'initier ou approfondir la méditation à Paris. Situé dans un cadre propice au silence intérieur, ce dojo traditionnel perpétue la transmission du zazen, la méditation assise  enseignée par le Bouddha et transmise de génération en génération.
 
-Françoise Jomon Julien, nonne zen qui a reçu en avril 2015 la transmission du Dharma de [Maître Kosen](../../zen-et-sangha/zen-et-sangha), proche disciple de [Maître Deshimaru](https://fr.wikipedia.org/wiki/Taisen_Deshimaru), enseigne quotidiennement la méditation à Paris dans ce dojo, qui organise également des matinées  et des journées de stage.
+Françoise Jomon Julien, nonne zen qui a reçu en avril 2015 la transmission du Dharma de [Maître Kosen](../../meditation-zen/zen-et-sangha), proche disciple de [Maître Deshimaru](https://fr.wikipedia.org/wiki/Taisen_Deshimaru), enseigne quotidiennement la méditation à Paris dans ce dojo, qui organise également des matinées  et des journées de stage.
 
 ![méditation à dijon](/assets/dojo-zen-dijon-3.webp)
 

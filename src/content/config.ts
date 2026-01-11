@@ -53,5 +53,5 @@ const teamCollection = defineCollection({
 export const collections = {
   'zen-et-dojo': zenetdojoCollection,
   'team': teamCollection,
-  'zen-et-sangha': zenetsanghaCollection,
+  'meditation-zen': zenetsanghaCollection,
 };
