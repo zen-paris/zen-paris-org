@@ -1,4 +1,4 @@
-x1---
+---
 import Analytics from '@vercel/analytics/astro';
 import { SEO } from "astro-seo";
 import Footer from "@/components/footer.astro";
@@ -53,8 +53,20 @@ const makeTitle = title ? `${title} Méditation zen | ` : "Zen Paris";
   </head>
   <body class="bg-white text-gray-900">
 
-
     <Navbar />
+
+    <!-- Hero Video -->
+    <div class="w-full overflow-hidden">
+      <video
+        id="hero-video"
+        src="/path/to/your/video.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-full h-[500px] object-cover transition-all duration-500"
+      ></video>
+    </div>
 
     <main class="mx-auto max-w-[1300px] flex flex-col lg:flex-row gap-8 px-4 py-8">
       <div class="flex-1">
@@ -82,30 +94,41 @@ const makeTitle = title ? `${title} Méditation zen | ` : "Zen Paris";
       </a>
     </div>
 
-    <!-- CTA Script (client-only) -->
+    <!-- Scripts -->
     <script is:client>
       document.addEventListener("DOMContentLoaded", () => {
+        // --- CTA Button ---
         const ctaButton = document.getElementById("cta-button");
         const hasSeenCTA = localStorage.getItem("ctaSeen") === "true";
 
         if (hasSeenCTA) {
-          ctaButton.remove();
-          return;
+          ctaButton?.remove();
+        } else {
+          const toggleCTA = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+
+            if (scrollPercent > 50) {
+              ctaButton?.classList.remove("hidden");
+              localStorage.setItem("ctaSeen", "true");
+              window.removeEventListener("scroll", toggleCTA);
+            }
+          };
+          window.addEventListener("scroll", toggleCTA);
         }
 
-        const toggleCTA = () => {
-          const scrollTop = window.scrollY || document.documentElement.scrollTop;
-          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-          const scrollPercent = (scrollTop / docHeight) * 100;
-
-          if (scrollPercent > 50) {
-            ctaButton.classList.remove("hidden");
-            localStorage.setItem("ctaSeen", "true");
-            window.removeEventListener("scroll", toggleCTA);
-          }
-        };
-
-        window.addEventListener("scroll", toggleCTA);
+        // --- Shrink Hero Video on Scroll ---
+        const video = document.getElementById("hero-video");
+        if (video) {
+          const shrinkVideo = () => {
+            if (window.scrollY > 0) {
+              video.style.height = "200px";
+              window.removeEventListener("scroll", shrinkVideo); // never revert
+            }
+          };
+          window.addEventListener("scroll", shrinkVideo);
+        }
       });
     </script>
 
