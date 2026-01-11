@@ -5,7 +5,7 @@ import Container from "@/components/container.astro";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const zenetdojoEntries = await getCollection("zen-et-dojo");
+  const zenetdojoEntries = await getCollection("autour-du-zen");
   return zenetdojoEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
@@ -17,7 +17,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 // Load all entries for navigation
-const allEntries = await getCollection("zen-et-dojo");
+const allEntries = await getCollection("autour-du-zen");
 
 // Sort by date ascending (oldest first)
 const sortedEntries = allEntries.sort(
@@ -57,7 +57,7 @@ const nextEntry =
       <div class="flex justify-between items-center text-sm font-medium text-teal-700">
         {prevEntry ? (
           <a
-            href={`/zen-et-dojo/${prevEntry.slug}`}
+            href={`/autour-du-zen/${prevEntry.slug}`}
             class="flex items-center gap-2 hover:text-teal-900 transition"
           >
             ← {prevEntry.data.title}
@@ -68,7 +68,7 @@ const nextEntry =
 
         {nextEntry ? (
           <a
-            href={`/zen-et-dojo/${nextEntry.slug}`}
+            href={`/autour-du-zen/${nextEntry.slug}`}
             class="flex items-center gap-2 hover:text-teal-900 transition"
           >
             {nextEntry.data.title} →

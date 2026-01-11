@@ -5,8 +5,8 @@ import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 
-// Filter zen-et-dojo entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("zen-et-dojo", ({ data }) => {
+// Filter autour-du-zen entries with 'draft: false' & date before current date
+const publishedBlogEntries = await getCollection("autour-du-zen", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
@@ -17,13 +17,13 @@ publishedBlogEntries.sort(function (a, b) {
 
 // Hard-coded navigation items
 const navItems = [
-  { title: "Zen et dojo", link: "/zen-et-dojo" },
+  { title: "Zen et dojo", link: "/autour-du-zen" },
   { title: "Zen et sangha", link: "/meditation-zen" },
   { title: "Activités précédentes", link: "/sesshins-et-stages-zen" },
 ];
 
 // Find index of current page in navItems
-const currentIndex = navItems.findIndex(item => item.link === "/zen-et-dojo");
+const currentIndex = navItems.findIndex(item => item.link === "/autour-du-zen");
 
 // Round-robin helpers
 const prevIndex = (currentIndex - 1 + navItems.length) % navItems.length;
@@ -52,7 +52,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
         {
           publishedBlogEntries.map((blogPostEntry, index) => (
             <li>
-              <a href={`/zen-et-dojo/${blogPostEntry.slug}`} class="text-teal-600 no-underline hover:text-orange-500">
+              <a href={`/autour-du-zen/${blogPostEntry.slug}`} class="text-teal-600 no-underline hover:text-orange-500">
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <Picture
                     src={blogPostEntry.data.image.src}
