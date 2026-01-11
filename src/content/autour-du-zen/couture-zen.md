@@ -12,10 +12,38 @@ tags: []
 <p>Zen Paris organise des après-midi couture zen (rakusu et kesa). Ces ateliers s’adressent aux personnes débutantes ou confirmées.  Stéphane, disciple de la nonne Françoise Kosen Laurent, qui dirige régulièrement une sesshin du kesa, y partage sa grande expérience de la couture traditionnelle zen.</p>
 <p>Le kesa<br />
 La pratique du zen ne requiert pas une tenue spécifique. Il est possible de pratiquer zazen dans une tenue souple de couleur sombre.</p>
-<p>[table id=2 /]<br />
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg"><tbody>
+  <tr>
+    <td class="tg-0lax">Horaires</td>
+    <td class="tg-0lax">14h à 16h certains samedis</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Lieu</td>
+    <td class="tg-0lax">Rue Labat, 75018 Paris</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Participation aux frais</td>
+    <td class="tg-0lax">6 €</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Kits rakusu (pour commencer à coudre<br>avec tout ce qui est nécessaire)</td>
+    <td class="tg-0lax">25 €</td>
+  </tr>
+</tbody>
+</table></div>
+
 Cependant, puisque le zen n'est pas une méthode de bien-être, mais une voie spirituelle, les personnes qui le souhaitent peuvent demander à recevoir l'ordination de Boddhisatva, de moine ou de nonne.</p>
 
-![Logo Markdown](/assets/couture-traditionnelle-kesa-zen.webp)
+![Logo Markdown](/assets/couture-zen-toge-moine-nonne-kesa.webp)
 
 <p>Lors de l'ordination, la·le maître de la sangha remet au boddhistava au moine ou à la nonne un rakusu. Les moines et les nonnes portent durant la pratique un kesa. Le rakusu et le kesa sont des vêtements rituels portés sur un kimono noir. Ils se cousent, se revêtent et se replient d'une manière précise.<br />
 
