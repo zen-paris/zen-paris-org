@@ -144,6 +144,42 @@ blockquote {
   }
 }
 
+.accordion summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::before {
+  content: "▸";
+  transition: transform 0.25s ease;
+}
+
+.accordion[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  opacity: 0;
+  max-height: 0;
+  padding: 0 1rem;
+}
+
+.accordion[open] .accordion-content {
+  opacity: 1;
+  max-height: 1000px; /* large enough for content */
+  padding: 0.75rem 1rem 1rem;
+}
+
+
 /* Apply custom font globally */
 @layer base {
   body {
