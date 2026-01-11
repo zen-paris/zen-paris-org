@@ -24,8 +24,14 @@ Et pourquoi pas une grève des femmes ? […] Les idées fusent. Josy Thibaut pr
 Mon MLF – Marie-Jo Bonnet
 </blockquote>
 
+![Collage sur la chaussée : Quand les femmes s’aiment, les hommes ne récoltent pas.](/assets/quand-les-femmes-s-aiment-les-hommes-ne-recoltent-pas.webp)
 
-<p>[custom-layout id='4717']<br />
+<blockquote>
+Le 1er mai 1976, nous nous sommes donné rendez-vous à l’université de Jussieu pour préparer les slogans de la manif, composer les banderoles, organiser notre présence dans le grand défilé des travailleurs. […] Josy Thibaut, particulièrement en verve, a trouvé un merveilleux slogan : « Quand les femmes s’aiment, les hommes ne récoltent pas. »
+<br/>
+Mon MLF – Marie-Jo Bonnet
+</blockquote>
+
 
 ## Féminisme au MLF
 
