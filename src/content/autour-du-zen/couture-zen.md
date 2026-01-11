@@ -45,7 +45,7 @@ La pratique du zen ne requiert pas une tenue spécifique. Il est possible de pra
 
 Cependant, puisque le zen n'est pas une méthode de bien-être, mais une voie spirituelle, les personnes qui le souhaitent peuvent demander à recevoir l'ordination de Boddhisatva, de moine ou de nonne.
 
-![Logo Markdown](/assets/couture-zen-toge-moine-nonne-kesa.webp)
+![Deux hommes adultes, concentrés, cousent et examinent à la main des pièces de tissu posées sur une table de travail, dans un atelier lumineux.](/assets/couture-zen-toge-moine-nonne-kesa.webp)
 
 Lors de l'ordination, la·le maître de la sangha remet au boddhistava au moine ou à la nonne un rakusu. Les moines et les nonnes portent durant la pratique un kesa. Le rakusu et le kesa sont des vêtements rituels portés sur un kimono noir. Ils se cousent, se revêtent et se replient d'une manière précise.
 
@@ -69,7 +69,7 @@ Taisen Deshimaru</blockquote>
 
 Le tissu utilisé pour coudre un rakusu peut être de toute origine, même (voire, de préférence) la plus vile. La couture zen se pratique très bien à partir de tissu de récupération en bon état. Il faut dans ce cas le nettoyer et le teindre en noir ou en brun. Ce tissu provient le plus souvent d'une pièce de coton (par exemple, une gabardine de coton). Dès que vous vous l'êtes procuré, vous devez le traiter comme s'il s'agissait d'un rakusu achevé. Le fil peut être blanc, gris, beige, brun ou noir, de préférence en coton (les fils de soie et les fils synthétiques ont tendance à fondre au repassage).
 
-![Logo Markdown](/assets/couture-traditionnelle-toge-bouddhiste-kesa.webp)
+![Vue de dos d’un homme aux cheveux gris, assis à une table avec d’autres personnes, participant à un atelier de couture manuelle ; des tissus, aiguilles et carnets sont disposés devant le groupe.](/assets/couture-traditionnelle-toge-bouddhiste-kesa.webp)
 
 Avant de coudre, exercez-vous au point de rakusu (point arrière) sur une chute de tissu. Ne faites aucun nœud pour arrêter le fil. Veillez à ne pas poser votre ouvrage sur le sol lorsque vous le montez ou le cousez.
 
