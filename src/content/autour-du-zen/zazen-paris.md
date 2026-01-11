@@ -9,7 +9,15 @@ snippet: "Zazen Paris : pratiquez zazen dans la tradition transmise par les maî
 publishDate: "2015-12-12T00:00:00Z"
 category: ""
 tags: []
+import Header from '@/components/Header.astro';
+
+const frontmatterImage = {
+  src: "/assets/zen-paris-pratique-de-zazen.webp",
+  alt: "Une pratique authentique dans un lieu intime et calme"
+};
 ---
+
+<Header title="Zazen Paris : dojo zen lignée Deshimaru" image={frontmatterImage} />
 
 Le dojo zazen Paris est un petit dojo de pratique de zazen fondé dans les années 1990 par la nonne et militante féministe Josy Genji Thibaut. Ce dojo convivial est rattaché à la sangha de maître Kosen Thibaut, fils de Josy Thibaut et disciple de maître Deshimaru, qui dirige le dojo zen de Montpellier.
 
