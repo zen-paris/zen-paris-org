@@ -15,11 +15,17 @@ Le dojo zazen Paris est un petit dojo de pratique de zazen fondé dans les anné
 
 Zen Paris vous accueille pour une pratique simple et authentique du zen soto (proche du zen rinzaï) : l'essence de la pratique, c’est la méditation en posture de zazen en groupe.
 
-[quotes-llama cat='kosen-paris']
+<blockquote>
+Le zen que nous a transmis Deshimaru, c’est ça. Deshimaru habitait à Paris et il a enseigné à Dalida, Arnaud Desjardins, Jodorowsky, Béjart, des gens comme ça, tout un milieu intellectuel. Aussi, à toute une jeunesse un peu hippie, qui n’étaient pas des moines ni des fils de moines. Il n’y avait pas de temple, on a bricolé un truc, on a fait zazen où on pouvait.
+
+Maître Kosen
+</blockquote>
 
 Notre dojo entretient des liens étroits avec d'autres dojos, basés en France et à l’étranger  (Paris, Lyon, Montpellier, Barcelone, Madrid, Québec, Buenos Aires, Genève, Budapest, Amsterdam…).
 
-[caption id="attachment_6498" align="aligncenter" width="740"] Une pratique authentique dans un lieu intime et calme[/caption]
+![Une pratique authentique dans un lieu intime et calme](/assets/centre-zen-paris-kosen-sangha.webp)
+
+*Une pratique authentique dans un lieu intime et calme*
 
 Le dojo Zen Paris pratique le zen sōtō transmis par maître Deshimaru et son proche disciple et héritier, maître Kosen.
 
