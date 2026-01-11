@@ -18,11 +18,11 @@ const publishedPosts = blogPosts
   .map(p => ({ title: p.data.title, path: `/zen-et-dojo/${p.slug}` }));
 
 /* ---------------- Zen et sangha ---------------- */
-const zenetsanghaPosts = await getCollection("zen-et-sangha");
-const publishedZenetsanghaPosts = zenetsanghaPosts
+const meditationzenPosts = await getCollection("meditation-zen");
+const publishedZenetsanghaPosts = meditationzenPosts
   .filter(p => !p.data.draft && p.data.publishDate <= new Date())
   .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
-  .map(p => ({ title: p.data.title, path: `/zen-et-sangha/${p.slug}` }));
+  .map(p => ({ title: p.data.title, path: `/meditation-zen/${p.slug}` }));
 
 /* ---------------- Navbar structure ---------------- */
 const menuitems = [

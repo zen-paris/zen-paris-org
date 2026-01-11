@@ -21,16 +21,16 @@ const staticWithDates = filteredStatic.map((page) => ({
   lastmod: buildDate,
 }));
 
-// Collections dynamiques : zen-et-dojo et zen-et-sangha
+// Collections dynamiques : zen-et-dojo et meditation-zen
 const dojo = await getCollection("zen-et-dojo");
-const sangha = await getCollection("zen-et-sangha");
+const sangha = await getCollection("meditation-zen");
 const collections = [
   ...dojo.map((entry) => ({
     url: `${baseUrl}/zen-et-dojo/${entry.slug}`,
     lastmod: buildDate,
   })),
   ...sangha.map((entry) => ({
-    url: `${baseUrl}/zen-et-sangha/${entry.slug}`,
+    url: `${baseUrl}/meditation-zen/${entry.slug}`,
     lastmod: buildDate,
   })),
 ];

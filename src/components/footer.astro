@@ -6,7 +6,7 @@ const pathname = Astro.url.pathname.replace(/\/$/, "");
 const segments = pathname === "" ? [] : pathname.split("/").filter(Boolean);
 
 // Collections to search
-const collections = ["pages", "zen-et-dojo", "zen-et-sangha", "ateliers", "dojos", "events"];
+const collections = ["pages", "zen-et-dojo", "meditation-zen", "ateliers", "dojos", "events"];
 let allEntries: { slug: string; fullSlug: string; data: any; col: string }[] = [];
 
 for (const col of collections) {
@@ -29,7 +29,7 @@ const getTitleForSlug = (slug: string) => {
   const topLevel = slug.split("/")[0];
   const protectedTopLevels = [
     "zen-et-dojo",
-    "zen-et-sangha",
+    "meditation-zen",
     "ateliers",
     "dojos",
     "events",
@@ -62,7 +62,7 @@ segments.forEach((seg) => {
   if (!name) {
     const customSegmentNames: Record<string, string> = {
       "zen-et-dojo": "Zen et dojo",
-      "zen-et-sangha": "Zen et sangha",
+      "meditation-zen": "Zen et sangha",
       "ateliers": "Ateliers",
       "dojos": "Dojos",
       "events": "Événements",
