@@ -2,7 +2,7 @@
 title: "Couture zen : cousez votre rakusu ou votre kesa"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/dojo-zen-dijon-3-vert.webp", alt: "Dojo Zen Paris" }
+image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
 snippet: "La couture zen s'adresse aux pratiquants de zazen qui veulent coudre leur rakusu ou leur kesa sous la direction d'un moine zen expérimenté."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""
@@ -15,10 +15,26 @@ La pratique du zen ne requiert pas une tenue spécifique. Il est possible de pra
 <p>[table id=2 /]<br />
 Cependant, puisque le zen n'est pas une méthode de bien-être, mais une voie spirituelle, les personnes qui le souhaitent peuvent demander à recevoir l'ordination de Boddhisatva, de moine ou de nonne.</p>
 <p>Lors de l'ordination, la·le maître de la sangha remet au boddhistava au moine ou à la nonne un rakusu. Les moines et les nonnes portent durant la pratique un kesa. Le rakusu et le kesa sont des vêtements rituels portés sur un kimono noir. Ils se cousent, se revêtent et se replient d'une manière précise.<br />
-La couture du kesa<br />
-La couture zen d'un rakusu ou d'un kesa demande de fréquentes et délicates opérations de<br />
+
+## La couture du kesa
+
+La couture zen d'un rakusu ou d'un kesa demande de fréquentes et délicates opérations de
 montage. Il est donc préférable de coudre sous la supervision d'une personne expérimentée, lors d'un atelier couture zen au dojo ou lors d'un stage (sesshin) au temple. Votre rakusu ne vous sera remis qu'après avoir été dûment vérifié.<br />
-[quotes-llama cat='deshimaru']<br />
+
+
+<blockquote><ul>
+  <li>Pourquoi donnez-vous des kusens&nbsp;?</li>
+  <li>Vous n'aimez pas mes kusens&nbsp;?</li>
+  <li>Si, mais je préfère la première partie du zazen, quand vous ne parlez pas.</li>
+  <li>Ah, quand je me tais, vous pouvez penser, c'est ça&nbsp;?</li>
+  <li>
+    Dans le silence, vous pouvez penser&nbsp;:<br/>«&nbsp;Tiens, je mangerais bien un steak&nbsp;».<br/>
+    Donc, mes kusens valent mieux que vos pensées.
+  </li>
+</ul>
+<br/>
+Taisen Deshimaru</blockquote>
+
 Le tissu utilisé pour coudre un rakusu peut être de toute origine, même (voire, de préférence) la plus vile. La couture zen se pratique très bien à partir de tissu de récupération en bon état. Il faut dans ce cas le nettoyer et le teindre en noir ou en brun. Ce tissu provient le plus souvent d'une pièce de coton (par exemple, une gabardine de coton). Dès que vous vous l'êtes procuré, vous devez le traiter comme s'il s'agissait d'un rakusu achevé. Le fil peut être blanc, gris, beige, brun ou noir, de préférence en coton (les fils de soie et les fils synthétiques ont tendance à fondre au repassage).</p>
 <p>Avant de coudre, exercez-vous au point de rakusu (point arrière) sur une chute de tissu. Ne faites aucun nœud pour arrêter le fil. Veillez à ne pas poser votre ouvrage sur le sol lorsque vous le montez ou le cousez.<br />
 Après la couture<br />
