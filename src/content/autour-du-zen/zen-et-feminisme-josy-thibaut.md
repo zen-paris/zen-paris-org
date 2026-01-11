@@ -7,9 +7,8 @@ snippet: "Zen et féminisme, voici le cocktail détonnant que Josy Thibaut a con
 publishDate: "2015-12-12T00:00:00Z"
 category: ""
 tags: []
----
-
 import ImageCarousel from "../components/ImageCarousel.astro"
+---
 
 <p>Zen et féminisme sont-ils compatibles ? Si l'on en croit les propos des plus grands maîtres et l'expérience qu'a vécue et transmise la nonne zen et militante féministe Josy Thibaut, oui.</p>
 
@@ -20,7 +19,6 @@ Josy (1925-2017), mère de maître Kosen Thibaut, était à la fois une pratiqua
 ![Banderole GRRRR-rêve des femmes tenue lors d'une manifestation](/assets/greve-des-femmes.webp)
 
 <blockquote>
-
 Et pourquoi pas une grève des femmes ? […] Les idées fusent. Josy Thibaut propose de l’écrire « GRRRR-rêve des femmes ». « GRRRR » pour la colère et « rêve » pour un monde nouveau où les femmes ne travailleraient plus gratuitement et ne seraient pas sous-payées dans les entreprises.
 <br/>
 Mon MLF – Marie-Jo Bonnet
@@ -34,10 +32,9 @@ Le 1er mai 1976, nous nous sommes donné rendez-vous à l’université de Jussi
 Mon MLF – Marie-Jo Bonnet
 </blockquote>
 
-
 ## Féminisme au MLF
 
-Après avoir connu l'après-guerre dans le jazz du Paris de Saint-Germain-des-Prés (quand on arrivait dans le dojo qu'elle animait chez elle, on était souvent accueilli par un morceau de Louis Armstrong), Josy Thibaut reprend des études à la Sorbonne en… 1967. Soit juste avant l'explosion d'énergie de Mai 68, à laquelle elle participe pleinement .</p>
+Après avoir connu l'après-guerre dans le jazz du Paris de Saint-Germain-des-Prés (quand on arrivait dans le dojo qu'elle animait chez elle, on était souvent accueilli par un morceau de Louis Armstrong), Josy Thibaut reprend des études à la Sorbonne en… 1967. Soit juste avant l'explosion d'énergie de Mai 68, à laquelle elle participe pleinement.</p>
 
 <p>Elle rejoint le Mouvement de libération des femmes au début de l'année 1971, quelques mois après les premières apparitions publiques du mouvement. Signataire du Manifeste des 343, elle étonne ses camarades de lutte plus jeunes par son humour, son énergie et son imagination.</p>
 
