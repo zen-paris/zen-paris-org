@@ -22,9 +22,7 @@ Le kin-hin favorise la pleine conscience, la stabilité mentale et la présence 
 ## La marche méditative
 
 
-<video controls style="max-width:100%; height:auto;">
-  <source src="https://zen-paris.org/wp-content/uploads/2024/03/marche-meditative-zen.mp4" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BQFBK1n0Qrg?si=AstCkzK6XHQygYNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Il s'agit d'une manière de marcher très lente et délibérée, effectuée entre les périodes de méditation assise.
 
