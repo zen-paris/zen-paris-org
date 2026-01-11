@@ -10,27 +10,36 @@ tags: []
 ---
 
 <p>Zen et féminisme sont-ils compatibles ? Si l'on en croit les propos des plus grands maîtres et l'expérience qu'a vécue et transmise la nonne zen et militante féministe Josy Thibaut, oui.</p>
-<p>Zen et féminisme : des pratiques vécues<br />
-EN English ES Español<br />
+
+## Zen et féminisme : des pratiques vécues
+
 Josy (1925-2017), mère de maître Kosen Thibaut, était à la fois une pratiquante sans faille du zen et une militante féministe aguerrie. Elle a longtemps animé chez elle un groupe de zazen, qui fut à l'origine du dojo Zen Paris.</p>
 <p>[custom-layout id='4717']<br />
-Féminisme au MLF<br />
+
+## Féminisme au MLF
+
 Après avoir connu l'après-guerre dans le jazz du Paris de Saint-Germain-des-Prés (quand on arrivait dans le dojo qu'elle animait chez elle, on était souvent accueilli par un morceau de Louis Armstrong), Josy Thibaut reprend des études à la Sorbonne en… 1967. Soit juste avant l'explosion d'énergie de Mai 68, à laquelle elle participe pleinement .</p>
 <p>Elle rejoint le Mouvement de libération des femmes au début de l'année 1971, quelques mois après les premières apparitions publiques du mouvement. Signataire du<br />
 Manifeste des 343, elle étonne ses camarades de lutte plus jeunes par son humour, son énergie et son imagination.</p>
 <p>[metaslider id="5113"]<br />
-Zen avec les maîtres Deshimaru et Kosen<br />
+
+## Zen avec les maîtres Deshimaru et Kosen
+
 En 1978, lorsque son fils rencontre maître Deshimaru, elle se met à pratiquer elle aussi zazen.</p>
 <p>Après s'être fait ordonner nonne zen par son fils devenu maître, elle continue zazen sans relâche et anime un petit dojo chez elle.</p>
 <p>[custom-layout id='4677']</p>
 <p>Josy a débuté zazen à plus de 50 ans, et peut-être au début plus pour voir dans quoi s'était lancé son fils, le futur maître Kosen Thibaut, que dans une recherche personnelle.</p>
 <p>Conquise par la pratique, elle continue assidument la grande assise. Elle participe à toutes les périodes de pratique intensive, ou sesshins, jusqu'à près de 90 ans, malgré une prothèse de la hanche !<br />
-Masculin, féminin : baratin ?<br />
+
+## Masculin, féminin : baratin ?
+
 Mais Josy Thibaut est-elle une exception dans une tradition bouddhiste qui, plus généralement, rejetterait les femmes ? Au moins dans la tradition mahāyāna du bouddhisme du Grand Véhicule, dont fait partie le zen, non.</p>
 <p>Le courant hīnayāna, quant à lui, est plus soucieux de libération personnelle que d'émancipation de tous les êtres et nie généralement les capacités spirituelles des femmes.</p>
 <p>[custom-layout id='4729']</p>
 <p>Nombre de textes du bouddhisme n'autorisent l'éveil des femmes qu'après leur réincarnation sous forme masculine. Mais le zen n'attribue à rien une essence propre. Il voit tout comme des agrégats, résultats d'interactions instables et éphémères. Les soutras les plus prisés de cette école sont donc ceux qui proposent un dépassement de la dualité homme/femme, vue seulement comme l'opposition illusoire de conditions arbitraires.<br />
-Les enfants du Bouddha ne devraient pas être ainsi<br />
+
+## Les enfants du Bouddha ne devraient pas être ainsi
+
 Le XIIIe siècle marque l'entrée du Japon dans le régime militaire du shogounat de Kamakura. En 1223, le futur grand maître Dogen, insatisfait de sa formation à l'école Tendai, se rend en Chine pour étudier le Chán auprès de maître Nyōjo.</p>
 <p>L'école Tendai avait été fondée par Dengyō Daishi durant l'antiquité japonaise. Attachée aux textes, teintée de confucianisme et proche du pouvoir, c'était la branche du bouddhisme dominante au Japon avant l'essor du zen. Hostile aux femmes, elle était plus préoccupée de prestige social que d'émancipation spirituelle. Elle ne pouvait répondre aux questionnements de Dogen.</p>
 <p>[custom-layout id='4751']</p>
@@ -40,7 +49,9 @@ Le XIIIe siècle marque l'entrée du Japon dans le régime militaire du shogouna
 <p>Les engagements parallèles de Josy dans le zen et le féminisme sont donc loin d’être contradictoires. Ils illustrent l’universalité du bouddhisme zen, même si ses rapports avec maître Deshimaru étaient parfois quelque peu… disons, rugueux. Car dans son œuvre phare, Dogen est on ne peut plus clair : suivre la voie n'est pas l'apanage des hommes.</p>
 <p>[custom-layout id='4768']</p>
 <p>Ceci à une époque où les principales branches du bouddhisme citaient le fait d'être née femme comme l'un des obstacles sur le chemin de l'éveil. Et alors qu'en Europe, une bulle pontificale de 1233 pose les bases des futures chasses aux sorcières.<br />
-Zen, féminisme, and all that jazz<br />
+
+## Zen, féminisme, and all that jazz
+
 Josy Thibaut est née femme au début du XXe siècle. Elle a traversé les périodes les plus sombres et les plus exaltantes du "Siècle des extrêmes".</p>
 <p>Son amour précoce du jazz lui fit craindre les pires ennuis. Au cours d'une visite d'inspection, des soldats allemands de l'armée d'occupation ont en effet trouvé un album de musique "dégénérée". Le jazz n'était alors pas interdit, mais, après 1941 et l'entrée en guerre des États-Unis, ce qui touchait aux musiciens américains était vu comme contestataire. Or, Josy, amatrice de swing, trouvait plus son bonheur chez les joueurs noirs américains que dans le jazz français de l'époque.</p>
 <p>[metaslider id="5147"]</p>
@@ -48,9 +59,13 @@ Josy Thibaut est née femme au début du XXe siècle. Elle a traversé les péri
 <p>[custom-layout id='4820']</p>
 <p>Dans les années 1950, le public français du jazz, minoritaire dans la population quoique réparti dans tout le pays, est très nettement jeune, masculin, instruit et - relativement - antiraciste.</p>
 <p>Le mari de Josy, Gilles Thibaut, accompagne Sidney Bechet à la trompette au club du Vieux Colombier, temple du style New Orleans.<br />
-Pratiques personnelles et collectives<br />
+
+## Pratiques personnelles et collectives
+
 S'il fallait à tout prix chercher une cohérence entre les trois passions de Josy, le féminisme, le zen et le jazz, ce serait peut-être celle d'une pratique à la fois personnelle et collective. De l'engagement militant dans un mouvement sans structure ni hiérarchie, à la pratique rigoureuse d'une posture méditative pratiquée sans discontinuité depuis 2 500 ans, en passant par une musique qui donne la part belle à l'improvisation au sein de petites formations.<br />
-Émancipation sociale, politique, spirituelle<br />
+
+## Émancipation sociale, politique, spirituelle
+
 Plus profondément, Josy n'a jamais cloisonné les différents aspects de son action. Qui l'aura connue pourra témoigner combien elle pouvait être entière !</p>
 <p>À l'instar du MLF pour qui « le personnel est politique », peut-être a-t-elle toujours été guidée, dans ses différents engagements, par une indomptable volonté d'émancipation, sur tous les plans, sans séparation.</p>
 <p>Josy Thibaut a débuté zazen et le militantisme lors d'une deuxième jeunesse dont elle n'est plus sortie. Elle a lutté pour les femmes sans se réduire à son statut de femme. Elle a fait avancer la cause qu'elle avait choisie sans rejeter quiconque, mais en luttant contre un système de valeurs inique. Sans trahir, se renier, ni faire de compromis, elle a pratiqué et fait connaitre la posture de zazen sans relâche, hors de toute considération égoïste.</p>
@@ -60,4 +75,4 @@ Plus profondément, Josy n'a jamais cloisonné les différents aspects de son ac
 <p>Olivier C<br />
 Relecture et conseils : Anne, Angela et Isabelle</p>
 <p>[custom-layout id='4850']<br />
-`</p>
+
