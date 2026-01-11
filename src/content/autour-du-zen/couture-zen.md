@@ -14,6 +14,9 @@ tags: []
 La pratique du zen ne requiert pas une tenue spécifique. Il est possible de pratiquer zazen dans une tenue souple de couleur sombre.</p>
 <p>[table id=2 /]<br />
 Cependant, puisque le zen n'est pas une méthode de bien-être, mais une voie spirituelle, les personnes qui le souhaitent peuvent demander à recevoir l'ordination de Boddhisatva, de moine ou de nonne.</p>
+
+![Logo Markdown](/assets/couture-traditionnelle-kesa-zen.webp)
+
 <p>Lors de l'ordination, la·le maître de la sangha remet au boddhistava au moine ou à la nonne un rakusu. Les moines et les nonnes portent durant la pratique un kesa. Le rakusu et le kesa sont des vêtements rituels portés sur un kimono noir. Ils se cousent, se revêtent et se replient d'une manière précise.<br />
 
 ## La couture du kesa
