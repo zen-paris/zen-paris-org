@@ -1,0 +1,127 @@
+---
+--- 
+
+<div class="carousel2" aria-label="Galerie d’images">
+  <div class="carousel2-track">
+    <figure class="carousel2-slide active">
+      <img src="/assets/josy-apres-zazen-700x300.webp" alt="Josy Thibaut après zazen" loading="lazy" />
+      <figcaption>Josy Thibaut à une manifestation du MLF, le 20 novembre 1971</figcaption>
+    </figure>
+
+    <figure class="carousel2-slide">
+      <img src="/assets/josy-danse-604x258.webp" alt="Josy Thibaut danse" loading="lazy" />
+      <figcaption>Josy Thibaut contre la répression de l’homosexualité le 25 juin 1977</figcaption>
+    </figure>
+
+    <figure class="carousel2-slide">
+      <img src="/assets/josy-gasho-2-700x300.webp" alt="Josy Thibaut en gasshō" loading="lazy" />
+      <figcaption>Josy Thibaut parodie Les Malheurs de Sophie. Photo de Catherine Deudon.</figcaption>
+    </figure>
+
+    <figure class="carousel2-slide">
+      <img src="/assets/jozy-zazen-700x300.webp" alt="Josy Thibaut en zazen" loading="lazy" />
+      <figcaption>Manifeste des 343 paru le 5 avril 1971 dans Le Nouvel Observateur</figcaption>
+    </figure>
+
+    <figure class="carousel2-slide">
+      <img src="/assets/kosen-thibaut-kosen-700x300.webp" alt="Kosen Thibaut et maître Kōsen" loading="lazy" />
+      <figcaption>Kōsen Thibaut et la transmission du zen</figcaption>
+    </figure>
+  </div>
+
+  <button class="carousel2-btn prev" aria-label="Image précédente">‹</button>
+  <button class="carousel2-btn next" aria-label="Image suivante">›</button>
+</div>
+
+<style>
+.carousel2 {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.carousel2-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel2-slide {
+  flex-shrink: 0;
+  width: 700px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel2-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill nicely without stretching */
+  border-radius: 0.5rem;
+}
+
+.carousel2-slide figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.carousel2-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel2-btn.prev { left: 0.5rem; }
+.carousel2-btn.next { right: 0.5rem; }
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+  .carousel2-slide {
+    width: 100%; 
+    height: calc(100% * 300 / 700); /* keep aspect ratio 700x300 */
+  }
+}
+</style>
+
+<script type="module" client:load>
+const carousel2 = document.querySelector(".carousel2");
+const track = carousel2.querySelector(".carousel2-track");
+const slides = carousel2.querySelectorAll(".carousel2-slide");
+const prev = carousel2.querySelector(".carousel2-btn.prev");
+const next = carousel2.querySelector(".carousel2-btn.next");
+
+let index = 0;
+
+function update() {
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+prev.addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  update();
+});
+
+next.addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  update();
+});
+
+// Update carousel2 if window resizes
+window.addEventListener("resize", update);
+
+// Initial position
+update();
+</script>
