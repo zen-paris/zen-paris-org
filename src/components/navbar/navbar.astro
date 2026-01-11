@@ -10,12 +10,12 @@ const pageMenuItems = pages
   .filter(p => !p.data.draft)
   .map(p => ({ title: p.data.title, path: `/${p.slug}` }));
 
-/* ---------------- Zen et dojo ---------------- */
-const blogPosts = await getCollection("zen-et-dojo");
+/* ---------------- Autour du zen ---------------- */
+const blogPosts = await getCollection("autour-du-zen");
 const publishedPosts = blogPosts
   .filter(p => !p.data.draft && p.data.publishDate <= new Date())
   .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
-  .map(p => ({ title: p.data.title, path: `/zen-et-dojo/${p.slug}` }));
+  .map(p => ({ title: p.data.title, path: `/autour-du-zen/${p.slug}` }));
 
 /* ---------------- Zen et sangha ---------------- */
 const meditationzenPosts = await getCollection("meditation-zen");
@@ -27,7 +27,7 @@ const publishedZenetsanghaPosts = meditationzenPosts
 /* ---------------- Navbar structure ---------------- */
 const menuitems = [
   { title: "Méditation zen", children: publishedZenetsanghaPosts },
-  { title: "Zen et dojo", children: publishedPosts },
+  { title: "Autour du zen", children: publishedPosts },
   {
     title: "Activités précédentes",
     children: [
