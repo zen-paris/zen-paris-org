@@ -132,6 +132,12 @@ blockquote {
   border-left: 3px solid #d1d5db; /* gray-300 */
   padding-left: 1rem;
   color: #374151; /* gray-700 */
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after {
+  content: none;
 }
 
 @layer base {
