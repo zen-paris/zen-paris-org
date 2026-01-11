@@ -1,56 +1,12 @@
 ---
 title: "Couture zen : cousez votre rakusu ou votre kesa"
-date: "2003-05-28"
-author: "landing-page"
-_edit_lock: "1739125550:68"
-_edit_last: "1"
-_yoast_wpseo_focuskw: "couture zen"
-_yoast_wpseo_title: "Couture zen : réaliser son rakusu ou son grand kesa"
-_yoast_wpseo_metadesc: "Si vous pratiquez régulièrement le zen, vous pouvez pratiquer la couture zen pour coudre votre rakusu ou votre grand kesa."
-_yoast_wpseo_linkdex: "80"
-_yoast_wpseo_focuskw_text_input: "couture zen"
-_yoast_wpseo_content_score: "90"
-_yoast_wpseo_estimated-reading-time-minutes: 
-_yoast_wpseo_wordproof_timestamp: 
-_wp_page_template: default
-_glossary_disable_for_page: "0"
-_glossary_disable_tooltip_for_page: "0"
-_glossary_disable_links_for_page: "0"
-_cmtt_highlightFirstOnly: "0"
-_glossary_disable_dom_parser_global_settings_for_page: "0"
-_cmtt_disable_acf_for_page: "0"
-_cmtt_new_page_exception: "0"
-_aioseo_title: 
-_aioseo_description: "La couture zen s'adresse aux pratiquants de zazen qui veulent coudre leur rakusu ou leur kesa sous la direction d'un moine zen expérimenté."
-_aioseo_keywords: 
-_aioseo_og_title: 
-_aioseo_og_description: 
-_aioseo_og_article_section: 
-_aioseo_og_article_tags: 
-_aioseo_twitter_title: 
-_aioseo_twitter_description: 
-lsw_language_switcher:
-  urls:
-    en: 
-    es: 
-  main: fr
-lsw_main_language: fr
-language_switcher: 
-_thumbnail_id: "6663"
-rank_math_title: 
-rank_math_description: "La couture zen s'adresse aux pratiquants de zazen qui veulent coudre leur rakusu ou leur kesa sous la direction d'un moine zen expérimenté."
-rank_math_canonical_url: 
-rank_math_facebook_title: 
-rank_math_facebook_description: 
-rank_math_facebook_image: 
-rank_math_twitter_title: 
-rank_math_twitter_description: 
-rank_math_twitter_image: 
-rank_math_twitter_use_facebook: off
-rank_math_focus_keyword: "couture zen"
-rank_math_seo_score: "73"
-rank_math_internal_links_processed: "1"
-rank_math_analytic_object_id: "105"
+date: 2015-12-12
+draft: false
+image: { src: "/assets/dojo-zen-dijon-3-vert.webp", alt: "Dojo Zen Paris" }
+snippet: "La couture zen s'adresse aux pratiquants de zazen qui veulent coudre leur rakusu ou leur kesa sous la direction d'un moine zen expérimenté."
+publishDate: "2015-12-12T00:00:00Z"
+category: ""
+tags: []
 ---
 
 <p>Zen Paris organise des après-midi couture zen (rakusu et kesa). Ces ateliers s’adressent aux personnes débutantes ou confirmées.  Stéphane, disciple de la nonne Françoise Kosen Laurent, qui dirige régulièrement une sesshin du kesa, y partage sa grande expérience de la couture traditionnelle zen.</p>
