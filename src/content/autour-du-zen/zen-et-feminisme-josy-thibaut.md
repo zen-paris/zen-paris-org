@@ -15,9 +15,9 @@ tags: []
 
 Josy (1925-2017), mère de maître Kosen Thibaut, était à la fois une pratiquante sans faille du zen et une militante féministe aguerrie. Elle a longtemps animé chez elle un groupe de zazen, qui fut à l'origine du dojo Zen Paris.</p>
 
+![Banderole GRRRR-rêve des femmes tenue lors d'une manifestation](/assets/greve-des-femmes.webp)
 
 <blockquote>
-![Deux hommes adultes, concentrés, cousent et examinent à la main des pièces de tissu posées sur une table de travail, dans un atelier lumineux.](/assets/greve-des-femmes.webp)
 
 Et pourquoi pas une grève des femmes ? […] Les idées fusent. Josy Thibaut propose de l’écrire « GRRRR-rêve des femmes ». « GRRRR » pour la colère et « rêve » pour un monde nouveau où les femmes ne travailleraient plus gratuitement et ne seraient pas sous-payées dans les entreprises.
 <br/>
