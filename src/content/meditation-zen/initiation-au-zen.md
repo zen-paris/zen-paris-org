@@ -19,8 +19,6 @@ Chaque point qu'on vous enseigne à l'initiation est essentiel, c'est le plus im
 Maître Kosen
 </blockquote>
 
-[contact-form-7 id="af52569"]
-
 L'initiation est ouverte à toute personne désirant essayer la pratique du zen sōtō, quels que soient son âge et sa condition. Munissez-vous d’une tenue confortable de couleur sombre vous permettant de croiser les jambes en tailleur. Munissez-vous également d’une écharpe ou d’une étoffe pour soutenir vos mains. Zen Paris fournit, dans la mesure du possible, un zafu et un zabuton.
 
 Certaines formes de méditations peuvent se pratiquer dans diverses postures ou dans des positions moins rigoureuses. Mais la méditation zazen est indissociable d'un positionnement du corps, du regard, de la respiration et de l'esprit très précis.
