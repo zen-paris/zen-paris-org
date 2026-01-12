@@ -1,0 +1,102 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+
+// Filter soutras entries with 'draft: false' & date before current date
+const publishedBlogEntries = await getCollection("soutras", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+// Sort content entries by publication date
+publishedBlogEntries.sort(function (a, b) {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
+
+// Hard-coded navigation items
+const navItems = [
+  { title: "Autour du zen", link: "/soutras" },
+  { title: "Méditation zen", link: "/meditation-zen" },
+  { title: "Activités précédentes", link: "/sesshins-et-stages-zen" },
+];
+
+// Find index of current page in navItems
+const currentIndex = navItems.findIndex(item => item.link === "/soutras");
+
+// Round-robin helpers
+const prevIndex = (currentIndex - 1 + navItems.length) % navItems.length;
+const nextIndex = (currentIndex + 1) % navItems.length;
+---
+
+<Layout title="Zen et dojo">
+  <Container>
+    <!-- Page Header -->
+    <Sectionhead>
+      <Fragment slot="title">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
+          Zen et dojo
+        </h1>
+      </Fragment>
+      <Fragment slot="desc">
+        <div class="text-left text-lg">
+          Pratiquez la méditation zen à Paris : zazen, stages et initiations avec Maître Jomon, héritière du zen Soto, dans un cadre calme et authentique.
+        </div>
+      </Fragment>
+    </Sectionhead>
+
+    <!-- Blog Entries -->
+    <main class="mt-16">
+      <ul class="grid gap-16 max-w-4xl mx-auto">
+        {
+          publishedBlogEntries.map((blogPostEntry, index) => (
+            <li>
+              <a href={`/soutras/${blogPostEntry.slug}`} class="text-teal-600 no-underline hover:text-orange-500">
+                <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+                  <Picture
+                    src={blogPostEntry.data.image.src}
+                    alt={blogPostEntry.data.image.alt}
+                    sizes="(max-width: 800px) 100vw, 800px"
+                    width={800}
+                    height={600}
+                    loading={index <= 2 ? "eager" : "lazy"}
+                    decoding={index <= 2 ? "sync" : "async"}
+                    class="w-full rounded-md object-cover object-center bg-white"
+                  />
+                  <div>
+                    <span class="text-teal-800 uppercase tracking-wider text-sm font-medium">
+                      {blogPostEntry.data.category}
+                    </span>
+
+                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1">
+                      {blogPostEntry.data.title}
+                    </h2>
+
+                    {blogPostEntry.data.snippet && (
+                      <p class="mt-3 text-gray-600 leading-relaxed">
+                        {blogPostEntry.data.snippet}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <section class="mt-20 border-t border-gray-200 pt-6">
+      <div class="flex justify-between max-w-3xl mx-auto text-sm font-medium text-teal-700">
+        <a href={navItems[prevIndex].link} class="flex items-center gap-2 hover:text-teal-900 transition">
+          ← {navItems[prevIndex].title}
+        </a>
+        <a href={navItems[nextIndex].link} class="flex items-center gap-2 hover:text-teal-900 transition">
+          {navItems[nextIndex].title} →
+        </a>
+      </div>
+    </section>
+  </Container>
+</Layout>
