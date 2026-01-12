@@ -1,3 +1,38 @@
+- title: Journée de zazen
+  date: 2025-11-23 08:00:00
+  to: 2025-11-23 18:00:00
+  type: journee
+  coverImage: affiche-zen-final.webp
+  lieu: 50 Rue Labat Espace Mélane, Paris
+  dojo: Zen Paris
+  prix: 20
+  godo:
+    - Maître Ingrid Gyu Ji Igelnick
+
+- title: Journée de zazen
+  date: 2025-11-30 08:00:00
+  to: 2025-11-30 18:00:00
+  type: journee
+  coverImage: Zen-5-avril-2025.webp
+  lieu: 50 Rue Labat Espace Mélane, Paris
+  dojo: Zen Paris
+  prix: 18
+  godo:
+    - Moines de la Kosen Sangha
+
+- title: Journée de zazen
+  date: 2025-04-05 08:00:00
+  to: 2025-04-05 18:00:00
+  type: journee
+  coverImage: journee-zazen-paris-novembre-2024.webp
+  lieu: 50 Rue Labat Espace Mélane, Paris
+  dojo: Zen Paris
+  prix: 20
+  godo:
+    - Maître Christophe Ryurin Desmur
+
+
+
 - title: Sesshin de Paris
   date: 2018-06-09
   to: 2018-06-10
