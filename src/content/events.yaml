@@ -51,3 +51,13 @@
   prix: 70
   godo:
     - Maître Françoise Jomon Julien
+
+- title: Sesshin de Paris
+  date: 2023-02-18
+  to: 2023-02-19
+  type: sesshin
+  lieu: Dojo des Guilands 8 Rue Gutenberg, Montreuil
+  coverImage: sesshin_de_paris_2023.webp
+  prix: 70
+  godo:
+    - Moine Sen Ki Gruau
