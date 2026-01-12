@@ -61,3 +61,13 @@
   prix: 70
   godo:
     - Moine Sen Ki Gruau
+
+- title: Sesshin de Paris
+  date: 2019-03-30
+  to: 2019-03-31
+  type: sesshin
+  lieu: Dojo des Guilands 8 Rue Gutenberg, Montreuil
+  coverImage: affiche_sesshin_de_paris_2019_fr_0.webp
+  prix: 70
+  godo:
+    - Nonne Ko Den del mar
