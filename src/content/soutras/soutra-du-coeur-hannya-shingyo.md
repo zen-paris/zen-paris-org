@@ -1,58 +1,33 @@
 ---
 title: "Soutra du coeur - Hannya Shingyo"
-date: "2013-10-23"
-author: admin
-_edit_lock: "1710233420:34"
-_edit_last: "34"
-_yoast_wpseo_content_score: "30"
-_wp_page_template: default
-_yoast_wpseo_estimated-reading-time-minutes: 
-_yoast_wpseo_wordproof_timestamp: 
-_yoast_wpseo_metadesc: "Le soutra du coeur, essence du soutra de la grande sagesse qui permet d’aller au-delà, chanté à la fin des séances de méditation zazen."
-_yoast_wpseo_focuskw: "soutra du coeur"
-_yoast_wpseo_linkdex: "67"
-_glossary_disable_for_page: "0"
-_glossary_disable_tooltip_for_page: "0"
-_glossary_disable_links_for_page: "0"
-_cmtt_highlightFirstOnly: "0"
-_glossary_disable_dom_parser_global_settings_for_page: "0"
-_cmtt_disable_acf_for_page: "0"
-_cmtt_new_page_exception: "0"
-_aioseo_title: 
-_aioseo_description: 
-_aioseo_keywords: 
-_aioseo_og_title: 
-_aioseo_og_description: 
-_aioseo_og_article_section: 
-_aioseo_og_article_tags: 
-_aioseo_twitter_title: 
-_aioseo_twitter_description: 
-lsw_language_switcher:
-  urls:
-    en: 
-    es: 
-  main: fr
-lsw_main_language: fr
-language_switcher: 
-_thumbnail_id: "6301"
-rank_math_title: 
-rank_math_description: 
-rank_math_canonical_url: 
-rank_math_facebook_title: 
-rank_math_facebook_description: 
-rank_math_facebook_image: 
-rank_math_twitter_title: 
-rank_math_twitter_description: 
-rank_math_twitter_image: 
-rank_math_twitter_use_facebook: off
-rank_math_internal_links_processed: "1"
-rank_math_analytic_object_id: "102"
+date: 2015-12-12
+draft: false
+image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+snippet: "Le soutra du coeur, essence du soutra de la grande sagesse qui permet d’aller au-delà."
+publishDate: "2015-12-12T00:00:00Z"
+category: ""
+tags: []
 ---
 
-<p>&gt; Télécharger tous les soutras<br />
-Le soutra du cœur<br />
-[video width="1280" height="720" mp4="https://zen-paris.org/wp-content/uploads/2024/03/Chants-zen-Soutra-du-Coeur-karaoke-sous-titre-en-francais.mp4"][/video]<br />
-Le Soutra du Cœur est l'un des textes les plus courts mais les plus essentiels du bouddhisme Mahayana. Les traditions bouddhistes d'Asie de l'Est, telles que le bouddhisme zen au Japon et le bouddhisme Chan en Chine, lui donnent une importance primordiale. Le Soutra du Cœur est généralement attribué au Bouddha Gautama. Les pratiquant.e.s zen le chantent à la fin de la séance de zazen du matin et du soir.</p>
+<p>
+Le soutra du cœur
+</p>
+
+Le Soutra du Cœur est l'un des textes les plus courts mais les plus essentiels du bouddhisme Mahayana. Les traditions bouddhistes d'Asie de l'Est, telles que le bouddhisme zen au Japon et le bouddhisme Chan en Chine, lui donnent une importance primordiale. Le Soutra du Cœur est généralement attribué au Bouddha Gautama. Les pratiquant.e.s zen le chantent à la fin de la séance de zazen du matin et du soir.
+
+<div class="w-full aspect-video">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/iCk3p4p-eg4?si=XDm3KTzR3x7FBSvK"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    class="w-full h-full"
+  ></iframe>
+</div>
+
+
 <p>Le Soutra du Cœur est un soutra central du bouddhisme Mahayana qui enseigne la vacuité en tant que concept fondamental pour la compréhension de la réalité ultime et la libération de la souffrance. C'est un texte court mais puissant qui continue d'influencer la pensée et la pratique bouddhistes à travers le monde.<br />
 Essence de la vacuité<br />
 Le Soutra du Cœur met l'accent sur la nature de la réalité ultime telle que la comprend la philosophie bouddhiste, en particulier le concept de "vacuité" (shunyata en sanskrit). Il enseigne que toute chose, y compris les phénomènes et les êtres, est dépourvue d'une existence inhérente et indépendante. Au lieu de cela, tout est interdépendant et dépendant de causes et de conditions.<br />
