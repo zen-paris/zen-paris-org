@@ -17,7 +17,18 @@ Transmise d'Inde en Chine par maître Bodhidharma, de Chine au Japon par maître
 Tous·tes les maîtres de l'école soto le répètent à l'envi : le zen, c'est zazen. En dehors de la posture qui actualise en chacun·e son état de bouddha originel, tout ce qui se réclame du « zen » est au mieux une aide temporaire. Au pire, un miroir aux alouettes, qui renforce nos illusions. Que l'on soit débutant ou ancien, dans la pratique, il faut sans cesse la réactualiser. C'est comme prendre des repas tous les jours, et non une seule fois dans sa vie.
 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7ie78ciPoAo?si=jVw_ArkdHuRh-J4V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="w-full aspect-video">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/7ie78ciPoAo?si=jVw_ArkdHuRh-J4V"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    class="w-full h-full"
+  ></iframe>
+</div>
+
 Zazen, une posture d'assise<br />
 Pour prendre la posture de zazen, asseyez-vous en posture du lotus ou du demi-lotus. Un coussin de méditation, le zafu, surélève votre bassin. Poussez fermement le sol avec vos deux genoux.
 

@@ -21,8 +21,17 @@ Le kin-hin favorise la pleine conscience, la stabilité mentale et la présence 
 
 ## La marche méditative
 
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BQFBK1n0Qrg?si=AstCkzK6XHQygYNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="w-full aspect-video">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/BQFBK1n0Qrg?si=AstCkzK6XHQygYNh"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    class="w-full h-full"
+  ></iframe>
+</div>
 
 Il s'agit d'une manière de marcher très lente et délibérée, effectuée entre les périodes de méditation assise.
 
