@@ -1,68 +1,50 @@
-// 1. Import utilities from `astro:content`
+// src/content/config.ts
 import { z, defineCollection } from 'astro:content';
 
-// 2. Define your collection(s)
-
-const zenetsanghaCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    title: z.string(),
-    snippet: z.string(),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
-    publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Zen Paris'),
-    category: z.string(),
-    tags: z.array(z.string()),
-  }),
+// ----------------------
+// Reusable schema for Zen articles
+// ----------------------
+const zenArticleSchema = z.object({
+  draft: z.boolean(),
+  title: z.string(),
+  snippet: z.string(),
+  image: z.object({
+    src: z.string(),
+    alt: z.string(),
+  }).optional(), // optional to prevent undefined errors
+  publishDate: z.string().transform(str => new Date(str)),
+  author: z.string().default('Dojo zen de Dijon'),
+  category: z.string(),
+  tags: z.array(z.string()),
 });
 
-const zenetdojoCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    title: z.string(),
-    snippet: z.string(),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
-    publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Zen Paris'),
-    category: z.string(),
-    tags: z.array(z.string()),
-  }),
-});
+// ----------------------
+// Define collections
+// ----------------------
+const zenetsanghaCollection = defineCollection({ schema: zenArticleSchema });
+const zenetdojoCollection = defineCollection({ schema: zenArticleSchema });
 
-const teamCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    name: z.string(),
-    title: z.string(),
-    avatar: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }),
-    publishDate: z.string().transform(str => new Date(str)),
-  }),
-});
-
-// ✅ Define the missing `soutrasCollection`
+// Soutras collection
 const soutrasCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
     title: z.string(),
     snippet: z.string(),
     publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Zen Paris'),
+    author: z.string().default('Dojo zen de Dijon'),
     category: z.string(),
     tags: z.array(z.string()),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }).optional(), // optional to avoid missing images
   }),
 });
 
-// 3. Export a single `collections` object to register your collection(s)
-//    The keys must match your collection folder names in "src/content"
+// ----------------------
+// Export collections
+// Keys must match folder names in src/content
+// ----------------------
 export const collections = {
   'autour-du-zen': zenetdojoCollection,
   'meditation-zen': zenetsanghaCollection,
