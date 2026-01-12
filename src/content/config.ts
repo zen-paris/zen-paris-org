@@ -13,7 +13,7 @@ const zenetsanghaCollection = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Dojo zen de Dijon'),
+    author: z.string().default('Zen Paris'),
     category: z.string(),
     tags: z.array(z.string()),
   }),
@@ -29,7 +29,7 @@ const zenetdojoCollection = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Dojo zen de Dijon'),
+    author: z.string().default('Zen Paris'),
     category: z.string(),
     tags: z.array(z.string()),
   }),
@@ -48,8 +48,21 @@ const teamCollection = defineCollection({
   }),
 });
 
+// ✅ Define the missing `soutrasCollection`
+const soutrasCollection = defineCollection({
+  schema: z.object({
+    draft: z.boolean(),
+    title: z.string(),
+    snippet: z.string(),
+    publishDate: z.string().transform(str => new Date(str)),
+    author: z.string().default('Zen Paris'),
+    category: z.string(),
+    tags: z.array(z.string()),
+  }),
+});
+
 // 3. Export a single `collections` object to register your collection(s)
-//    This key should match your collection directory name in "src/content"
+//    The keys must match your collection folder names in "src/content"
 export const collections = {
   'autour-du-zen': zenetdojoCollection,
   'meditation-zen': zenetsanghaCollection,
