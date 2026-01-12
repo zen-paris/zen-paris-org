@@ -1,53 +1,14 @@
 ---
 title: "Gojûshichi Butsu"
-date: "2013-11-18"
-author: admin
-_edit_last: "1"
-_edit_lock: "1705562485:1"
-_yoast_wpseo_content_score: "60"
-_wp_page_template: default
-_glossary_disable_for_page: "0"
-_glossary_disable_tooltip_for_page: "0"
-_glossary_disable_links_for_page: "0"
-_cmtt_highlightFirstOnly: "0"
-_glossary_disable_dom_parser_global_settings_for_page: "0"
-_cmtt_disable_acf_for_page: "0"
-_cmtt_new_page_exception: "0"
-_yoast_wpseo_estimated-reading-time-minutes: 
-_yoast_wpseo_wordproof_timestamp: 
-lsw_language_switcher:
-  urls:
-    en: 
-    es: 
-  main: fr
-lsw_main_language: fr
-_aioseo_title: 
-_aioseo_description: 
-_aioseo_keywords: 
-_aioseo_og_title: 
-_aioseo_og_description: 
-_aioseo_og_article_section: 
-_aioseo_og_article_tags: 
-_aioseo_twitter_title: 
-_aioseo_twitter_description: 
-language_switcher: 
-_thumbnail_id: "6375"
-rank_math_title: 
-rank_math_description: 
-rank_math_canonical_url: 
-rank_math_facebook_title: 
-rank_math_facebook_description: 
-rank_math_facebook_image: 
-rank_math_twitter_title: 
-rank_math_twitter_description: 
-rank_math_twitter_image: 
-rank_math_twitter_use_facebook: off
-rank_math_internal_links_processed: "1"
-rank_math_analytic_object_id: "93"
+date: 2015-12-12
+draft: false
+image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+snippet: "Découvrez les 57 bouddhas et patriarches du Zen à travers le chant Gojûshichi Butsu, une récitation traditionnelle pleine de sens et de dévotion."
+publishDate: "2015-12-12T00:00:00Z"
+category: ""
+tags: []
 ---
 
-<p>Téléchargement<br />
-Télécharger tous les soutras<br />
 Cinquante-sept bouddhas et patriarches<br />
 Aogi koi negawaku wa sambô fushite shôkan wo tare tamae<br />
 Jo rai maka hanny haramita shingyô o fujustu atsumuru tokoro no shukun wa.</p>
