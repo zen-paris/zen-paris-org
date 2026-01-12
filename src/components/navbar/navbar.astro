@@ -159,13 +159,13 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
     preload="auto"
   ></video>
 
-  <!-- Image for mobile -->
-  <img
-    class="hero-image"
-    src="/assets/zen-paris-meditation-zazen-paris-kosen-deshimaru.webp"
-    alt="Zen Paris Hero"
-  />
-
+<!-- Image for mobile, lazy-loaded -->
+<img
+  class="hero-image"
+  src="/assets/zen-paris-meditation-zazen-paris-kosen-deshimaru.webp"
+  alt="Zen Paris Hero"
+  loading="lazy"
+/>
   <div class="overlay"></div>
 
   <div class="hero-content flex flex-col items-center sm:items-start gap-4">
