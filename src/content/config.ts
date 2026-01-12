@@ -52,6 +52,6 @@ const teamCollection = defineCollection({
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   'autour-du-zen': zenetdojoCollection,
-  'team': teamCollection,
   'meditation-zen': zenetsanghaCollection,
+  'soutras': soutrasCollection,
 };
