@@ -11,11 +11,11 @@ const zenArticleSchema = z.object({
   image: z.object({
     src: z.string(),
     alt: z.string(),
-  }).optional(), // optional to prevent undefined errors
+  }).optional(),
   publishDate: z.string().transform(str => new Date(str)),
-  author: z.string().default('Dojo zen de Dijon'),
+  author: z.string().default('Zen Paris'),
   category: z.string(),
-  tags: z.array(z.string()),
+  tags: z.array(z.string()).default([]),
 });
 
 // ----------------------
@@ -23,23 +23,7 @@ const zenArticleSchema = z.object({
 // ----------------------
 const zenetsanghaCollection = defineCollection({ schema: zenArticleSchema });
 const zenetdojoCollection = defineCollection({ schema: zenArticleSchema });
-
-// Soutras collection
-const soutrasCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    title: z.string(),
-    snippet: z.string(),
-    publishDate: z.string().transform(str => new Date(str)),
-    author: z.string().default('Dojo zen de Dijon'),
-    category: z.string(),
-    tags: z.array(z.string()),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
-    }).optional(), // optional to avoid missing images
-  }),
-});
+const soutrasCollection = defineCollection({ schema: zenArticleSchema });
 
 // ----------------------
 // Export collections
