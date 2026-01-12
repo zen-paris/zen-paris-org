@@ -57,4 +57,3 @@ No jo i saï ku shin jitsu fu ko Ko setsu han ya ha ra mi ta shu<br />
 Soku setsu shu watsu Gya tei gya tei<br />
 Ha ra gya tei<br />
 Hara so gya tei Bo ji so wa ka</p>
-<p>&gt; Version française</p>
