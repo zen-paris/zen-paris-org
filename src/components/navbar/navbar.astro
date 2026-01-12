@@ -24,10 +24,18 @@ const publishedZenetsanghaPosts = meditationzenPosts
   .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
   .map(p => ({ title: p.data.title, path: `/meditation-zen/${p.slug}` }));
 
+/* ---------------- Soutras ---------------- */
+const soutrasPosts = await getCollection("soutras");
+const publishedSoutrasPosts = soutrasPosts
+  .filter(p => !p.data.draft && p.data.publishDate <= new Date())
+  .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
+  .map(p => ({ title: p.data.title, path: `/soutras/${p.slug}` }));
+
 /* ---------------- Navbar structure ---------------- */
 const menuitems = [
   { title: "Méditation zen", children: publishedZenetsanghaPosts },
   { title: "Autour du zen", children: publishedPosts },
+  { title: "Soutras", children: publishedSoutrasPosts }, // new menu
   {
     title: "Activités précédentes",
     children: [
@@ -49,7 +57,7 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* push content to bottom */
+  justify-content: flex-end;
   position: relative;
   min-height: 860px;
   height: 70vh;
@@ -161,7 +169,6 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
   <div class="overlay"></div>
 
   <div class="hero-content flex flex-col items-center sm:items-start gap-4">
-    <!-- Wrap logo and hero text in link to root -->
     <a href="/" class="flex flex-col items-center sm:items-start gap-4">
       <img
         src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
@@ -233,9 +240,9 @@ const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
                 <div class="mobile-dropdown">
                   <button class="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center text-black">
                     {item.title}
-                    <span class="rotate-0">▼</span>
+                    <span>▼</span>
                   </button>
-                  <ul class="max-h-0">
+                  <ul>
                     {item.children.map(child => (
                       <li>
                         <a
@@ -296,4 +303,43 @@ window.addEventListener("scroll", () => {
   targetRatio = Math.min(window.scrollY / TRIGGER, 1);
   requestAnimationFrame(update);
 }, { passive: true });
+</script>
+
+<!-- ================= MOBILE DROPDOWN SCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.getElementById("burger-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  // Toggle mobile menu
+  burger.addEventListener("click", () => {
+    const isOpen = mobileMenu.style.maxHeight && mobileMenu.style.maxHeight !== "0px";
+    mobileMenu.style.maxHeight = isOpen ? "0px" : mobileMenu.scrollHeight + "px";
+  });
+
+  // Handle dropdowns inside mobile menu
+  const dropdowns = mobileMenu.querySelectorAll(".mobile-dropdown");
+
+  dropdowns.forEach(drop => {
+    const button = drop.querySelector("button");
+    const submenu = drop.querySelector("ul");
+    const arrow = button.querySelector("span");
+
+    // Collapse submenu initially
+    submenu.style.maxHeight = "0px";
+    arrow.style.transition = "transform 0.3s ease";
+
+    button.addEventListener("click", () => {
+      const isOpen = submenu.style.maxHeight && submenu.style.maxHeight !== "0px";
+
+      if (isOpen) {
+        submenu.style.maxHeight = "0px";
+        arrow.style.transform = "rotate(0deg)";
+      } else {
+        submenu.style.maxHeight = submenu.scrollHeight + "px";
+        arrow.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+});
 </script>
