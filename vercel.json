@@ -8,5 +8,10 @@
     { "source": "/zazen-paris/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
     { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut/", "permanent": true },
     { "source": "/zazen-paris/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true }
+    { "source": "/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
+    { "source": "/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
+    { "source": "/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true }
+
+
   ]
 }
