@@ -1,12 +1,12 @@
 {
   "redirects": [
-    { "source": "/infos-pratiques/couture-zen/", "destination": "/autour-du-zen/couture-zen.html", "permanent": true },
-    { "source": "/zazen-paris/", "destination": "/autour-du-zen/zazen-paris.html", "permanent": true },
-    { "source": "/zen-et-feminisme-josy-thibaut/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut.html", "permanent": true },
-    { "source": "/zen-paris-a-10-ans/", "destination": "/autour-du-zen/zen-paris-a-10-ans.html", "permanent": true },
-    { "source": "/initiation-au-zen/", "destination": "/meditation-zen/initiation-au-zen.html", "permanent": true },
-    { "source": "/zazen-paris/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin.html", "permanent": true },
-    { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut.html", "permanent": true },
-    { "source": "/zazen-paris/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto.html", "permanent": true }
+    { "source": "/infos-pratiques/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
+    { "source": "/zazen-paris/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
+    { "source": "/zen-et-feminisme-josy-thibaut/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+    { "source": "/zen-paris-a-10-ans/", "destination": "/autour-du-zen/zen-paris-a-10-ans/", "permanent": true },
+    { "source": "/initiation-au-zen/", "destination": "/meditation-zen/initiation-au-zen/", "permanent": true },
+    { "source": "/zazen-paris/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
+    { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut/", "permanent": true },
+    { "source": "/zazen-paris/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true }
   ]
 }
