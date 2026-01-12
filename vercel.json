@@ -10,7 +10,9 @@
       { "source": "/zazen-paris/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true },
     { "source": "/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
     { "source": "/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
-    { "source": "/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true }
+      { "source": "/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true },
+      { "source": "/stages-meditation-zen/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
+    { "source": "/stages-meditation-zen/?eventDisplay=past", "destination": "/sesshins-et-stages-zen/", "permanent": true }
 
 
   ]
