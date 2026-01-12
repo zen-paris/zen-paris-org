@@ -11,6 +11,12 @@
     { "source": "/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
     { "source": "/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
       { "source": "/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true },
-      { "source": "/stages-meditation-zen/", "destination": "/sesshins-et-stages-zen/", "permanent": true }
+      { "source": "/stages-meditation-zen/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
+{ "source": "/zazen-paris/soutras/soutras/", "destination": "/soutras/soutras", "permanent": true },
+{ "source": "/zazen-paris/soutras/kesa-chodai-no-ge-le-sutra-du-kesa/", "destination": "/soutras/kesa-chodai-no-ge-le-sutra-du-kesa", "permanent": true },
+{ "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/", "destination": "/soutras/soutra-du-coeur-hannya-shingyo", "permanent": true },
+{ "source": "/zazen-paris/soutras/shiguseiganmon-les-quatre-grands-voeux/", "destination": "/soutras/shiguseiganmon-les-quatre-grands-voeux", "permanent": true },
+{ "source": "/zazen-paris/soutras/gojushichi-butsu-les-cinquante-sept-bouddhas-et-patriarches/", "destination": "/soutras/gojushichi-butsu-les-cinquante-sept-bouddhas-et-patriarches", "permanent": true },
+{ "source": "/zazen-paris/soutras/bussho-kapila-sutra-des-repas/", "destination": "/soutras/bussho-kapila-sutra-des-repas", "permanent": true }      
   ]
 }
