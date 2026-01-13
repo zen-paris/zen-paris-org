@@ -27,5 +27,4 @@ Maître Kosen Thibaut a laissé une empreinte durable par son engagement, ses en
 
 ![Maître Kosen dirigeant la 5e session du camp d'été 1982 au temple zen de la Gendronnière](/assets/kosen-sesshin-gendronniere.webp)
 
-
 *Maître Kosen dirigeant la 5<sup>e</sup> session du camp d'été 1982 au temple zen de la Gendronnière*
