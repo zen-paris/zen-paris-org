@@ -24,3 +24,8 @@ Il a fondé et animé de nombreux **dojos**, **sesshins** et **lieux de pratique
 *Josy Thibaut (centre), fondatrice de Zen Paris, lors d'une session du camp d'été 1982 dirigée par maître Kosen (debout)*
 
 Maître Kosen Thibaut a laissé une empreinte durable par son engagement, ses enseignements oraux, ses écrits et la communauté qu’il a contribué à faire vivre. Son héritage se poursuit aujourd’hui à travers les sanghas et pratiquants qui s’inscrivent dans sa lignée.
+
+![Maître Kosen dirigeant la 5e session du camp d'été 1982 au temple zen de la Gendronnière](/assets/kosen-sesshin-gendronniere.webp)
+
+
+*Maître Kosen dirigeant la 5<sup>e</sup> session du camp d'été 1982 au temple zen de la Gendronnière*
