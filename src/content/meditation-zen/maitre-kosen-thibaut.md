@@ -19,4 +19,8 @@ Il fut un très proche disciple de **Maître Taisen Deshimaru**, qu’il accompa
 
 Il a fondé et animé de nombreux **dojos**, **sesshins** et **lieux de pratique**, en France comme à l’étranger, et a contribué à former plusieurs générations de pratiquants et d’enseignants. Son enseignement, direct et sans dogmatisme, voire iconoclaste, dans la grande tradition zen, insistait sur l’intégration du zen dans la vie ordinaire.
 
+![Josy Thibaut, fondatrice de Zen Paris, et maître Kosen](/assets/kosen-josy.webp)
+
+*Josy Thibaut (centre), fondatrice de Zen Paris, et maître Kosen (debout)*
+
 Maître Kosen Thibaut a laissé une empreinte durable par son engagement, ses enseignements oraux, ses écrits et la communauté qu’il a contribué à faire vivre. Son héritage se poursuit aujourd’hui à travers les sanghas et pratiquants qui s’inscrivent dans sa lignée.
