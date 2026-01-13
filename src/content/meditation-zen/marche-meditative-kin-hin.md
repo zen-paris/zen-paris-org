@@ -11,13 +11,13 @@ tags: []
 
 ## Une partie intégrante du bouddhisme zen
 
-La marche méditative kin-hin est une pratique qui fait partie intégrante de la tradition du bouddhisme zen sōtō. Cette pratique a été redynamisée au XX<sup>e</sup> siècle par le maître zen japonais Kodo Sawaki qui a insisté sur son importance dans le développement spirituel.
+La marche méditative kin-hin est une pratique qui fait partie intégrante de la tradition du bouddhisme zen soto. Cette pratique a été redynamisée au XX<sup>e</sup> siècle par le maître zen japonais Kodo Sawaki qui a insisté sur son importance dans le développement spirituel.
 
 <blockquote>D’un côté, il y a le dojo, et de l’autre côté, il y a la vie ordinaire. On ne doit pas amener les spécificités d’un côté dans l’autre. Par exemple, on ne va pas envoyer un SMS pendant le kin-hin. Mais quand on va sortir du dojo, on ne va pas essayer non plus de garder la concentration dans la rue ou au bistro. Mais quand même, c’est important de garder un petit zest de dojo dans la vie quotidienne, et de garder un petit zest de vie quotidienne dans le dojo.
 
 Maître Kosen</blockquote>
 
-Le kin-hin favorise la pleine conscience, la stabilité mentale et la présence dans l'instant. Elle renforce également la conscience corporelle et la relation entre le corps et l'esprit. Cette pratique est un complément puissant à la méditation assise dans la tradition zen sōtō. Vous pouvez la pratiquer seule pour développer la pleine conscience au quotidien.
+Le kin-hin favorise la pleine conscience, la stabilité mentale et la présence dans l'instant. Elle renforce également la conscience corporelle et la relation entre le corps et l'esprit. Cette pratique est un complément puissant à la méditation assise dans la tradition zen soto. Vous pouvez la pratiquer seule pour développer la pleine conscience au quotidien.
 
 ## La marche méditative
 

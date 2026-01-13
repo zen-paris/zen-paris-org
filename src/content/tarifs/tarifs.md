@@ -21,5 +21,5 @@ _thumbnail_id: "8019"
 Le prix unitaire, ajusté à l’inflation, aide Zen Paris à rester à flot.</p>
 <p>[table id=10 /]</p>
 <p>Règlement en espèces (merci de venir avec l’appoint) ou par virement.</p>
-<p>La carte et l'abonnement ne sont pas là pour pousser à la consommation, mais pour encourager la continuité de la pratique (Gyōji).<br />
+<p>La carte et l'abonnement ne sont pas là pour pousser à la consommation, mais pour encourager la continuité de la pratique (Gyoji).<br />
 Pour les gens qui auraient des problèmes de liquidités, vous pouvez en parler individuellement à un responsable pendant un jour de pratique.</p>

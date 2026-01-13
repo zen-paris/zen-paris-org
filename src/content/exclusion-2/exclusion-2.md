@@ -37,5 +37,5 @@ rank_math_analytic_object_id: "89"
 ---
 
 <p>Deux intendants laïcs seront nommés dans ce monastère Tendai pour le surveiller à tour de rôle et en interdire l’accès aux voleurs, à l’alcool et aux femmes. Ainsi, la loi bouddhiste sera respectée et la nation sauvegardée.</p>
-<p>Dengyō Daishi - Règles pour les disciples de l’École du Mont Hiei - Septembre 818 - Cité par Mason et Caiger - A history of Japan - [Traduit de l’anglais par l’auteur]<br />
+<p>Dengyo Daishi - Règles pour les disciples de l’École du Mont Hiei - Septembre 818 - Cité par Mason et Caiger - A history of Japan - [Traduit de l’anglais par l’auteur]<br />
 Original English version</p>

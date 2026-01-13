@@ -19,7 +19,7 @@ Chaque point qu'on vous enseigne à l'initiation est essentiel, c'est le plus im
 Maître Kosen
 </blockquote>
 
-L'initiation est ouverte à toute personne désirant essayer la pratique du zen sōtō, quels que soient son âge et sa condition. Munissez-vous d’une tenue confortable de couleur sombre vous permettant de croiser les jambes en tailleur. Munissez-vous également d’une écharpe ou d’une étoffe pour soutenir vos mains. Zen Paris fournit, dans la mesure du possible, un zafu et un zabuton.
+L'initiation est ouverte à toute personne désirant essayer la pratique du zen soto, quels que soient son âge et sa condition. Munissez-vous d’une tenue confortable de couleur sombre vous permettant de croiser les jambes en tailleur. Munissez-vous également d’une écharpe ou d’une étoffe pour soutenir vos mains. Zen Paris fournit, dans la mesure du possible, un zafu et un zabuton.
 
 Certaines formes de méditations peuvent se pratiquer dans diverses postures ou dans des positions moins rigoureuses. Mais la méditation zazen est indissociable d'un positionnement du corps, du regard, de la respiration et de l'esprit très précis.
 
@@ -31,5 +31,5 @@ La posture de zazen ne s'improvise pas et ne peut s'apprendre seul·e. Après l'
 
 Selon les conseils de maître Kosen, ne recherchez pas un état d'esprit spécial pendant la séance de zazen. Contentez-vous de vous concentrer, avec toute votre énergie, sur la posture et la respiration. Une fois la séance terminée, n'essayez pas de prolonger l'état méditatif et revenez pleinement à la vie quotidienne.
 
-Un·e pratiquant·e expérimenté·e vous expliquera la posture de zazen et les bases de la pratique du zen sōtō. Une première séance de zazen, suit immédiatement l'initiation. Fin de la séance à 12 h. Si vous le souhaitez, vous pourrez prolonger la séance autour d'un café avec l'ensemble du groupe dans notre bar favori.
+Un·e pratiquant·e expérimenté·e vous expliquera la posture de zazen et les bases de la pratique du zen soto. Une première séance de zazen, suit immédiatement l'initiation. Fin de la séance à 12 h. Si vous le souhaitez, vous pourrez prolonger la séance autour d'un café avec l'ensemble du groupe dans notre bar favori.
 

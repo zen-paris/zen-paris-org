@@ -43,4 +43,4 @@ rank_math_analytic_object_id: "85"
 ---
 
 <p>Two lay intendants will be appointed to this Tendai monastery to supervise it alternately, and to keep out robbers, liquor and women. Thus the Buddhist Law will be upheld and the nation safeguarded.</p>
-<p>Dengyō Daishi - Regulations for students of the Mountain School - September, 818 - Cited by Mason and Caiger - A history of Japan</p>
+<p>Dengyo Daishi - Regulations for students of the Mountain School - September, 818 - Cited by Mason and Caiger - A history of Japan</p>

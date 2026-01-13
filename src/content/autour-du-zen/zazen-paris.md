@@ -29,7 +29,7 @@ Notre dojo entretient des liens étroits avec d'autres dojos, basés en France e
 
 *Une pratique authentique dans un lieu intime et calme*
 
-Le dojo Zen Paris pratique le zen sōtō transmis par maître Deshimaru et son proche disciple et héritier, maître Kosen.
+Le dojo Zen Paris pratique le zen soto transmis par maître Deshimaru et son proche disciple et héritier, maître Kosen.
 
 Structuré en association à but non lucratif peu avant la disparition de Josy, le dojo continue à proposer des séances et initiations régulières. Affilié à la Kosen sangha, il est ouvert à d'autres sanghas héritières de maître Deshimaru. Le dojo anime également des séances de couture, et des matinées, journées ou week-ends de méditation.
 

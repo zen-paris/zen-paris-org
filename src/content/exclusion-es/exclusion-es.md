@@ -44,4 +44,4 @@ rank_math_analytic_object_id: "36"
 ---
 
 <p>En este monasterio Tendai se nombrarán dos intendentes laicos para que lo supervisen alternativamente y mantengan alejados a los ladrones, el licor y las mujeres. Así se mantendrá la Ley Budista y se salvaguardará la nación.</p>
-<p>Dengyō Daishi - Reglamento para los estudiantes de la Escuela de la Montaña - septiembre de 818 - Citado por Mason y Caiger - A history of Japan.</p>
+<p>Dengyo Daishi - Reglamento para los estudiantes de la Escuela de la Montaña - septiembre de 818 - Citado por Mason y Caiger - A history of Japan.</p>
