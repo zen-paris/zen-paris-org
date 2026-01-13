@@ -33,17 +33,17 @@ const publishedSoutrasPosts = soutrasPosts
 
 /* ---------------- Navbar structure ---------------- */
 const menuitems = [
-  { title: "Méditation zen", children: publishedZenetsanghaPosts },
-  { title: "Autour du zen", children: publishedPosts },
-  { title: "Soutras", children: publishedSoutrasPosts }, // new menu
+  { title: "Méditation", children: publishedZenetsanghaPosts },
+  { title: "À propos", children: publishedPosts },
   {
-    title: "Activités précédentes",
+    title: "Stages",
     children: [
       { title: "Par année", path: "/sesshins-et-stages-zen" },
       { title: "Sesshins", path: "/sesshins" },
       { title: "Journées", path: "/journees" },
     ],
   },
+  { title: "Soutras", children: publishedSoutrasPosts }, // new menu
 ];
 
 const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
