@@ -110,9 +110,9 @@ const menuitems = [
 </style>
 
 <!-- ================= HERO HEADER ================= -->
-<header id="hero" class="relative h-full">
+<header id="hero" class="relative h-screen min-h-[600px]">
   <video
-    class="hero-video"
+    class="hero-video absolute inset-0 w-full h-full object-cover"
     autoplay
     muted
     loop
@@ -123,34 +123,34 @@ const menuitems = [
 
   <!-- Mobile fallback -->
   <img
-    class="hero-image"
+    class="hero-image absolute inset-0 w-full h-full object-cover md:hidden"
     src="/assets/zen-paris-meditation-zazen-paris-kosen-deshimaru.webp"
     alt="Zen Paris"
     loading="lazy"
   />
 
-<div
-  class="hero-content absolute bottom-0 left-0 w-full px-6 pb-8
-         flex flex-col items-center sm:items-start gap-4"
->
-  <a href="/" class="flex flex-col items-center sm:items-start gap-4">
-    <img
-      src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
-      alt="Logo Kosen Shangha"
-      class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
-    />
-    <div class="text-center sm:text-left">
-      <h1 class="text-white font-bold text-3xl md:text-5xl">
-        Zen Paris, Kosen sangha
-      </h1>
-      <p class="text-white mt-2 text-lg md:text-xl">
-        Simplement s&rsquo;asseoir, dans un cadre simple
-      </p>
-    </div>
-  </a>
-</div>
+  <div
+class="hero-content absolute left-0 md:left-0 lg:left-0 top-[65%] w-full px-6
+         flex flex-col items-start gap-4"
+           flex flex-col items-center sm:items-start gap-4"
+  >
+    <a href="/" class="flex flex-col items-center sm:items-start gap-4 w-full max-w-6xl mx-auto">
+      <img
+        src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
+        alt="Logo Kosen Shangha"
+        class="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto"
+      />
+      <div class="text-center sm:text-left">
+        <h1 class="text-white font-bold text-3xl md:text-5xl lg:text-6xl">
+          Zen Paris, Kosen sangha
+        </h1>
+        <p class="text-white mt-2 md:mt-4 text-lg md:text-xl lg:text-2xl">
+          Simplement s&rsquo;asseoir, dans un cadre simple
+        </p>
+      </div>
+    </a>
+  </div>
 </header>
-
 <!-- ================= NAVBAR ================= -->
 <nav id="navbar" class="shadow-sm">
   <Container>
