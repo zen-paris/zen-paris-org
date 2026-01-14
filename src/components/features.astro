@@ -10,15 +10,31 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
-// Example grid items
 const gridItems = [
   { title: "Zen et dojo", image: "/assets/une-salle-de-meditation-avec-des-tapis-et-des-coussins-sur-le-sol-en-bois.webp", link: "/autour-du-zen" },
   { title: "Zen et sangha", image: "/assets/un-groupe-de-personnes-est-rassemble-a-l-exterieur-devant-une-statue-en-pierre.webp", link: "/meditation-zen" },
   { title: "Activités précédentes", image: "/assets/activites-zen-stages-meditation.webp", link: "/sesshins-et-stages-zen" },
 ];
+
+const heroVideo = "/assets/Zen-Paris-en-tete3.mp4";
 ---
 
-<div class="mt-8 px-4 sm:px-6 lg:px-8">
+<!-- RESPONSIVE PAGE-WIDTH VIDEO -->
+<div class="relative w-full overflow-hidden mt-[96px]">
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="w-full h-auto"
+  >
+    <source src={heroVideo} type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
+</div>
+
+<!-- PAGE CONTENT -->
+<div class="px-4 sm:px-6 lg:px-8 mt-12">
   <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
 
     <!-- Main Text -->
@@ -33,16 +49,17 @@ const gridItems = [
       </p>
 
       <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-900">
-        Le surnom traditionnel du dojo zen au Japon est "la forêt d’arbres secs". Tout comme ce n'est pas la forêt qui fait les arbres, mais les arbres qui font la forêt, ce sont les pratiquant·e·s qui font le dojo, et non le dojo qui fait les pratiquant·e·s.
+        Le surnom traditionnel du dojo zen au Japon est "la forêt d’arbres secs".
+        Ce sont les pratiquant·e·s qui font le dojo, et non le dojo qui fait les pratiquant·e·s.
       </p>
 
       <blockquote class="border-l-4 border-teal-700 pl-4 sm:pl-5 md:pl-6 italic text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed my-4">
-        D’un côté, il y a le dojo, et de l’autre côté, il y a la vie ordinaire. On ne doit pas amener les spécificités d’un côté dans l’autre. Par exemple, on ne va pas envoyer un SMS pendant le kin-hin. Mais quand on va sortir du dojo, on ne va pas essayer non plus de garder la concentration dans la rue ou au bistro. Mais quand même, c’est important de garder un petit zest de dojo dans la vie quotidienne, et de garder un petit zest de vie quotidienne dans le dojo.<br/>
+        D’un côté, il y a le dojo, et de l’autre côté, il y a la vie ordinaire…<br/>
         <strong>Maître Kosen</strong>
       </blockquote>
 
       <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-900">
-        Le local que nous louons actuellement ne correspond pas à l'image du zen véhiculée dans les médias, et qu'on s'attend tout naturellement à rencontrer lorsque l'on débute. Mais il ne tient qu'à nous, le temps d'une séance, d'une journée ou d'un stage de zazen, de faire de ce lieu sans âme le creuset où se réalisent les bouddhas.
+        Le local que nous louons actuellement ne correspond pas à l'image du zen véhiculée dans les médias…
       </p>
 
       <img
@@ -52,19 +69,15 @@ const gridItems = [
       />
 
       <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-900">
-        D'ailleurs, au Japon, à l’entrée des dojos traditionnels, il est de coutume de mettre une pancarte en bois au-dessus de la porte, où est inscrit : "salle où l’on fabrique des bouddhas". Et maître Deshimaru avait coutume de dire aux personnes qui fréquentaient son dojo : "Vous êtes tous des bouddhas, quand vous êtes assis en zazen".
+        « Salle où l’on fabrique des bouddhas »…
       </p>
 
       <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-900">
-        De même, selon maître Kosen, "Les gens disent qu'être un moine, ça veut dire vivre dans un monastère. C'est plutôt le monastère qui se propose d'accueillir des moines."
+        Donc, quel que soit le lieu où l'on pratique zazen, cet endroit devient un dojo.
       </p>
 
       <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-900">
-        Donc, quel que soit le lieu où l'on pratique zazen, cet endroit devient un dojo. À plus forte raison si l'on pratique en groupe.
-      </p>
-
-      <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-900">
-        Mais rassurez-vous : si vous souhaitez pratiquer également dans un magnifique lieu totalement dédié à la pratique de zazen, il suffit de vous rendre au temple zen de la Kosen sangha, situé dans le Haut-Languedoc !
+        Pour une pratique en temple, rendez-vous dans le Haut-Languedoc !
       </p>
 
     </div>
