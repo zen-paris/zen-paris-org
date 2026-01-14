@@ -110,7 +110,7 @@ const menuitems = [
 </style>
 
 <!-- ================= HERO HEADER ================= -->
-<header id="hero">
+<header id="hero" class="relative h-full">
   <video
     class="hero-video"
     autoplay
@@ -129,25 +129,26 @@ const menuitems = [
     loading="lazy"
   />
 
-  <div class="overlay"></div>
-
-  <div class="hero-content flex flex-col items-center sm:items-start gap-4">
-    <a href="/" class="flex flex-col items-center sm:items-start gap-4">
-      <img
-        src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
-        alt="Logo Kosen Shangha"
-        class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
-      />
-      <div class="text-center sm:text-left">
-        <h1 class="text-white font-bold text-3xl md:text-5xl">
-          Zen Paris, Kosen sangha
-        </h1>
-        <p class="text-white mt-2 text-lg md:text-xl">
-          Simplement s&rsquo;asseoir, dans un cadre simple
-        </p>
-      </div>
-    </a>
-  </div>
+<div
+  class="hero-content absolute bottom-0 left-0 w-full px-6 pb-8
+         flex flex-col items-center sm:items-start gap-4"
+>
+  <a href="/" class="flex flex-col items-center sm:items-start gap-4">
+    <img
+      src="/assets/logo-kosen-shangha-typo-mono-blanc.svg"
+      alt="Logo Kosen Shangha"
+      class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
+    />
+    <div class="text-center sm:text-left">
+      <h1 class="text-white font-bold text-3xl md:text-5xl">
+        Zen Paris, Kosen sangha
+      </h1>
+      <p class="text-white mt-2 text-lg md:text-xl">
+        Simplement s&rsquo;asseoir, dans un cadre simple
+      </p>
+    </div>
+  </a>
+</div>
 </header>
 
 <!-- ================= NAVBAR ================= -->
@@ -155,17 +156,6 @@ const menuitems = [
   <Container>
     <header class="flex justify-between items-center p-4 lg:p-6">
       <Astronav>
-        <div class="flex w-full lg:w-auto items-center justify-between">
-          <a href="/" class="flex items-center gap-2">
-            <img
-              src="/assets/logo-kosen-shangha-typo-plein.svg"
-              alt="Logo Zen Paris"
-              class="h-14 w-auto"
-            />
-            <span class="font-bold text-xl">
-              Zen Paris, Kosen sangha
-            </span>
-          </a>
 
           <div class="block lg:hidden">
             <MenuIcon class="w-6 h-6" />
