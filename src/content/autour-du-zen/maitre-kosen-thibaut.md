@@ -33,7 +33,7 @@ Il fut un très proche disciple de **Maître Taisen Deshimaru**, qu’il accompa
   </figcaption>
 </figure>
 
-Il a fondé et animé de nombreux **dojos**, **sesshins** et **lieux de pratique**, en France comme à l’étranger, et a contribué à former plusieurs générations de pratiquants et d’enseignants. Son enseignement, direct et sans dogmatisme, voire iconoclaste, dans la grande tradition zen, insistait sur l’intégration du zen dans la vie ordinaire.
+Il a fondé et animé de nombreux **dojos**, **sesshins** et **lieux de pratique**, en France comme à l’étranger, notamment le [temple zen Yujo Nyusanji](https://www.zen-deshimaru.com/), dans le Haut-Languedoc. Il a contribué à former plusieurs générations de pratiquants et d’enseignants. Son enseignement, direct et sans dogmatisme, voire iconoclaste, dans la grande tradition zen, insistait sur l’intégration du zen dans la vie ordinaire.
 
 <figure>
   <img
