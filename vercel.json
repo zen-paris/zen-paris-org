@@ -1,8 +1,5 @@
 {
   "redirects": [
-
-    /* ---------------- Core content ---------------- */
-
     { "source": "/zazen-paris/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
     { "source": "/zen-paris-a-10-ans/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
     { "source": "/autour-du-zen/zen-paris-a-10-ans/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
@@ -19,8 +16,6 @@
 
     { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut/", "permanent": true },
 
-    /* ---------------- Autour du zen ---------------- */
-
     { "source": "/infos-pratiques/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
     { "source": "/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
 
@@ -28,18 +23,12 @@
     { "source": "/zen-y-feminismo-josy-thibaut/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
     { "source": "/zen-and-feminism-josy-thibaut-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
 
-    /* ---------------- Soutras ---------------- */
-
     { "source": "/zazen-paris/soutras/:slug*/", "destination": "/soutras/:slug*/", "permanent": true },
-
-    /* ---------------- Stages & sesshins ---------------- */
 
     { "source": "/stages-meditation-zen/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
     { "source": "/stages-de-meditation/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
     { "source": "/stage-zen/:slug*/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
     { "source": "/camp-dhiver-2023/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
-
-    /* ---------------- Retired sections ---------------- */
 
     { "source": "/infos-pratiques/", "destination": "/", "permanent": true },
 
@@ -55,9 +44,6 @@
 
     { "source": "/6907-2/", "destination": "/", "permanent": true },
 
-    /* ---------------- Ultimate fallback (KEEP LAST) ---------------- */
-
     { "source": "/:path*/", "destination": "/", "permanent": true }
-
   ]
 }
