@@ -23,7 +23,7 @@ Maître Kosen
 
 Notre dojo entretient des liens étroits avec d'autres dojos, basés en France et à l’étranger  (Paris, Lyon, Montpellier, Barcelone, Madrid, Québec, Buenos Aires, Genève, Budapest, Amsterdam…).
 
-![Une pratique authentique dans un lieu intime et calme](/assets/centre-zen-paris-kosen-sangha.webp)
+![Une pratique authentique dans un lieu intime et calme](/assets/WhatsApp-Image-2025-11-26-at-07.43.42-1536x1152.webp)
 
 *Une pratique authentique dans un lieu intime et calme*
 
