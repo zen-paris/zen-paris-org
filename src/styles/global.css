@@ -186,6 +186,10 @@ blockquote::after {
 }
 
 
+.prose img {
+  border: 1px solid #000;
+}
+
 /* Apply custom font globally */
 @layer base {
   body {
