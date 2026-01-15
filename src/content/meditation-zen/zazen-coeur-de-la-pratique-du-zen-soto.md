@@ -1,10 +1,10 @@
 ---
 title: "Zazen : la méditation du Bouddha à Paris"
-date: 2015-12-12
+date: 2025-12-12
 draft: false
 snippet: "Pratiquez zazen à Paris. Zazen, posture de méditation du Bouddha, fut apporté en Europe par Maître Deshimaru et est authentiquement transmis par ses disciples."
-image: { src: "/assets/dojo-zen-dijon-3-vert.webp", alt: "Dojo Zen Dijon" }
-publishDate: "2015-12-12T00:00:00Z"
+image: { src: "/assets/dojo-zen-dijon-3-vert.webp", alt: "Zen Paris" }
+publishDate: "2025-12-12T00:00:00Z"
 category: ""
 tags: []
 ---
