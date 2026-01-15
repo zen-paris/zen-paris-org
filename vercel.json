@@ -42,8 +42,6 @@
 
     { "source": "/questions/:path*/", "destination": "/", "permanent": true },
 
-    { "source": "/6907-2/", "destination": "/", "permanent": true },
-
-    { "source": "/:path*/", "destination": "/", "permanent": true }
+    { "source": "/6907-2/", "destination": "/", "permanent": true }
   ]
 }
