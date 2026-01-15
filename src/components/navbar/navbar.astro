@@ -52,8 +52,7 @@ const menuitems = [
 #hero {
   position: relative;
   width: 100vw;
-  height: 70vh;
-  min-height: 900px;
+  height: 1000px; /* desktop video height */
   overflow: hidden;
 }
 
@@ -71,9 +70,14 @@ const menuitems = [
 }
 
 @media (max-width: 768px) {
+  #hero {
+    height: 300px; /* mobile image height */
+  }
+
   .hero-video {
     display: none;
   }
+
   .hero-image {
     display: block;
     position: absolute;
@@ -110,7 +114,7 @@ const menuitems = [
 </style>
 
 <!-- ================= HERO HEADER ================= -->
-<header id="hero" class="relative h-screen min-h-[600px]">
+<header id="hero" class="relative h-screen min-h-[700px]">
   <video
     class="hero-video absolute inset-0 w-full h-full object-cover"
     autoplay
@@ -130,9 +134,8 @@ const menuitems = [
   />
 
   <div
-class="hero-content absolute left-0 md:left-0 lg:left-0 top-[65%] w-full px-6
-         flex flex-col items-start gap-4"
-           flex flex-col items-center sm:items-start gap-4"
+    class="hero-content absolute left-0 md:left-0 lg:left-0 top-[58%] w-full px-6
+           flex flex-col items-start gap-4"
   >
     <a href="/" class="flex flex-col items-center sm:items-start gap-4 w-full max-w-6xl mx-auto">
       <img
@@ -151,15 +154,14 @@ class="hero-content absolute left-0 md:left-0 lg:left-0 top-[65%] w-full px-6
     </a>
   </div>
 </header>
+
 <!-- ================= NAVBAR ================= -->
 <nav id="navbar" class="shadow-sm">
   <Container>
     <header class="flex justify-between items-center p-4 lg:p-6">
       <Astronav>
-
-          <div class="block lg:hidden">
-            <MenuIcon class="w-6 h-6" />
-          </div>
+        <div class="block lg:hidden">
+          <MenuIcon class="w-6 h-6" />
         </div>
 
         <MenuItems class="hidden w-full lg:flex">
