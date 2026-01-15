@@ -2,7 +2,7 @@
 title: "Les soutras"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+image: { src: "/assets/soutra-bouddhiste-zen.webp", alt: "Soutras bouddhistes zen" }
 snippet: "Découvrez les soutras essentiels du bouddhisme zen. Guidez votre pratique de zazen avec les enseignements des maîtres bouddhistes."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""

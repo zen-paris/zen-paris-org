@@ -2,7 +2,7 @@
 title: "Shiguseiganmon - les 4 grands vœux"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+image: { src: "/assets/soutra-bouddhiste-zen.webp", alt: "Soutras bouddhistes zen" }
 snippet: "Découvrez les 4 grands vœux du Zen : chants traditionnels, sens profond et dédicace à tous les êtres, Bodhisattvas et Bouddhas."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""

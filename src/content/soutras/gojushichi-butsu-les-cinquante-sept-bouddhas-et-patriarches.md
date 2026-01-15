@@ -2,7 +2,7 @@
 title: "Gojûshichi Butsu"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+image: { src: "/assets/soutra-bouddhiste-zen.webp", alt: "Soutras bouddhistes zen" }
 snippet: "Découvrez les 57 bouddhas et patriarches du Zen à travers le chant Gojûshichi Butsu, une récitation traditionnelle pleine de sens et de dévotion."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""

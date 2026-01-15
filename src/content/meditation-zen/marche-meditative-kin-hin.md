@@ -2,7 +2,7 @@
 title: "Marche méditative : méditez en action !"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/dojo-zen-dijon-3-vert.webp", alt: "Dojo Zen Paris" }
+image: { src: "/assets/kin-hin-marche-meditative-zen.webp", alt: "Marche méditative" }
 snippet: "Pratiquez la marche méditative traditionnelle zen : kin-hin. Partie intégrante de la pratique du zen, cette méditation peut se pratiquer au quotidien."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""

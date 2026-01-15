@@ -2,7 +2,7 @@
 title: "Soutra du coeur - Hannya Shingyo"
 date: 2015-12-12
 draft: false
-image: { src: "/assets/couture-traditionnelle-kesa-zen.webp", alt: "Couture zen : cousez votre rakusu ou votre kesa" }
+image: { src: "/assets/soutra-bouddhiste-zen.webp", alt: "Soutras bouddhistes zen" }
 snippet: "Le soutra du coeur, essence du soutra de la grande sagesse qui permet d’aller au-delà."
 publishDate: "2015-12-12T00:00:00Z"
 category: ""
