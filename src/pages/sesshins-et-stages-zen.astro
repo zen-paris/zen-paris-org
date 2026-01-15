@@ -104,20 +104,20 @@ sortedYears.forEach(year => {
 
 // --- Navigation ---
 const navItems = [
-  { title: "Zen et dojo", link: "/autour-du-zen" },
-  { title: "Zen et sangha", link: "/meditation-zen" },
-  { title: "Activités précédentes", link: "/sesshins-et-stages-zen" },
+  { title: "À propos", link: "/autour-du-zen" },
+  { title: "Méditation zen", link: "/meditation-zen" },
+  { title: "Stages", link: "/sesshins-et-stages-zen" },
 ];
 const currentIndex = navItems.findIndex(i => i.link === "/sesshins-et-stages-zen");
 const prevIndex = (currentIndex - 1 + navItems.length) % navItems.length;
 const nextIndex = (currentIndex + 1) % navItems.length;
 ---
 
-<Layout title="Activités précédentes">
+<Layout title="Stages">
   <Container>
     <div class="mx-auto max-w-3xl mt-4">
       <h1 class="text-4xl lg:text-5xl font-bold text-teal-800">
-        Activités précédentes
+        Stages
       </h1>
       <p class="text-lg mt-4 text-gray-600">
         Stages de pratique de la méditation zen, zazen.

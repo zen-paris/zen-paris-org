@@ -17,7 +17,7 @@ const publishedPosts = blogPosts
   .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate))
   .map(p => ({ title: p.data.title, path: `/autour-du-zen/${p.slug}` }));
 
-/* ---------------- Zen et sangha ---------------- */
+/* ---------------- Méditation zen ---------------- */
 const meditationzenPosts = await getCollection("meditation-zen");
 const publishedZenetsanghaPosts = meditationzenPosts
   .filter(p => !p.data.draft && p.data.publishDate <= new Date())

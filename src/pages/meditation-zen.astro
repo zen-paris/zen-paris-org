@@ -17,9 +17,9 @@ publishedBlogEntries.sort(function (a, b) {
 
 // Hard-coded navigation items
 const navItems = [
-  { title: "Zen et dojo", link: "/autour-du-zen" },
-  { title: "Zen et sangha", link: "/meditation-zen" },
-  { title: "Activités précédentes", link: "/sesshins-et-stages-zen" },
+  { title: "À propos", link: "/autour-du-zen" },
+  { title: "Méditation zen", link: "/meditation-zen" },
+  { title: "Stages", link: "/sesshins-et-stages-zen" },
 ];
 
 // Find index of current page in navItems
@@ -30,13 +30,13 @@ const prevIndex = (currentIndex - 1 + navItems.length) % navItems.length;
 const nextIndex = (currentIndex + 1) % navItems.length;
 ---
 
-<Layout title="Zen et sangha">
+<Layout title="Méditation zen">
   <Container>
     <!-- Page Header -->
     <Sectionhead>
       <Fragment slot="title">
         <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
-          Zen et sangha
+          Méditation zen
         </h1>
       </Fragment>
       <Fragment slot="desc">

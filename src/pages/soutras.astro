@@ -20,7 +20,7 @@ const navItems = [
   { title: "Autour du zen", link: "/autour-du-zen" },
   { title: "Soutras", link: "/soutras" },
   { title: "Méditation zen", link: "/meditation-zen" },
-  { title: "Activités précédentes", link: "/sesshins-et-stages-zen" },
+  { title: "Stages", link: "/sesshins-et-stages-zen" },
 ];
 
 // Find index of current page in navItems
@@ -31,13 +31,13 @@ const prevIndex = (currentIndex - 1 + navItems.length) % navItems.length;
 const nextIndex = (currentIndex + 1) % navItems.length;
 ---
 
-<Layout title="Zen et dojo">
+<Layout title="À propos">
   <Container>
     <!-- Page Header -->
     <Sectionhead>
       <Fragment slot="title">
         <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
-          Zen et dojo
+          À propos
         </h1>
       </Fragment>
       <Fragment slot="desc">
