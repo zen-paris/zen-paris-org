@@ -9,7 +9,7 @@ category: ""
 tags: []
 ---
 
-Zen Paris organise des après-midi couture zen (rakusu et kesa). Ces ateliers s’adressent aux personnes débutantes ou confirmées.  Stéphane, disciple de la nonne Françoise Kosen Laurent, qui dirige régulièrement une [sesshin du kesa](https://www.zen-deshimaru.com/fr/sesshin/sesshin-du-kesa-2024), y partage sa grande expérience de la couture traditionnelle zen.
+Zen Paris organise des après-midi couture zen (rakusu et kesa). Ces ateliers s’adressent aux personnes débutantes ou confirmées. Stéphane, disciple de la nonne Françoise Kosen Laurent, qui dirige régulièrement une [sesshin du kesa](https://www.zen-deshimaru.com/fr/sesshin/sesshin-du-kesa-2024), y partage sa grande expérience de la couture traditionnelle zen.
 
 ## Le kesa
 
@@ -22,7 +22,9 @@ La pratique du zen ne requiert pas une tenue spécifique. Il est possible de pra
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0lax{text-align:left;vertical-align:top}
-@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+</style>
+
 <div class="tg-wrap"><table class="tg"><tbody>
   <tr>
     <td class="tg-0lax">Horaires</td>
@@ -45,14 +47,21 @@ La pratique du zen ne requiert pas une tenue spécifique. Il est possible de pra
 
 Cependant, puisque le zen n'est pas une méthode de bien-être, mais une voie spirituelle, les personnes qui le souhaitent peuvent demander à recevoir l'ordination de Boddhisatva, de moine ou de nonne.
 
-![Deux hommes adultes, concentrés, cousent et examinent à la main des pièces de tissu posées sur une table de travail, dans un atelier lumineux.](/assets/couture-zen-toge-moine-nonne-kesa.webp)
+<figure>
+  <img
+    src="/assets/couture-zen-toge-moine-nonne-kesa.webp"
+    alt="Deux hommes adultes cousant et examinant des pièces de tissu lors d’un atelier de couture zen"
+  />
+  <figcaption>
+    Atelier couture à Zen Paris
+  </figcaption>
+</figure>
 
 Lors de l'ordination, la·le maître de la sangha remet au boddhistava au moine ou à la nonne un rakusu. Les moines et les nonnes portent durant la pratique un kesa. Le rakusu et le kesa sont des vêtements rituels portés sur un kimono noir. Ils se cousent, se revêtent et se replient d'une manière précise.
 
 ## La couture du kesa
 
-La couture zen d'un rakusu ou d'un kesa demande de fréquentes et délicates opérations de
-montage. Il est donc préférable de coudre sous la supervision d'une personne expérimentée, lors d'un atelier couture zen au dojo ou lors d'un stage (sesshin) au temple. Votre rakusu ne vous sera remis qu'après avoir été dûment vérifié.
+La couture zen d'un rakusu ou d'un kesa demande de fréquentes et délicates opérations de montage. Il est donc préférable de coudre sous la supervision d'une personne expérimentée, lors d'un atelier couture zen au dojo ou lors d'un stage (sesshin) au temple. Votre rakusu ne vous sera remis qu'après avoir été dûment vérifié.
 
 <blockquote><ul>
   <li>Pourquoi donnez-vous des kusens&nbsp;?</li>
@@ -69,7 +78,15 @@ Taisen Deshimaru</blockquote>
 
 Le tissu utilisé pour coudre un rakusu peut être de toute origine, même (voire, de préférence) la plus vile. La couture zen se pratique très bien à partir de tissu de récupération en bon état. Il faut dans ce cas le nettoyer et le teindre en noir ou en brun. Ce tissu provient le plus souvent d'une pièce de coton (par exemple, une gabardine de coton). Dès que vous vous l'êtes procuré, vous devez le traiter comme s'il s'agissait d'un rakusu achevé. Le fil peut être blanc, gris, beige, brun ou noir, de préférence en coton (les fils de soie et les fils synthétiques ont tendance à fondre au repassage).
 
-![Vue de dos d’un homme aux cheveux gris, assis à une table avec d’autres personnes, participant à un atelier de couture manuelle ; des tissus, aiguilles et carnets sont disposés devant le groupe.](/assets/couture-traditionnelle-toge-bouddhiste-kesa.webp)
+<figure>
+  <img
+    src="/assets/couture-traditionnelle-toge-bouddhiste-kesa.webp"
+    alt="Participants à un atelier de couture manuelle du rakusu, assis autour d’une table"
+  />
+  <figcaption>
+    Couture du rakusu
+  </figcaption>
+</figure>
 
 Avant de coudre, exercez-vous au point de rakusu (point arrière) sur une chute de tissu. Ne faites aucun nœud pour arrêter le fil. Veillez à ne pas poser votre ouvrage sur le sol lorsque vous le montez ou le cousez.
 
@@ -80,4 +97,3 @@ Avant de vous être remis par la·le maître au cours de votre ordination, le ra
 Ne traitez pas le kesa ou le rakusu comme un vêtement ordinaire. Retirez-le pour vous rendre aux toilettes, ne le posez pas sur le sol et rangez-le dans un endroit élevé.
 
 Il est déconseillé d'en confier le nettoyage à un tiers. Il faut au préalable retirer la pièce de soie, puis la reposer après séchage de la partie en coton.
-
