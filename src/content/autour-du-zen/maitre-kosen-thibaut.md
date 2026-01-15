@@ -1,10 +1,10 @@
 ---
 title: "Maître Kosen Thibaut"
-date: 2015-12-12
+date: 2024-12-12
 draft: false
 image: { src: "/assets/dojo-zen-dijon-3-vert.webp", alt: "Dojo Zen Paris" }
 snippet: "Maître Kosen Thibaut (1950-2025) fut un enseignant majeur du zen soto en France, disciple de Taisen Deshimaru, transmettant la pratique du zazen."
-publishDate: "2015-12-12T00:00:00Z"
+publishDate: "2024-12-12T00:00:00Z"
 category: ""
 tags: []
 ---

@@ -1,12 +1,12 @@
 ---
 title: "Initiation au zen"
-date: 2015-12-12
+date: 2024-12-12
 draft: false
 image:
   src: "/assets/couture-traditionnelle-kesa-zen.webp"
   alt: "Couture zen : cousez votre rakusu ou votre kesa"
 snippet: "Initiation zen gratuite à Paris le lundi ou mercredi à 18 h 30. Téléphonez au 01 43 70 11 46 au moins 24 heures à l'avance."
-publishDate: "2015-12-12T00:00:00Z"
+publishDate: "2024-12-12T00:00:00Z"
 category: ""
 tags: []
 ---

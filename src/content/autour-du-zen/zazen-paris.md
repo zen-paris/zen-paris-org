@@ -1,12 +1,12 @@
 ---
 title: "Zazen Paris : dojo zen lignée Deshimaru"
-date: 2001-10-15
+date: 2025-10-15
 draft: false
 image:
   src: "/assets/zen-paris-pratique-de-zazen.webp"
   alt: "Une pratique authentique dans un lieu intime et calme"
 snippet: "Zazen Paris : pratiquez zazen dans la tradition transmise par les maîtres Deshimaru et Kosen. Découvrez et approfondissez la pratique à votre rythme."
-publishDate: "2015-12-12T00:00:00Z"
+publishDate: "2025-12-12T00:00:00Z"
 category: ""
 tags: []
 ---
