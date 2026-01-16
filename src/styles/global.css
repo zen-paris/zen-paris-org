@@ -187,8 +187,8 @@ blockquote::after {
 
 
 .prose img {
-  border: 1px solid #000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid #0ea5e9;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.5); /* blue shadow */
   margin: 1.5rem auto;
 }
 
