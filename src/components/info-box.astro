@@ -139,6 +139,12 @@ const futureEvents = rawEvents
 
           <div class="text-xs text-gray-500" set:html={event.displayDate}></div>
           <h3 class="font-semibold text-gray-900 mt-1">{event.title}</h3>
+<details class="border rounded-2xl bg-gray-50 shadow p-3">
+  <summary class="cursor-pointer font-semibold text-gray-800 text-lg">
+    Détails
+  </summary>
+
+  <div class="grid gap-3 sm:grid-cols-1 lg:grid-cols-1 mt-3">
 
           <ul class="mt-2 space-y-1 text-gray-700 text-sm">
             {event.lieu && (
@@ -178,7 +184,7 @@ const futureEvents = rawEvents
       ))}
     </ul>
   )}
-
+</div>
   <!-- Initiation -->
   <section>
     <div class="w-full max-w-4xl">
