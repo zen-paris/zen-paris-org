@@ -20,7 +20,7 @@
   }
 }
 
-/* Global link style: sky normally, orange on hover */
+/* Global link style: sky normally, sky on hover */
 @layer base {
   a {
     color: #0ea5e9; /* Tailwind sky-500 */
@@ -29,25 +29,25 @@
   }
 
   a:hover {
-    color: #ffffff; /* Tailwind orange-800 */
+    color: #0c4a6e; /* Tailwind sky-900 */
     text-decoration: underline;
-    text-decoration-color: #ea580c;
+    text-decoration-color: #0ea5e9;
   }
 }
 
 /* Homepage links */
-.underline-orange {
+.underline-sky {
   color: #0ea5e9; /* sky normally */
   text-decoration: underline;
   text-decoration-color: #0ea5e9;
 }
 
-.underline-orange:hover {
-  color: #ea580c; /* orange on hover */
-  text-decoration-color: #ea580c;
+.underline-sky:hover {
+  color: #0ea5e9; /* sky on hover */
+  text-decoration-color: #0ea5e9;
 }
 
-/* Navbar links: sky normally, orange on hover */
+/* Navbar links: sky normally, sky on hover */
 @layer base {
   header a,
   header a:hover {
@@ -69,11 +69,11 @@
   }
 
   .group.block.rounded-2xl a:hover {
-    color: #ea580c !important;
+    color: #0ea5e9 !important;
   }
 }
 
-/* Prose content links: sky normally, orange on hover */
+/* Prose content links: sky normally, sky on hover */
 @layer base {
   .prose a,
   .prose-sm a,
@@ -88,8 +88,8 @@
   .prose-sm a:hover,
   .prose-lg a:hover,
   .prose-xl a:hover {
-    color: #ea580c !important;
-    text-decoration-color: #ea580c !important;
+    color: #0ea5e9 !important;
+    text-decoration-color: #0ea5e9 !important;
     text-decoration-thickness: 2px !important;
   }
 }
@@ -123,7 +123,7 @@
   }
 
   h2 a:hover {
-    color: #ff6600; /* orange on hover */
+    color: #0ea5e9; /* sky on hover */
   }
 }
 
