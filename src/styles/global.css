@@ -192,6 +192,13 @@ blockquote::after {
   margin: 1.5rem auto;
 }
 
+.prose figcaption {
+  color: #0ea5e9;
+  font-size: 0.875rem; /* optional: slightly smaller text */
+  text-align: center;   /* optional: center under image */
+  margin-top: 0.5rem;   /* optional spacing from image */
+}
+
 .prose figure {
   margin: 0;
 }
