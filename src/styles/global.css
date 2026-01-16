@@ -187,7 +187,7 @@ blockquote::after {
 
 
 .prose img {
-  border: 1px solid #777777;
+  border: 1px solid black;
   margin: 1.5rem auto;
 }
 
