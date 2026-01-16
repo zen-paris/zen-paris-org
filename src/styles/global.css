@@ -20,16 +20,16 @@
   }
 }
 
-/* Global link style: teal normally, orange on hover */
+/* Global link style: sky normally, orange on hover */
 @layer base {
   a {
-    color: #02bba7; /* Tailwind teal-500 */
+    color: #0ea5e9; /* Tailwind sky-500 */
     text-decoration: none;
     transition: color 0.2s ease-in-out;
   }
 
   a:hover {
-    color: #ea580c; /* Tailwind orange-800 */
+    color: #ffffff; /* Tailwind orange-800 */
     text-decoration: underline;
     text-decoration-color: #ea580c;
   }
@@ -37,9 +37,9 @@
 
 /* Homepage links */
 .underline-orange {
-  color: #02bba7; /* teal normally */
+  color: #0ea5e9; /* sky normally */
   text-decoration: underline;
-  text-decoration-color: #02bba7;
+  text-decoration-color: #0ea5e9;
 }
 
 .underline-orange:hover {
@@ -47,16 +47,16 @@
   text-decoration-color: #ea580c;
 }
 
-/* Navbar links: teal normally, orange on hover */
+/* Navbar links: sky normally, orange on hover */
 @layer base {
   header a,
   header a:hover {
     text-decoration: none !important;
-    color: #02bba7 !important;
+    color: #0ea5e9 !important;
   }
 
   header a:hover {
-    color: #ea580c !important;
+    color: #ffffff !important;
   }
 }
 
@@ -65,7 +65,7 @@
   .group.block.rounded-2xl,
   .group.block.rounded-2xl a {
     text-decoration: none !important;
-    color: #02bba7 !important;
+    color: #0ea5e9 !important;
   }
 
   .group.block.rounded-2xl a:hover {
@@ -73,15 +73,15 @@
   }
 }
 
-/* Prose content links: teal normally, orange on hover */
+/* Prose content links: sky normally, orange on hover */
 @layer base {
   .prose a,
   .prose-sm a,
   .prose-lg a,
   .prose-xl a {
-    color: #02bba7 !important;
+    color: #0ea5e9 !important;
     text-decoration: underline !important;
-    text-decoration-color: #02bba7 !important;
+    text-decoration-color: #0ea5e9 !important;
   }
 
   .prose a:hover,
@@ -97,7 +97,7 @@
 /* 🔥 Dropdown submenu links: keep white */
 @layer base {
   .dropdown-menu {
-    background-color: #02bba7 !important; /* teal-600 */
+    background-color: text-sky-600 !important; /* sky-600 */
   }
 
   .dropdown-menu a,
@@ -107,17 +107,17 @@
 
   .dropdown-menu a:hover,
   .dropdown-menu button:hover {
-    color: #99f6e4 !important; /* teal-200 on hover */
-    background-color: #02bba7 !important;
+    color: text-sky-200 !important; /* sky-200 on hover */
+    background-color: #0ea5e9 !important;
   }
 }
 
-/* H2 headings teal */
+/* H2 headings sky */
 @layer base {
 
   /* If h2 contains a link */
   h2 a {
-    color: inherit; /* inherit teal by default */
+    color: inherit; /* inherit sky by default */
     text-decoration: none;
     transition: color 0.2s;
   }
@@ -208,3 +208,4 @@ blockquote::after {
     font-family: var(--font-sans);
   }
 }
+

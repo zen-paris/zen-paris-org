@@ -21,7 +21,7 @@ import Button from "./ui/button.astro";
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
       name="name"
     />
-    <div class="empty-feedback invalid-feedback text-teal-400 text-sm mt-1">
+    <div class="empty-feedback invalid-feedback text-sky-400 text-sm mt-1">
       Please provide your full name.
     </div>
   </div>
@@ -34,10 +34,10 @@ import Button from "./ui/button.astro";
       required
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     />
-    <div class="empty-feedback text-teal-400 text-sm mt-1">
+    <div class="empty-feedback text-sky-400 text-sm mt-1">
       Please provide your email address.
     </div>
-    <div class="invalid-feedback text-teal-400 text-sm mt-1">
+    <div class="invalid-feedback text-sky-400 text-sm mt-1">
       Please provide a valid email address.
     </div>
   </div>
@@ -48,7 +48,7 @@ import Button from "./ui/button.astro";
       placeholder="Your Message"
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
-    <div class="empty-feedback invalid-feedback text-teal-400 text-sm mt-1">
+    <div class="empty-feedback invalid-feedback text-sky-400 text-sm mt-1">
       Please enter your message.
     </div>
   </div>
@@ -104,11 +104,11 @@ import Button from "./ui/button.astro";
       .then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
-          result.classList.add("text-teal-500");
+          result.classList.add("text-sky-500");
           result.innerHTML = json.message;
         } else {
           console.log(response);
-          result.classList.add("text-teal-500");
+          result.classList.add("text-sky-500");
           result.innerHTML = json.message;
         }
       })

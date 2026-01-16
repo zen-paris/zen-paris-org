@@ -39,10 +39,10 @@ const nextEntry =
   <Container>
     <!-- Post Header -->
     <div class="mx-auto max-w-3xl mt-4">
-      <span class="text-teal-800 uppercase tracking-wider text-sm font-medium">
+      <span class="text-sky-800 uppercase tracking-wider text-sm font-medium">
         {entry.data.category}
       </span>
-      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
+      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-sky-800">
         {entry.data.title}
       </h1>
     </div>
@@ -54,11 +54,11 @@ const nextEntry =
 
     <!-- Navigation Bar -->
     <div class="mx-auto max-w-3xl mt-12 border-t border-gray-200 pt-6">
-      <div class="flex justify-between items-center text-sm font-medium text-teal-700">
+      <div class="flex justify-between items-center text-sm font-medium text-sky-700">
         {prevEntry ? (
           <a
             href={`/meditation-zen/${prevEntry.slug}`}
-            class="flex items-center gap-2 hover:text-teal-900 transition"
+            class="flex items-center gap-2 hover:text-sky-900 transition"
           >
             ← {prevEntry.data.title}
           </a>
@@ -69,7 +69,7 @@ const nextEntry =
         {nextEntry ? (
           <a
             href={`/meditation-zen/${nextEntry.slug}`}
-            class="flex items-center gap-2 hover:text-teal-900 transition"
+            class="flex items-center gap-2 hover:text-sky-900 transition"
           >
             {nextEntry.data.title} →
           </a>

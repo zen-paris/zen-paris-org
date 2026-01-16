@@ -36,7 +36,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
     <!-- Page Header -->
     <Sectionhead>
       <Fragment slot="title">
-        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-sky-800">
           À propos
         </h1>
       </Fragment>
@@ -53,7 +53,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
         {
           publishedBlogEntries.map((blogPostEntry, index) => (
             <li>
-              <a href={`/soutras/${blogPostEntry.slug}`} class="text-teal-600 no-underline hover:text-orange-500">
+              <a href={`/soutras/${blogPostEntry.slug}`} class="text-sky-600 no-underline hover:text-orange-500">
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <Picture
                     src={blogPostEntry.data.image.src}
@@ -66,7 +66,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
                     class="w-full rounded-md object-cover object-center bg-white"
                   />
                   <div>
-                    <span class="text-teal-800 uppercase tracking-wider text-sm font-medium">
+                    <span class="text-sky-800 uppercase tracking-wider text-sm font-medium">
                       {blogPostEntry.data.category}
                     </span>
 
@@ -90,11 +90,11 @@ const nextIndex = (currentIndex + 1) % navItems.length;
 
     <!-- Bottom Navigation -->
     <section class="mt-20 border-t border-gray-200 pt-6">
-      <div class="flex justify-between max-w-3xl mx-auto text-sm font-medium text-teal-700">
-        <a href={navItems[prevIndex].link} class="flex items-center gap-2 hover:text-teal-900 transition">
+      <div class="flex justify-between max-w-3xl mx-auto text-sm font-medium text-sky-700">
+        <a href={navItems[prevIndex].link} class="flex items-center gap-2 hover:text-sky-900 transition">
           ← {navItems[prevIndex].title}
         </a>
-        <a href={navItems[nextIndex].link} class="flex items-center gap-2 hover:text-teal-900 transition">
+        <a href={navItems[nextIndex].link} class="flex items-center gap-2 hover:text-sky-900 transition">
           {navItems[nextIndex].title} →
         </a>
       </div>

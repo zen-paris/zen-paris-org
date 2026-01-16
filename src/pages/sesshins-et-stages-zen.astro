@@ -116,7 +116,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
 <Layout title="Stages">
   <Container>
     <div class="mx-auto max-w-3xl mt-4">
-      <h1 class="text-4xl lg:text-5xl font-bold text-teal-800">
+      <h1 class="text-4xl lg:text-5xl font-bold text-sky-800">
         Stages
       </h1>
       <p class="text-lg mt-4 text-gray-600">
@@ -146,7 +146,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
 
                 <div class="flex-1">
                   <span
-                    class="text-teal-800 uppercase text-sm font-medium"
+                    class="text-sky-800 uppercase text-sm font-medium"
                     set:html={event.displayDate}
                   />
                   <h3 class="text-2xl font-bold mt-2">{event.title}</h3>
@@ -165,7 +165,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
                           href={dojoMap[event.dojo].url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-teal-800 hover:underline"
+                          class="text-sky-800 hover:underline"
                         >
                           {dojoMap[event.dojo].name}
                         </a>
@@ -191,7 +191,7 @@ const nextIndex = (currentIndex + 1) % navItems.length;
 
     <!-- Bottom Navigation -->
     <section class="mt-20 border-t pt-6">
-      <div class="flex justify-between max-w-3xl mx-auto text-sm font-medium text-teal-700">
+      <div class="flex justify-between max-w-3xl mx-auto text-sm font-medium text-sky-700">
         <a href={navItems[prevIndex].link}>← {navItems[prevIndex].title}</a>
         <a href={navItems[nextIndex].link}>{navItems[nextIndex].title} →</a>
       </div>

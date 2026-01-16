@@ -117,7 +117,7 @@ const defaultGodo = "Maître Kosen";
 <Layout title="Stages">
   <Container>
     <div class="mx-auto max-w-3xl mt-4">
-      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-teal-800">
+      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight text-sky-800">
         Stages de zazen par godo
       </h1>
       <p class="text-lg mt-4 text-gray-600">
@@ -133,7 +133,7 @@ const defaultGodo = "Maître Kosen";
       </label>
       <select
         id="godo-select"
-        class="block w-full max-w-xs rounded border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+        class="block w-full max-w-xs rounded border-gray-300 shadow-sm focus:border-sky-500 focus:ring-teal-500"
       >
         {sortedGodos.map((godo) => (
           <option value={godo} selected={godo === defaultGodo}>
@@ -150,7 +150,7 @@ const defaultGodo = "Maître Kosen";
         class={`godo-section ${godo === defaultGodo ? "" : "hidden"} mt-6`}
         data-godo={godo}
       >
-        <h3 class="text-2xl font-bold text-teal-800 mb-4">{godo}</h3>
+        <h3 class="text-2xl font-bold text-sky-800 mb-4">{godo}</h3>
         <ul class="mt-4 space-y-12">
           {ateliersByGodo[godo].map((event) => (
             <li key={event.date + event.title} class="border-b pb-8">
@@ -167,7 +167,7 @@ const defaultGodo = "Maître Kosen";
 
                 <div class="flex-1">
                   <span
-                    class="text-teal-800 uppercase tracking-wider text-sm font-medium"
+                    class="text-sky-800 uppercase tracking-wider text-sm font-medium"
                     set:html={event.displayDate}
                   />
                   <h4 class="text-xl font-bold mt-2">{event.title}</h4>
@@ -186,7 +186,7 @@ const defaultGodo = "Maître Kosen";
                           href={dojoMap[event.dojo].url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-teal-800 hover:underline"
+                          class="text-sky-800 hover:underline"
                         >
                           {dojoMap[event.dojo].name}
                         </a>

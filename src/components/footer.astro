@@ -116,7 +116,7 @@ segments.forEach((seg) => {
         <nav aria-label="Fil d’Ariane" class="mb-4" itemscope itemtype="https://schema.org/BreadcrumbList">
           <ol class="flex flex-wrap justify-center items-center text-sm text-gray-600 gap-2">
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a href="/" itemprop="item" class="hover:text-teal-600">
+              <a href="/" itemprop="item" class="hover:text-sky-600">
                 <span itemprop="name">Accueil</span>
               </a>
               <meta itemprop="position" content="1" />
@@ -130,7 +130,7 @@ segments.forEach((seg) => {
                   {isLast ? (
                     <span class="font-medium text-gray-800" itemprop="name">{crumb.name}</span>
                   ) : (
-                    <a href={crumb.href} itemprop="item" class="hover:text-teal-600">
+                    <a href={crumb.href} itemprop="item" class="hover:text-sky-600">
                       <span itemprop="name">{crumb.name}</span>
                     </a>
                   )}
