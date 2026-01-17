@@ -21,7 +21,7 @@ Maître **Kosen Thibaut** (1950-2025) fut un artisan majeur de l’implantation 
   </figcaption>
 </figure>
 
-Il fut un très proche disciple de **Maître Taisen Deshimaru**, qu’il accompagna pendant de nombreuses années. Après la mort de ce dernier, Maître Kosen reçut la transmission du Dharma et poursuivit son enseignement dans un esprit de fidélité à la pratique du **zazen**.
+Il fut un très proche disciple de **Maître Taisen Deshimaru**, qu’il accompagna pendant de nombreuses années. Après la mort de ce dernier, Maître Kosen reçut la transmission du Dharma et poursuivit sans relâche son enseignement dans un esprit de fidélité à la pratique du **zazen**.
 
 <figure>
   <img
