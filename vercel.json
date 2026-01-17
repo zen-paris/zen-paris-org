@@ -105,7 +105,15 @@
     "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
     "destination": "/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
     "permanent": true
-  }
-      
+  },
+  { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut/", "permanent": true },
+  { "source": "/infos-pratiques/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
+  { "source": "/zazen-paris/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "destination": "/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "permanent": true },
+  { "source": "/zazen-paris/soutras/eko/", "destination": "/soutras/eko/", "permanent": true },
+  {
+    "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
+    "destination": "/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
+    "permanent": true
+  }      
   ]
 }
