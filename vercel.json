@@ -110,6 +110,11 @@
     "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
     "destination": "/soutras/soutra-du-coeur-hannya-shingyo/",
     "permanent": true
+  },
+  {
+    "source": "/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
+    "destination": "/soutras/soutra-du-coeur-hannya-shingyo/",
+    "permanent": true
   }      
   ]
 }
