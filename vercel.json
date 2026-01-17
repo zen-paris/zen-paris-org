@@ -76,7 +76,36 @@
   { "source": "/sans-essence/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
   { "source": "/essence/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
   { "source": "/essence-2/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
-  { "source": "/glossary/", "destination": "/", "permanent": true }
+      { "source": "/glossary/", "destination": "/", "permanent": true },
+  { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut/", "permanent": true },
+  { "source": "/non-fixed/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/non-fixite/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/children-of-the-buddha-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/enfants-du-bouddha/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/mas-alla-del-genero-es/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/masculinity-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/masculinite/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/influence-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/influence/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/anti-racism/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/antiracisme/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/defilement/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/souillure/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/vous-etes-folle/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/rebellion/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/rebellion-2/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/principe/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/principle/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/exclusion-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/exclusion-2/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/infos-pratiques/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
+  { "source": "/zazen-paris/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "destination": "/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "permanent": true },
+  { "source": "/zazen-paris/soutras/eko/", "destination": "/soutras/eko/", "permanent": true },
+  {
+    "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
+    "destination": "/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
+    "permanent": true
+  }
       
   ]
 }
