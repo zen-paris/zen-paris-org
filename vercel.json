@@ -100,6 +100,7 @@
   { "source": "/exclusion-2/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
   { "source": "/infos-pratiques/couture-zen/", "destination": "/meditation-zen/couture-zen", "permanent": true },
   { "source": "/zazen-paris/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "destination": "/soutras/shiguseiganmon-les-quatre-grands-voeux", "permanent": true },
+  { "source": "/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "destination": "/soutras/shiguseiganmon-les-quatre-grands-voeux", "permanent": true },
   { "source": "/zazen-paris/soutras/eko/", "destination": "/soutras/gojushichi-butsu-les-cinquante-sept-bouddhas-et-patriarches", "permanent": true },
   {
     "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
@@ -109,10 +110,10 @@
   { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/autour-du-zen/maitre-kosen-thibaut/", "permanent": true },
   { "source": "/infos-pratiques/couture-zen/", "destination": "/meditation-zen/couture-zen", "permanent": true },
   { "source": "/zazen-paris/soutras/ne-ga-wa-ku-wa-kono-kudo-kuwo/", "destination": "/soutras/shiguseiganmon-les-quatre-grands-voeux", "permanent": true },
-  { "source": "/zazen-paris/soutras/eko/", "destination": "/soutras/gojushichi-butsu-les-cinquante-sept-bouddhas-et-patriarches", "permanent": true },
+  { "source": "/soutras/eko/", "destination": "/soutras/gojushichi-butsu-les-cinquante-sept-bouddhas-et-patriarches", "permanent": true },
   {
     "source": "/zazen-paris/soutras/soutra-du-coeur-hannya-shingyo/traduction-francaise-de-lhannya-shingyo/",
-    "destination": "/soutras/soutra-du-coeur-hannya-shingyo",
+    "destination": "/soutras/soutra-du-coeur-hannya-shingyo/",
     "permanent": true
   }      
   ]
