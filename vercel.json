@@ -3,45 +3,80 @@
     { "source": "/zazen-paris/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
     { "source": "/zen-paris-a-10-ans/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
     { "source": "/autour-du-zen/zen-paris-a-10-ans/", "destination": "/autour-du-zen/zazen-paris/", "permanent": true },
-
     { "source": "/initiation-au-zen/", "destination": "/meditation-zen/initiation-au-zen/", "permanent": true },
     { "source": "/infos-pratiques/seances-de-meditation-zazen/", "destination": "/meditation-zen/", "permanent": true },
     { "source": "/zazen-fait-il-mal-aux-jambes/", "destination": "/meditation-zen/", "permanent": true },
-
     { "source": "/zazen-paris/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true },
     { "source": "/zazen-coeur-de-la-pratique-du-zen-soto/", "destination": "/meditation-zen/zazen-coeur-de-la-pratique-du-zen-soto/", "permanent": true },
-
     { "source": "/zazen-paris/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
     { "source": "/marche-meditative-kin-hin/", "destination": "/meditation-zen/marche-meditative-kin-hin/", "permanent": true },
-
     { "source": "/kusens-audio-de-maitre-kosen/", "destination": "/meditation-zen/maitre-kosen-thibaut/", "permanent": true },
-
     { "source": "/infos-pratiques/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
     { "source": "/couture-zen/", "destination": "/autour-du-zen/couture-zen/", "permanent": true },
-
     { "source": "/zen-et-feminisme-josy-thibaut/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
     { "source": "/zen-y-feminismo-josy-thibaut/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
     { "source": "/zen-and-feminism-josy-thibaut-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
-
     { "source": "/zazen-paris/soutras/:slug*/", "destination": "/soutras/:slug*/", "permanent": true },
-
     { "source": "/stages-meditation-zen/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
     { "source": "/stages-de-meditation/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
     { "source": "/stage-zen/:slug*/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
     { "source": "/camp-dhiver-2023/", "destination": "/sesshins-et-stages-zen/", "permanent": true },
-
     { "source": "/infos-pratiques/", "destination": "/", "permanent": true },
-
     { "source": "/cart/", "destination": "/", "permanent": true },
     { "source": "/checkout/", "destination": "/", "permanent": true },
     { "source": "/my-account/", "destination": "/", "permanent": true },
     { "source": "/shop/", "destination": "/", "permanent": true },
-
     { "source": "/tickets-checkout/", "destination": "/", "permanent": true },
     { "source": "/tickets-order/", "destination": "/", "permanent": true },
-
     { "source": "/questions/:path*/", "destination": "/", "permanent": true },
-
-    { "source": "/6907-2/", "destination": "/", "permanent": true }
+      { "source": "/6907-2/", "destination": "/", "permanent": true },
+  { "source": "/tarifs/", "destination": "/", "permanent": true },
+  { "source": "/zen-en-distanciel/", "destination": "/meditation-zen/", "permanent": true },
+  { "source": "/infos-pratiques/dojo-zen/", "destination": "/", "permanent": true },
+  { "source": "/fuentes/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/masculinidad/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/antirracismo/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/rebelion/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/los-ninos-de-buda/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/principio/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/esencia/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/mas-alla/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/paridad/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/amnesia-es/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/influencias/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/contaminacion/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/exclusion-es/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/no-fijacion/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/sin-esencia/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/continuar-zazen/", "destination": "/meditation-zen/", "permanent": true },
+  { "source": "/continuer-la-pratique/", "destination": "/meditation-zen/", "permanent": true },
+  { "source": "/continuing-the-practice/", "destination": "/meditation-zen/", "permanent": true },
+  { "source": "/esta-loca/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/youre-crazy/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/canciones-feministas/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/feminist-songs/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/chansons-feministes/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/cuando-las-mujeres-se-aman/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/when-women-love-each-other/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/quand-les-femmes-saiment/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/grrrr-huelga-de-mujeres/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/grrrr-reve-des-femmes/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/dream-and-anger/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/sources-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/source/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/beyond-gender/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/au-dela-du-genre/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/beyond/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/au-dela/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/parity/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/parite/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/amnesia-en/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/amnesie/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/without-essence/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/sans-essence/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/essence/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/essence-2/", "destination": "/autour-du-zen/zen-et-feminisme-josy-thibaut/", "permanent": true },
+  { "source": "/glossary/", "destination": "/", "permanent": true }
+      
   ]
 }
